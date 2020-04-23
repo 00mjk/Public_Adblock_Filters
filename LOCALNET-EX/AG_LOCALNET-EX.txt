@@ -1,0 +1,57 @@
+! Title: InnoScorpio's Adguard LOCALNET-EX
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 30 days
+! Version: 04.23.2020
+! Source:
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: These are an example of vulnerable IP addresses that should be blocked for increased security against network attacks from outbound traffic. This filter is meant for AdGuard. You may have to customize a similar filter with your own rules.
+! Use them at your own risk.
+! =======================================================================================================================================
+! Blocking dangerous IP addresses in Adguard
+! Outbound requests to these IP addresses should be blocked
+! unless for a specific reason such as mangaging network administration, an external server, etc.
+! See Wikipedia - Reserved IP Addresses (https://en.wikipedia.org/wiki/Reserved_IP_addresses),
+! IANA IPv4 Special Purpose Registry (https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml),
+! and IANA IPv6 Special Purpose Registry (https://www.iana.org/assignments/iana-ipv6-special-registry/iana-ipv6-special-registry.xhtml) 
+! for gudiance.
+0.*^$network
+10.*^$network
+100.64.*^$network
+127.*^$network
+169.254.*^$network
+172.16.*^$network
+172.17.*^$network
+172.18.*^$network
+172.19.*^$network
+172.2*.*^$network
+172.30.*^$network
+172.31.*^$network
+192.168.*^$network
+192.0.0.*^$network
+192.88.99.*^$network
+! These IP addresses are used for legitimate applications. Enable them with caution.
+198.18.*^$network
+198.19.*^$network
+! If you use localhost for legitimate reasons. Add exclusions.
+! Websites like www.leoaffairs.com use localhost to bypass your adblocker.
+||localhost^$empty 
+! You can use the rule below to block all IPv6 addresses if you do not use an IPv6 router.
+[*]^$network
+[::]^$network
+[::1]^$network
+[::ffff:0:*]^$network
+||[fc**:*]^$empty
+||[fe**:*]^$empty
+||[fd**:*]^$empty
+[100:*]^$network
+[2002:*]^$network
+! Add IPv6 address range associated withyour IPv6 Home ISP Wide-Area Network. 
+! This can be found from logging into your router network administration.
+! The rule below is for ISP Starnet, Czech Republic.
+[2a02:768:7c00:*]^$network
+! If you have a mobile ISP, add IPv6 addresses associated with IPv6 Mobile ISP WAN. 
+! Use an app such as IP Tools on Android to get Mobile ISP IPv6 WAN address 
+! Google a IPv6 Lookup service to figure out the range to block. 
+! The rule below is for Verzion Wireless.
+[2600:1010:*]^$network 
