@@ -1,0 +1,56 @@
+! Title: InnoScorpio's Adguard FILEEXT-Personal 
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 30 days
+! Version: 04.23.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Block dangerous file extensions from most network protocols for increased security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for Adguard.
+! Use them at your own risk.
+! ============================================================================
+! Dangerous File Extensions for Microsoft Windows
+! Block downloads of .exe and .msi from insecure websites.
+http://*exe^$empty
+http://*msi^$empty
+! Other vulnerable or malicious extensions for Windows
+||*bat^$empty
+||*dll^$empty
+||*hta^$empty
+||*jar^$empty
+||*msu^$empty
+||*pif^$empty
+||*ps1^$empty
+||*ps2^$empty
+||*reg^$empty
+||*scr^$empty
+||*sys^$empty
+||*vbe^$empty
+||*vbs^$empty
+||*tmp^$empty
+! Dangerous File Extensions for Android
+||*elf^$empty
+||*jar^$empty
+||*odex^$empty
+||*so^$empty
+||*dex^$empty
+! You will encounter issues downloading APK files if this rule is enabled in Adguard. I only block APK files from HTTP-only traffic.
+http://*apk^$empty
+! Additional ones from malicious websites, possibly for Linux
+||*x64^$empty
+||*x86^$empty
+||*spc^$empty
+||*sh^$empty
+||*sh*^$empty
+||*ppc^$empty
+||*mpsl^$empty
+||*mips^$empty
+||*m68k^$empty
+||*arm^$empty
+||*arm*^$empty
+||*i58*^$empty
+||*sparc^$empty
+! Legitimate file extensions used from malicious websites or servers
+||*bin^$empty
+||*lnk^$empty
+http://*jpg^$all
+http://*png^$all

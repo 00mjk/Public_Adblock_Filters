@@ -1,0 +1,56 @@
+! Title: InnoScorpio's uBlock Origin FILEEXT-HTTP-Only
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 30 days
+! Version: 04.23.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Block dangerous file extensions from HTTP-Only traffic for increased security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for uBlock Origin or Nano Defender.
+! Use them at your own risk.
+! ============================================================================
+! Dangerous File Extensions for Microsoft Windows
+! Block downloads of .exe and .msi from insecure websites.
+http://*exe^$all
+http://*msi^$all
+! Other vulnerable or malicious extensions for Windows
+http://*bat^$all
+http://*dll^$all
+http://*hta^$all
+http://*jar^$all
+http://*msu^$all
+http://*pif^$all
+http://*ps1^$all
+http://*ps2^$all
+http://*reg^$all
+http://*scr^$all
+http://*sys^$all
+http://*vbe^$all
+http://*vbs^$all
+http://*tmp^$all
+! Dangerous File Extensions for Android
+http://*elf^$all
+http://*jar^$all
+http://*odex^$all
+http://*so^$all
+http://*dex^$all
+! You will encounter issues downloading APK files if this rule is enabled in Adguard. I only block APK files from HTTP-only traffic.
+http://*apk^$all
+! Additional ones from malicious websites, possibly for Linux
+http://*x64^$all
+http://*x86^$all
+http://*spc^$all
+http://*sh^$all
+http://*sh*^$all
+http://*ppc^$all
+http://*mpsl^$all
+http://*mips^$all
+http://*m68k^$all
+http://*arm^$all
+http://*arm*^$all
+http://*i58*^$all
+http://*sparc^$all
+! Legitimate file extensions used from malicious websites or servers
+http://*bin^$all
+http://*lnk^$all
+http://*jpg^$all
+http://*png^$all
