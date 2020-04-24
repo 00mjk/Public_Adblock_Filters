@@ -11,29 +11,29 @@
 ! Dangerous File Extensions for Microsoft Windows
 ! Block downloads of .exe and .msi from insecure websites.
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
-http://*exe^$all
-http://*msi^$all
+http://*.exe^$all
+http://*.msi^$all
 ! Other vulnerable or malicious extensions for Windows
-http://*bat^$all
-http://*dll^$all
-http://*hta^$all
-http://*jar^$all
-http://*msu^$all
-http://*pif^$all
-http://*ps1^$all
-http://*ps2^$all
-http://*reg^$all
-http://*scr^$all
-http://*sys^$all
-http://*vbe^$all
-http://*vbs^$all
-http://*tmp^$all
+http://*.bat^$all
+http://*.dll^$all
+http://*.hta^$all
+http://*.jar^$all
+http://*.msu^$all
+http://*.pif^$all
+http://*.ps1^$all
+http://*.ps2^$all
+http://*.reg^$all
+http://*.scr^$all
+http://*.sys^$all
+http://*.vbe^$all
+http://*.vbs^$all
+http://*.tmp^$all
 ! Dangerous File Extensions for Android
-http://*elf^$all
-http://*jar^$all
-http://*odex^$all
-http://*so^$all
-http://*dex^$all
+http://*.elf^$all
+http://*.jar^$all
+http://*.odex^$all
+http://*.so^$all
+http://*.dex^$all
 ! You will encounter issues downloading APK files if this rule is enabled in Adguard. I only block APK files from HTTP-only traffic.
-http://*apk^$all
+http://*.apk^$all
 
