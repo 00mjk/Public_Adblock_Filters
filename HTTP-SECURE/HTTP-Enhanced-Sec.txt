@@ -3,7 +3,7 @@
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 30 days
 ! Version: 04.24.2020
-! Source: 
+! Source: https://raw.githubusercontent.com/InnoScorpio/Public_Adblock_Filters/master/HTTP-SECURE/HTTP-Enhanced-Sec.txt
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Increases security when accessing websites using the HTTP and HTTPS protocols.
 ! Use them at your own risk.
