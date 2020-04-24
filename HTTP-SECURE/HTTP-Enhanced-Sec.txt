@@ -8,6 +8,8 @@
 ! Description: Increases security when accessing websites using the HTTP and HTTPS protocols.
 ! Use them at your own risk.
 ! ====================================================================================================================
+! Cybo1927's Original Rule
+! http://*^$third-party,all
 ! Block all HTTP websites.
 ! http://*^$all
 ! Block Javascript on all HTTP insecure websites
