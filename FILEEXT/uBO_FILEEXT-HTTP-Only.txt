@@ -10,6 +10,7 @@
 ! ============================================================================
 ! Dangerous File Extensions for Microsoft Windows
 ! Block downloads of .exe and .msi from insecure websites.
+! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
 http://*exe^$all
 http://*msi^$all
 ! Other vulnerable or malicious extensions for Windows
