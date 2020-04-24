@@ -5,7 +5,7 @@
 ! Version: 04.23.2020
 ! Source:
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: These are an example of vulnerable IP addresses that should be blocked for increased security against network attacks from outbound traffic. This filter is meant for uMatrix. You may have to customize a similar filter with your own rules.
+! Description: These are an example of vulnerable IP addresses that should be blocked for increasing security against network attacks from outbound traffic. This filter is meant for uMatrix. You may have to customize a similar filter with your own rules.
 ! Use them at your own risk.
 ! =======================================================================================================================================
 ! Blocking dangerous IP addresses in uMatrix
