@@ -10,47 +10,30 @@
 ! ============================================================================
 ! Dangerous File Extensions for Microsoft Windows
 ! Block downloads of .exe and .msi.
-http://*exe^$empty
-http://*msi^$empty
+http://*.exe^$empty
+http://*.msi^$empty
 ! Other vulnerable or malicious extensions for Windows
-http://*bat^$empty
-http://*dll^$empty
-http://*hta^$empty
-http://*jar^$empty
-http://*msu^$empty
-http://*pif^$empty
-http://*ps1^$empty
-http://*ps2^$empty
-http://*reg^$empty
-http://*scr^$empty
-http://*sys^$empty
-http://*vbe^$empty
-http://*vbs^$empty
-http://*tmp^$empty
+http://*.bat^$empty
+http://*.dll^$empty
+http://*.hta^$empty
+http://*.jar^$empty
+http://*.msu^$empty
+http://*.pif^$empty
+http://*.ps1^$empty
+http://*.ps2^$empty
+http://*.reg^$empty
+http://*.scr^$empty
+http://*.sys^$empty
+http://*.vbe^$empty
+http://*.vbs^$empty
+http://*.tmp^$empty
 ! Dangerous File Extensions for Android
-http://*elf^$empty
-http://*jar^$empty
-http://*odex^$empty
-http://*so^$empty
-http://*dex^$empty
+http://*.elf^$empty
+http://*.jar^$empty
+http://*.odex^$empty
+http://*.so^$empty
+http://*.dex^$empty
 ! You will encounter issues downloading APK files if this rule is enabled in Adguard. I only block APK files from HTTP-only traffic.
 http://*.apk^$empty
-! Additional ones from malicious websites, possibly for Linux
-http://*x64^$empty
-http://*x86^$empty
-http://*spc^$empty
-http://*sh^$empty
-http://*sh*^$empty
-http://*ppc^$empty
-http://*mpsl^$empty
-http://*mips^$empty
-http://*m68k^$empty
-http://*arm^$empty
-http://*arm*^$empty
-http://*i58*^$empty
-http://*sparc^$empty
-! Legitimate file extensions used from malicious websites or servers
-http://*bin^$empty
-http://*lnk^$empty
-http://*jpg^$all
-http://*png^$all
+
+

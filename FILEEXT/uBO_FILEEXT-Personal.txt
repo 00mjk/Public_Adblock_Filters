@@ -35,22 +35,4 @@ http://*msi^$all
 ||*dex^$all
 ! You will encounter issues downloading APK files if this rule is enabled in Adguard. I only block APK files from HTTP-only traffic.
 http://*apk^$all
-! Additional ones from malicious websites, possibly for Linux
-||*x64^$all
-||*x86^$all
-||*spc^$all
-||*sh^$all
-!||*sh*^$all
-||*ppc^$all
-||*mpsl^$all
-||*mips^$all
-||*m68k^$all
-||*arm^$all
-||*arm*^$all
-||*i58*^$all
-||*sparc^$all
-! Legitimate file extensions used from malicious websites or servers
-||*bin^$all
-||*lnk^$all
-http://*jpg^$all
-http://*png^$all
+
