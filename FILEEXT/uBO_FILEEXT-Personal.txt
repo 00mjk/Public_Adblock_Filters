@@ -40,7 +40,7 @@ http://*apk^$all
 ||*x86^$all
 ||*spc^$all
 ||*sh^$all
-||*sh*^$all
+!||*sh*^$all
 ||*ppc^$all
 ||*mpsl^$all
 ||*mips^$all

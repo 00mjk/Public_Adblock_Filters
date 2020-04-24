@@ -40,7 +40,7 @@ http://*x64^$all
 http://*x86^$all
 http://*spc^$all
 http://*sh^$all
-http://*sh*^$all
+!http://*sh*^$all
 http://*ppc^$all
 http://*mpsl^$all
 http://*mips^$all
