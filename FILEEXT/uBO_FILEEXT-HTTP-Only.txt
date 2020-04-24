@@ -5,7 +5,7 @@
 ! Version: 04.23.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Block dangerous file extensions from HTTP-Only traffic for increased security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for uBlock Origin or Nano Defender.
+! Description: Block dangerous file extensions from HTTP-Only traffic for increasing security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for uBlock Origin or Nano Defender.
 ! Use them at your own risk.
 ! ============================================================================
 ! Dangerous File Extensions for Microsoft Windows
