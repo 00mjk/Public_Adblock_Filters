@@ -1,0 +1,24 @@
+! Title: Innoscorpio's Enhanced Security of HTTP
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 30 days
+! Version: 04.24.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Increases security when accessing websites using the HTTP and HTTPS protocols.
+! Use them at your own risk.
+! ====================================================================================================================
+! Block all HTTP websites.
+! http://*^$all
+! Block Javascript on all HTTP insecure websites
+http://*$script
+! Only allow third-party elements on HTTP websites that are essential for not increasing the security.
+http://*$third-party,~stylesheet,~image,~media
+! This rule supports syntax for Adguard for Android or Adguard for Desktop
+https://*$third-party,object,script,subdocument,websocket,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io
+! Rule for Adguard Adblock Extension. Only useful for web browser. 
+! https://*$third-party,object,script,subdocument,websocket,webrtc,ping,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io
+! Try To Make HTTP Links HTTPS (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests)
+||*$csp='upgrade-insecure-requests';
+! Block 'Mixed Content' / Loading Of HTTP On HTTPS Sites (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content)
+||*$csp='block-all-mixed-content';
