@@ -46,7 +46,7 @@
 ![2002:*]^$network
 ! === Localhost Ranges =======
 ! Optional: Adguard does not filter out localhost connections by default. You can use the following rules to filter out localhost traffic. Exclusions for localhost traffic may be needed.
-! Websites like leoaffairs.com use localhost to bypass your adblocker.
+! Websites like leoaffairs.com use localhost to bypass your adblocker. So, this is needed to block loopholes in regards to adblocking.
 !127.*^$network, 
 ![::1]^$network, 
 !localhost^$empty   
