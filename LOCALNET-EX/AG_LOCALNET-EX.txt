@@ -48,11 +48,7 @@
 !127.*^$network, 
 ![::1]^$network, 
 !localhost^$empty   
-! Add IPv6 address range associated with your IPv6 Home ISP Wide-Area Network. This can be found from logging into your router or gateway.
-! The rule below is example for ISP Starnet, Czech Republic. 
+! Optional: Add IPv6 address range associated with your IPv6 Home ISP Wide-Area Network. This can be found from logging into your router or gateway. The rule below is example for ISP Starnet, Czech Republic. 
 ! [2a02:768:7c00:*]^$network
-! If you have a Mobile ISP or carrier, add IPv6 address range associated with your IPv6 Mobile ISP WAN. 
-! Use an app such as IP Tools for Android to get Mobile ISP IPv6 WAN address 
-! Google a IPv6 Lookup service to figure out the range to block. 
-! The rule below is an example for Verzion Wireless.
+! Optional: If you have a Mobile ISP or carrier, add IPv6 address range associated with your IPv6 Mobile ISP WAN. Use an app such as IP Tools for Android to get Mobile ISP IPv6 WAN address. Google a IPv6 Lookup service to figure out the range to block. The rule below is an example for Verzion Wireless.
 ! [2600:1010:*]^$network 
