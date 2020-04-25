@@ -44,11 +44,14 @@
 ! Optional: 192.168.* range is deprecated. Should not be used. Can be problematic for legacy devices. These rules are disabled for caution. 
 !192.198.*^$network
 ![2002:*]^$network
+! === Localhost IP Address Ranges ======
 ! Optional: Adguard does not filter out localhost connections by default. You can use the following rules to filter out localhost traffic. Exclusions for localhost traffic may be needed.
 !127.*^$network, 
 ![::1]^$network, 
-!localhost^$empty   
+!localhost^$empty 
+! ==== IPv6 Home ISP WAN Range Example ======
 ! Optional: Add IPv6 address range associated with your IPv6 Home ISP Wide-Area Network. This can be found from logging into your router or gateway. The rule below is example for ISP Starnet, Czech Republic. 
 ! [2a02:768:7c00:*]^$network
+! ==== IPv6 Mobile ISP WAN Range Example ======
 ! Optional: If you have a Mobile ISP or carrier, add IPv6 address range associated with your IPv6 Mobile ISP WAN. Use an app such as IP Tools for Android to get Mobile ISP IPv6 WAN address. Google a IPv6 Lookup service to figure out the range to block. The rule below is an example for Verzion Wireless.
 ! [2600:1010:*]^$network 
