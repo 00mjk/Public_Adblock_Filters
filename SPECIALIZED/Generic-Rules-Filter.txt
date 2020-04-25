@@ -1,8 +1,8 @@
 ! Title: InnoScorpio's Generic-Rules-Filter
-! Last updated: 2020-04-17
-! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Version: 04.24.2020
+! License: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Custom_Adguard_Filters
-! Source: https://raw.githubusercontent.com/InnoScorpio/Custom_Adguard_Filters/master/Ad%20%26%20Cryptomining.txt
+! Source: 
 ! Expires: Infinite
 ! Generic rules to counter ad, tracking, & cryptomining scripts for HTML and Javascript.
 ! Use them at your own risk.

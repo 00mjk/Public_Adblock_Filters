@@ -5,9 +5,9 @@
 ! Version: 04.24.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: List of rules consisting of URL expressions. 
-! =================================================================================
+! Description: List of rules consisting of complex URL expressions. 
 ! Use them at your own risk.
+! =================================================================================
 ! bogachenko's Filter List
 /^(https?|ftp|wss?):\/\/((www|wap)\.)?(fingerpr[ie]nt|fp)([0-9]{1,3})?\./$important
 /^(https?|ftp|wss?):\/\/((www|wap)\.)?(metri[ck]?[asx]?|mtrcs?)([0-9]{1,3})?\./$important,domain=~metrica.yandex.com|~metrica.yandex.ru|~metrika.yandex.com|~metrika.yandex.ru

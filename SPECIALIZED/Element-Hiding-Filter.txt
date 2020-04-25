@@ -1,11 +1,12 @@
 ! Title: InnoScorpio's Element Hiding Filter
-! Last updated: 4.22.2020
+! Version: 04.24.2020
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Custom_Adguard_Filters
 ! Source: 
 ! Expires: Infinite
-! Description: Filters based on generic element hiding rules from uBlock-Filter-Plus, Blockzilla and Adversity
+! Description: Filters based on generic element hiding rules from uBlock-Filter-Plus, Blockzilla and Adversity.
 ! Use them at your own risk.
+! =============================================================================================
 ###A9AdsMiddleBoxTop
 ###A9AdsOutOfStockWidgetTop
 ###AD-HOME-FOOT
