@@ -1,14 +1,14 @@
-! Title: InnoScorpio's Adguard LOCALNET IPv4 and IPv6 Example
+! Title: InnoScorpio's Adguard LOCALNET IPv4 and IPv6
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 30 days
 ! Version: 04.23.2020
 ! Source:
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Intended for devices that support IPv4 and IPv6 traffic. These are an example of reserved IP addresses that should be blocked for increasing security against network attacks from outbound traffic. This filter is meant for AdGuard. You may have to customize a similar list with your own rules for your own control. 
+! Description: These are an example of vulnerable IP addresses that should be blocked for increasing security against network attacks from outbound traffic. This filter is meant for AdGuard. You may have to customize a similar filter with your own rules.
 ! Use them at your own risk.
 ! =======================================================================================================================================
-! Recommended reserved IP addresses to block in Adguard
+! Recommended IP addresses in Adguard
 ! Outbound requests to these IP addresses should be blocked
 ! unless for a specific reason such as mangaging network administration, an external server, etc.
 ! See Wikipedia - Reserved IP Addresses (https://en.wikipedia.org/wiki/Reserved_IP_addresses),
@@ -44,55 +44,14 @@
 ! Optional: 192.168.* range is deprecated. Should not be used. Can be problematic for legacy devices. These rules are disabled for caution. 
 !192.198.*^$network
 ![2002:*]^$network
-! === Localhost Ranges =======
+! === Localhost IP Address Ranges ======
 ! Optional: Adguard does not filter out localhost connections by default. You can use the following rules to filter out localhost traffic. Exclusions for localhost traffic may be needed.
-! Websites like leoaffairs.com use localhost to bypass your adblocker. So, this is needed to block loopholes in regards to adblocking.
 !127.*^$network, 
 ![::1]^$network, 
-!localhost^$empty   
-! ======== IPv6 Home ISP Wide-Area Network ========
-! Suggested: Add IPv6 address range associated with your IPv6 Home ISP Wide-Area Network. 
-! This can be found from logging into your router or gateway. The rule below is example for ISP Starnet, Czech Republic. 
+!localhost^$empty 
+! ==== IPv6 Home ISP WAN Range Example ======
+! Optional: Add IPv6 address range associated with your IPv6 Home ISP Wide-Area Network. This can be found from logging into your router or gateway. The rule below is example for ISP Starnet, Czech Republic. 
 ! [2a02:768:7c00:*]^$network
-! ======== IPv6 Mobile ISP or Carrier Wide-Area Network ==========
-! Suggested: If you have a Mobile ISP or carrier, add IPv6 address range associated with your IPv6 Mobile ISP WAN. 
-! Use an app such as IP Tools for Android to get Mobile ISP IPv6 WAN address. Google a IPv6 Lookup service to figure out the range to block.  The rule below is an example for Verzion Wireless.
+! ==== IPv6 Mobile ISP WAN Range Example ======
+! Optional: If you have a Mobile ISP or carrier, add IPv6 address range associated with your IPv6 Mobile ISP WAN. Use an app such as IP Tools for Android to get Mobile ISP IPv6 WAN address. Google a IPv6 Lookup service to figure out the range to block. The rule below is an example for Verzion Wireless.
 ! [2600:1010:*]^$network 
-! ==== Common Exclusions ======
-! These are examples of IP addresses used for legitimate purposes
-! Localhost exclusions are possible for DNS traffic, local servers for Python programming and proxy servers (Tor, NordVPN, TorGuard, Shadowsocks).
-! Remove apps like Orbot and Shadowsocks (AdGuard -> Apps management -> Shadowsocks -> Disable protection) from filtering to avoid issues.
-@@[::1]:53$network
-@@127.0.0.1:53$network
-@@[::1]:853$network
-@@127.0.0.1:8888$network
-@@[::1]:8888$network
-@@127.0.0.1:8000$network
-@@[::1]:8000$network
-@@127.0.0.1:1080$network
-@@[::1]:1080$network
-@@127.0.0.1:4444$network
-@@[::1]:4444$network
-@@127.0.0.1:9050$network
-@@[::1]:9050$network
-@@127.0.0.1:8118$network
-@@[::1]:8118$network
-@@127.0.0.1:9040$network
-@@[::1]:9040$network
-@@127.0.0.1:1085$network
-@@[::1]:1085$network
-@@127.0.0.1:1090$network
-@@[::1]:1090$network
-! Login to router or gateway.
-@@10.0.0.1:80$network
-@@10.0.0.1:443$network
-@@10.0.1.1:80$network
-@@10.0.1.1:443$network
-@@172.16.0.1:80$network
-@@172.16.0.1:443$network
-@@172.16.1.1:80$network
-@@172.16.1.1:443$network
-@@192.168.0.1:80$network
-@@192.168.0.1:443$network
-@@192.168.1.1:80$network
-@@192.168.1.1:443$network
