@@ -1,4 +1,4 @@
-! Title: InnoScorpio's Adguard LOCALNET IPv4 and IPv6 Example
+! Title: IS's Adguard LOCALNET IPv4 and IPv6 Example
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 30 days
@@ -63,41 +63,41 @@
 ! Localhost exclusions are possible for DNS traffic, local servers for Python programming and proxy servers (Tor, NordVPN, TorGuard, Shadowsocks).
 ! Remove apps like Orbot and Shadowsocks (AdGuard -> Apps management -> Shadowsocks -> Disable protection) from filtering to avoid issues.
 ! DNS Traffic
-@@127.0.0.1:53$network
-@@[::1]:53$network
-@@127.0.0.1:853$network
-@@[::1]:853$network
-@@127.0.0.1:5353$network
-@@[::1]:5353$network
+@@127.0.0.1:53^$network
+@@[::1]:53^$network
+@@127.0.0.1:853^$network
+@@[::1]:853^$network
+@@127.0.0.1:5353^$network
+@@[::1]:5353^$network
 ! Freenet, local servers for Python or Julia Jupyter Notebook, and Django Webserver
-@@127.0.0.1:8888$network
-@@[::1]:8888$network 
-@@127.0.0.1:8000$network
-@@[::1]:8000$network
+@@127.0.0.1:8888^$network
+@@[::1]:8888^$network 
+@@127.0.0.1:8000^$network
+@@[::1]:8000^$network
 ! I2P
-@@127.0.0.1:4444$network
-@@[::1]:4444$network
+@@127.0.0.1:4444^$network
+@@[::1]:4444^$network
 ! Tor 
-@@127.0.0.1:8118$network
-@@[::1]:8118$network
-@@127.0.0.1:9050$network
-@@[::1]:9050$network
-@@127.0.0.1:9040$network
-@@[::1]:9040$network
+@@127.0.0.1:8118^$network
+@@[::1]:8118^$network
+@@127.0.0.1:9050^$network
+@@[::1]:9050^$network
+@@127.0.0.1:9040^$network
+@@[::1]:9040^$network
 ! For Other SOCKS and HTTP Proxy Servers
-@@127.0.0.1:1080$network
-@@[::1]:1080$network
-@@127.0.0.1:1085$network
-@@[::1]:1085$network
-@@127.0.0.1:1090$network
-@@[::1]:1090$network
+@@127.0.0.1:1080^$network
+@@[::1]:1080^$network
+@@127.0.0.1:1085^$network
+@@[::1]:1085^$network
+@@127.0.0.1:1090^$network
+@@[::1]:1090^$network
 ! Login to router or gateway.
-@@10.0.0.1:80$network
-@@10.0.0.1:443$network
-@@10.0.1.1:80$network
-@@10.0.1.1:443$network
-@@172.16.0.1:80$network
-@@172.16.0.1:443$network
+@@10.0.0.1:80^$network
+@@10.0.0.1:443^$network
+@@10.0.1.1:80^$network
+@@10.0.1.1:443^$network
+@@172.16.0.1:80^$network
+@@172.16.0.1:443^$network
 @@172.16.1.1:80$network
 @@172.16.1.1:443$network
 @@192.168.0.1:80$network
