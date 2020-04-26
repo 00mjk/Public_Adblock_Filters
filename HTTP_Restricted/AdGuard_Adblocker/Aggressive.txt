@@ -1,4 +1,4 @@
-! Title: HTTP Restricted - Moderate for Adguard Browser Extension
+! Title: HTTP Restricted - Aggressive for Adguard Adblocker Extension
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 15 days

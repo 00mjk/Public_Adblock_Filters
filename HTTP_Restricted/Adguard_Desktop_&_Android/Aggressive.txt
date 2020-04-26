@@ -1,11 +1,11 @@
-! Title: HTTP Restricted - Moderate for Adguard for Desktop and Android
+! Title: HTTP Restricted - Aggressive for Adguard for Windows and Android
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 15 days
 ! Version: 04.26.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Intended for Adguard for Desktop and Adguard for Android. Increases security when visiting HTTP and HTTPS websites.
+! Description: Intended for Adguard for Windows and for Android. Increases security when visiting HTTP and HTTPS websites.
 ! Use them at your own risk.
 ! ====================================================================================================================
 ! Block Javascript on all HTTP insecure websites. This is not suggested for Adguard for Desktop due to misinterpertation of filtering modifiers is possible. 
