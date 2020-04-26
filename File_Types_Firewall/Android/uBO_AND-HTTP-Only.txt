@@ -1,0 +1,19 @@
+! Title: Android File Types Firewall HTTP-Only for uBlock Origin
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 15 days
+! Version: 04.26.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Block dangerous Android file extensions from HTTP-Only traffic to increase security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for uBlock Origin or Nano Defender.
+! Use them at your own risk.
+! ============================================================================
+! Dangerous File Extensions for Android
+http://*.elf^$all
+http://*.jar^$all
+http://*.odex^$all
+http://*.so^$all
+http://*.dex^$all
+! You will encounter issues downloading APK files if this rule is enabled in Adguard. I only block APK files from HTTP-only traffic.
+http://*.apk^$all
+

@@ -1,0 +1,30 @@
+! Title: Windows File Types Firewall Personal Setting for uBlock Origin
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 15 days
+! Version: 04.26.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Block dangerous Windows file extensions from HTTP-Only traffic to increase security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for uBlock Origin or Nano Defender.
+! Use them at your own risk.
+! ============================================================================
+! Dangerous File Extensions for Microsoft Windows
+! Block downloads of .exe and .msi from insecure websites.
+! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
+http://*.exe^$all
+http://*.msi^$all
+! Other vulnerable or malicious extensions for Windows
+||*.bat^$all
+||*.dll^$all
+||*.hta^$all
+||*.jar^$all
+||*.msu^$all
+||*.pif^$all
+||*.ps1^$all
+||*.ps2^$all
+||*.reg^$all
+||*.scr^$all
+||*.sys^$all
+||*.vbe^$all
+||*.vbs^$all
+||*.tmp^$all
