@@ -1,4 +1,4 @@
-! Title: HTTP Restricted - HTTPS_Empty for Adguard
+! Title: HTTP Restricted - HTTP_Empty for Adguard
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 15 days
