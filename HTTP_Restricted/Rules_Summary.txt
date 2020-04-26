@@ -1,0 +1,33 @@
+! Title: Enhanced Security for HTTP - All Rules
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 15 days
+! Version: 04.26.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Increases security when accessing websites using the HTTP and HTTPS protocols.
+! Use them at your own risk.
+! ====================================================================================================================
+! This is a rules summary. None of the rules are intended to work together.
+! Block Javascript on all HTTP insecure websites. This is not suggested for Adguard for Desktop due to misinterpertation of filtering modifiers is possible. 
+! It is best to uBlock Origin or uMatrix to filter out Javascript and ignore this rule if using only Adguard for Desktop or Adguard Adblocker Extension. 
+! http://*$script
+! Only allow third-party elements on HTTP websites that are essential for viewing content. From LennyFox.
+! http://*$third-party,~stylesheet,~image,~media
+! Only allow third-party elements on HTTP websites that are essential for viewing content for other domains excluding whitelisted. From rdsu-pt.
+! http://*$third-party,~stylesheet,~image,~media,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx
+! This rule supports the syntax for Adguard for Android or Adguard for Desktop.
+! https://*$third-party,object,script,subdocument,websocket,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx
+! Rule for Adguard Adblock Extension. Only useful for web browser. 
+! https://*$third-party,object,script,subdocument,websocket,webrtc,ping,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx
+! Cybo1927's original rule. Block all third-party elements on all HTTP websites.
+! http://*^$third-party,all
+! Block all HTTP websites from loading without proceeding anyway. Mainly useful for online banking and sensitive tasks. From beerisgood. 
+! http://*^$all
+! Neuters requests to HTTP websites completely. This rule is intended for Adguard. Mainly useful for online banking and sensitive tasks.
+! http://*^$empty 
+! Try To Make HTTP Links HTTPS (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests)
+||*$csp='upgrade-insecure-requests';
+! Block 'Mixed Content' / Loading Of HTTP On HTTPS Sites (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content)
+||*$csp='block-all-mixed-content';
+
