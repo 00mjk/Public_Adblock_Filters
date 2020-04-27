@@ -1,4 +1,4 @@
-! Title: InnoScorpio's Element Hiding Filter
+! Title: Element_Hiding_List
 ! Version: 04.24.2020
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Custom_Adguard_Filters
