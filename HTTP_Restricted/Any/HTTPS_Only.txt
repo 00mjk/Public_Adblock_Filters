@@ -14,5 +14,3 @@ http://*^$all
 ||*$csp='upgrade-insecure-requests';
 ! Block 'Mixed Content' / Loading Of HTTP On HTTPS Sites (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content)
 ||*$csp='block-all-mixed-content';
-! Prevent any non-HTTPS connection
-||*^$csp=default-src https:;
