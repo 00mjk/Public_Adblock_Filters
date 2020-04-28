@@ -42,8 +42,8 @@
 ||[fd**:*]^$empty
 ! === Deprecated IP Address Ranges =======
 ! Optional: 192.88.99.* and [2002:*] range are deprecated. Should not be used. Can be problematic for legacy devices. These rules are disabled for caution. 
-! 192.88.99.*^$network
-! [2002:*]^$network
+192.88.99.*^$network
+[2002:*]^$network
 ! === Localhost Ranges =======
 ! Optional: Adguard does not filter out localhost connections by default. You can use the following rules to filter out localhost traffic. Exclusions for localhost traffic may be needed.
 ! Websites like leoaffairs.com use localhost to bypass your adblocker. So, this is needed to block loopholes in regards to adblocking.

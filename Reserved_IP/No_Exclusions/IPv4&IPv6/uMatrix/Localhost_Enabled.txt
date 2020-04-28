@@ -28,7 +28,7 @@
 * 192.0.0 * block
 ! === Stateless Address AutoConfiguration or Link-Local Addresses ==== 
 ! 169.254.* and [fe**:*] IP ranges is intended when your device is not set to static address or DHCP server. 
-* 169.254 * block
+!* 169.254 * block
 ! === Private IPv4 Address Range ======
 ! These ranges are used for IP addresses associated for a private network. 
 * 10 * block
