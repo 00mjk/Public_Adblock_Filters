@@ -20,4 +20,4 @@ $$link[rel="preload"]
 $$link[rel="dns-prefetch"]
 ! These rules are responsible for mitigating pings. 
 $$link[rel="pingback"]
-*$ping
+||*$ping
