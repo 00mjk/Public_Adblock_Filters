@@ -9,11 +9,15 @@
 ! Use them at your own risk.
 ! =======================================================================================================================================
 ! Not all rules will with every Adguard software program just simply import the filter for Adguard software. This list will improve overtime.
+! This avoids prefecting all together, this is the rule you will need the most. 
+||*^$csp=prefetch-src 'none'
+! These two rules replicate the same privacy settings for uBlock Origin or Nano Defender. 
+$$link[rel="next"]
+$$link[rel="prefetch"]
+! These rules are relevant for Adguard for Desktop, work on all domains, not just blocked domains. 
 $$link[rel="preconnect"]
 $$link[rel="preload"]
 $$link[rel="dns-prefetch"]
-$$link[rel="prefetch"]
+! These rules are responsible for mitigating pings. 
 $$link[rel="pingback"]
-$$link[rel="next"]
-||*^$csp=prefetch-src 'none'
 *$ping
