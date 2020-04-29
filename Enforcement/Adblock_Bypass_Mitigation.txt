@@ -31,3 +31,4 @@ $$link[rel="pingback"]
 *##+js(ra, data-google-query-id, a[data-google-query-id])
 *##+js(ra, data-obtrack, a[data-obtrack])
 *##+js(ra, data-oburl, a[data-oburl])
+*##+js(ra.js, rel, link[rel*="preload"])
