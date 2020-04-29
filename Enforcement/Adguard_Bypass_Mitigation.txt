@@ -1,17 +1,17 @@
-! Title: Adguard Bypass Mitigation List
+! Title: Adblock Bypass Mitigation List
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 15 days
 ! Version: 04.29.2020
 ! Source:
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Includes a list of rules to prevent ad servers from bypassing or compromising your privacy when using Adguard adblocking software.
+! Description: Includes a list of rules to prevent ad servers from bypassing or compromising your privacy when using adblocking software.
 ! Use them at your own risk.
 ! =======================================================================================================================================
 ! Not all rules will with every Adguard software program just simply import the filter for Adguard software. This list will improve overtime.
 ! This avoids prefecting all together, this is the rule you will need the most. 
 ||*^$csp=prefetch-src 'none'
-! These two rules replicate the same privacy settings for uBlock Origin or Nano Defender. 
+! These two rules replicate the same privacy settings for blocking prefetching from uBlock Origin or Nano Defender for Adguard. 
 $$link[rel="next"]
 $$link[rel="prefetch"]
 ! These rules are relevant for Adguard for Desktop, work on all domains, not just blocked domains. 

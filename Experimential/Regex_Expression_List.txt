@@ -1,11 +1,11 @@
-! Title: Expressions_List
+! Title: Prototype Regex_Expressions_List
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Expires: 30 days
-! Version: 04.24.2020
+! Expires: 15 days
+! Version: 04.29.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: List of rules consisting of complex URL expressions. 
+! Description: List of rules consisting of complex URL expressions from various sources. 
 ! Use them at your own risk.
 ! =================================================================================
 ! bogachenko's Filter List
