@@ -22,6 +22,10 @@
 !alborzpatogh.ir
 %22display_ad_
 &ADMode=
+*freemonies*
+*freemoney*
+*freecash*
+-analysis-safety-antimalware-support.
 &AdFormat=
 &AdType=
 */csp-frame
