@@ -1,0 +1,14 @@
+! Title: HTTP Restricted - Never use eval()
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 15 days
+! Version: 04.29.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Executing JavaScript from a string is an enormous security risk. It is far too easy for a bad actor to run arbitrary code when you use eval().
+! Use them at your own risk.
+! ====================================================================================================================
+! "If you run eval() with a string that could be affected by a malicious party, you may end up running malicious code on the user's
+! machine with the permissions of your webpage/extension," Mozilla explains on its MDN web docs. 
+! -https://thehackernews.com/2019/10/firefox-javascript-injection.html
+*##+js(noeval)
