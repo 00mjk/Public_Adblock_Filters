@@ -24,6 +24,8 @@
 &ADMode=
 &AdFormat=
 &AdType=
+*/csp-frame
+*/beacon
 &Ads_DFP=
 &UrlAdParam=
 &act=ads_
