@@ -1,5 +1,5 @@
 ! Title: Prototype Privacy, Ad, and Cryptomining List
-! Version: 04.29.2020
+! Version: 04.29.2020.13.11
 ! License: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Custom_Adguard_Filters
 ! Source: 

@@ -2,7 +2,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 15 days
-! Version: 04.29.2020
+! Version: 04.29.2020.13.11
 ! Source:
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Includes a list of rules to prevent ad servers from bypassing or compromising your privacy when using adblocking software.
@@ -21,3 +21,13 @@ $$link[rel="dns-prefetch"]
 ! These rules are responsible for mitigating pings. 
 $$link[rel="pingback"]
 ||*$ping
+! Remove attribute tracking from uBlockOrigin
+*##+js(ra.js, ping)
+*##+js(ra.js, referrerpolicy)
+*##+js(ra.js, rel, link[rel*="pingback"])
+*##+js(ra, onclick, a[onclick*="ga"])
+*##+js(ra, onclick, a[onclick*="_gaq.push"])
+*##+js(ra, onclick, a[onclick*="dataLayer.push"])
+*##+js(ra, data-google-query-id, a[data-google-query-id])
+*##+js(ra, data-obtrack, a[data-obtrack])
+*##+js(ra, data-oburl, a[data-oburl])
