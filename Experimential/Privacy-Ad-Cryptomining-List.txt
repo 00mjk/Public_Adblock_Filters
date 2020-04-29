@@ -22,7 +22,6 @@
 !alborzpatogh.ir
 %22display_ad_
 &ADMode=
-csp-frame
 &AdFormat=
 &AdType=
 &Ads_DFP=
