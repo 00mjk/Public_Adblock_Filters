@@ -2,7 +2,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 15 days
-! Version: 04.29.2020.13.11
+! Version: 04.29.2020
 ! Source:
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Includes a list of rules to prevent ad servers from bypassing or compromising your privacy when using adblocking software.
