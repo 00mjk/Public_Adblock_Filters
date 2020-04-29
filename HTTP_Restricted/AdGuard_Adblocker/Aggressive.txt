@@ -10,7 +10,7 @@
 ! ====================================================================================================================
 ! Block Javascript on all HTTP insecure websites. This is not suggested for Adguard for Desktop due to misinterpertation of filtering modifiers is possible. 
 ! It is best to uBlock Origin, Policy Control or uMatrix to filter out Javascript.
-http://*$script
+http://*$script,inline-script
 ! Only allow third-party elements on HTTP websites that are essential for viewing content. From LennyFox.
 http://*$third-party,~stylesheet,~image,~media
 ! Rule for Adguard Adblock Extension. Only useful for web browser. From LennyFox.
