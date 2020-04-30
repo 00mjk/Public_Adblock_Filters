@@ -18,8 +18,7 @@ $$link[rel="prefetch"]
 $$link[rel="preconnect"]
 $$link[rel="preload"]
 $$link[rel="dns-prefetch"]
-! These rules are responsible for mitigating pings. 
-$$link[rel="pingback"]
+! This rule is responsible for mitigating pings. 
 ||*$ping
 ! Remove attribute tracking from uBlock Origin
 *##+js(ra.js, ping)
