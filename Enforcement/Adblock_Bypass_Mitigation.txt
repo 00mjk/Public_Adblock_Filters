@@ -1,7 +1,7 @@
 ! Title: Adblock Bypass Mitigation List
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Expires: 15 days
+! Expires: 10 days
 ! Version: 04.29.2020
 ! Source:
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
@@ -20,13 +20,3 @@ $$link[rel="preload"]
 $$link[rel="dns-prefetch"]
 ! This rule is responsible for mitigating pings. 
 ||*$ping
-! Remove attribute tracking from uBlock Origin. From Cybo1927.
-*##+js(ra.js, ping)
-*##+js(ra.js, referrerpolicy)
-*##+js(ra.js, rel, link[rel*="pingback"])
-*##+js(ra, onclick, a[onclick*="ga"])
-*##+js(ra, onclick, a[onclick*="_gaq.push"])
-*##+js(ra, onclick, a[onclick*="dataLayer.push"])
-*##+js(ra, data-google-query-id, a[data-google-query-id])
-*##+js(ra, data-obtrack, a[data-obtrack])
-*##+js(ra, data-oburl, a[data-oburl])
