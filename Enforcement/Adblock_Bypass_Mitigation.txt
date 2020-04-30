@@ -9,7 +9,7 @@
 ! Use them at your own risk.
 ! =======================================================================================================================================
 ! Not all rules will with every Adguard software program just simply import the filter for Adguard software. This list will improve overtime.
-! This avoids prefecting all together, this is the rule you will need the most. 
+! This avoids prefecting all together, this is the rule you will need the most. From Cybo1927.
 ||*^$csp=prefetch-src 'none'
 ! These two rules replicate the same privacy settings for blocking prefetching from uBlock Origin or Nano Defender for Adguard for Desktop and Adguard for Android. 
 $$link[rel="next"]
@@ -20,7 +20,7 @@ $$link[rel="preload"]
 $$link[rel="dns-prefetch"]
 ! This rule is responsible for mitigating pings. 
 ||*$ping
-! Remove attribute tracking from uBlock Origin
+! Remove attribute tracking from uBlock Origin. From Cybo1927.
 *##+js(ra.js, ping)
 *##+js(ra.js, referrerpolicy)
 *##+js(ra.js, rel, link[rel*="pingback"])
@@ -30,8 +30,3 @@ $$link[rel="dns-prefetch"]
 *##+js(ra, data-google-query-id, a[data-google-query-id])
 *##+js(ra, data-obtrack, a[data-obtrack])
 *##+js(ra, data-oburl, a[data-oburl])
-*##+js(ra.js, rel, link[rel*="preload"])
-*##+js(ra.js, rel, link[rel*="prefetch"])
-*##+js(ra.js, rel, link[rel*="preconnect"])
-*##+js(ra.js, rel, link[rel*="dns-prefetch"])
-*##+js(ra.js, rel, link[rel*="next"])
