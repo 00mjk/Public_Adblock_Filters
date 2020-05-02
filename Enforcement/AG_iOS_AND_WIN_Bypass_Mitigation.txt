@@ -2,7 +2,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 10 days
-! Version: 04.29.2020
+! Version: 05.02.2020
 ! Source:
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Includes a list of rules to prevent ad and tracking servers from compromising your privacy or bypassing Adguard software for iOS, Android, and Windows.
@@ -14,9 +14,9 @@
 ! These two rules replicate the same privacy settings for blocking prefetching from uBlock Origin or Nano Defender for Adguard for Desktop and Adguard for Android. 
 $$link[rel="next"]
 $$link[rel="prefetch"]
-! These rules are relevant for Adguard for Desktop and Adguard for Android, work on all domains, not just blocked domains. 
+! These rules are relevant for Adguard for Desktop, Android, and iOS, work on all domains, not just blocked domains. 
 $$link[rel="preconnect"]
 $$link[rel="preload"]
 $$link[rel="dns-prefetch"]
-! This rule is responsible for mitigating hyperlink auditing and pings. 
-||*$ping
+! Associated with pings
+$$link[rel="pingback"]
