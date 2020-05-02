@@ -1,20 +1,20 @@
-! Title: HTTP Restricted - Aggressive for Adguard Adblocker Extension
+! Title: HTTP Restricted - Aggressive (Older version) for Adguard for Windows and Android
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 15 days
-! Version: 04.26.2020
+! Version: 05.01.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Intended for Adguard Browser Extension. Increases security when visiting HTTP and HTTPS websites.
+! Description: Older version. Intended for Adguard for Windows and for Android. Increases security when visiting HTTP and HTTPS websites.
 ! Use them at your own risk.
 ! ====================================================================================================================
 ! Block Javascript on all HTTP insecure websites. This is not suggested for Adguard for Desktop due to misinterpertation of filtering modifiers is possible. 
-! It is best to uBlock Origin, Policy Control or uMatrix to filter out Javascript.
+! It is best to uBlock Origin, Policy Control or uMatrix to filter out Javascript. 
 http://*$script
 ! Only allow third-party elements on HTTP websites that are essential for viewing content. From LennyFox.
 http://*$third-party,~stylesheet,~image,~media
-! Rule for Adguard Adblock Extension. Only useful for web browser. From LennyFox.
-https://*$third-party,object,script,subdocument,websocket,webrtc,ping,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx
+! This rule supports the syntax for Adguard for Android or Adguard for Desktop.
+https://*$third-party,object,script,subdocument,websocket,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
 ! Try To Make HTTP Links HTTPS (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests)
 ||*$csp='upgrade-insecure-requests';
 ! Block 'Mixed Content' / Loading Of HTTP On HTTPS Sites (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content)

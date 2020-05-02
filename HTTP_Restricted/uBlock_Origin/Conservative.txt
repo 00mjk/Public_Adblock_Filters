@@ -1,0 +1,14 @@
+! Title: HTTP Restricted - Conservative for uBlock Origin
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 15 days
+! Version: 04.26.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Intended for uBlock Origin. Block untrusted elements from third-party HTTP websites of untrusted TLDs.
+! Use them at your own risk.
+! ====================================================================================================================
+! Only allow third-party elements on HTTP websites that are essential for viewing content for other domains excluding whitelisted. From rdsu-pt.
+http://*$3p,~stylesheet,~image,~media,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
+! Try To Make HTTP Links HTTPS (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests)
+||*$csp='upgrade-insecure-requests';

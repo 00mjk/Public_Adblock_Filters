@@ -1,19 +1,19 @@
-! Title: HTTP Restricted - Extreme for Adguard Adblocker Extension
+! Title: HTTP Restricted - Extreme (Older version) for Adguard Adblocker Extension
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 15 days
-! Version: 04.29.2020
+! Version: 05.01.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Intended for Adguard Browser Extension. Block all HTTP websites and increases security when visiting HTTPS websites.
+! Description: Older version. Intended for Adguard Browser Extension. Block all HTTP websites and increases security when visiting HTTPS websites. 
 ! Use them at your own risk.
 ! ====================================================================================================================
 ! Block all HTTP insecure websites. From beerisgood.
 http://*$all
 ! Only allow third-party elements on HTTP websites that are essential for viewing content. 
-https://*$script,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx
+https://*$script,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
 ! Rule for Adguard Adblock Extension. Only useful for web browser. From LennyFox.
-https://*$third-party,object,script,subdocument,websocket,webrtc,ping,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx
+https://*$third-party,object,script,subdocument,websocket,webrtc,ping,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
 ! Try To Make HTTP Links HTTPS (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests)
 ||*$csp='upgrade-insecure-requests';
 ! Block 'Mixed Content' / Loading Of HTTP On HTTPS Sites (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content)

@@ -1,15 +1,15 @@
-! Title: Adblock Bypass Mitigation List
+! Title: Adguard for iOS, Android, and Windows Bypass Mitigation List
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 10 days
 ! Version: 04.29.2020
 ! Source:
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Includes a list of rules to prevent ad servers from bypassing or compromising your privacy when using adblocking software.
+! Description: Includes a list of rules to prevent ad and tracking servers from compromising your privacy or bypassing Adguard software for iOS, Android, and Windows.
 ! Use them at your own risk.
 ! =======================================================================================================================================
 ! Not all rules will with every Adguard software program just simply import the filter for Adguard software. This list will improve overtime.
-! This avoids prefecting all together, this is the rule you will need the most. From Cybo1927.
+! Cybo1927 >> This avoids prefecting all together, this is the rule you will need the most.
 ||*^$csp=prefetch-src 'none'
 ! These two rules replicate the same privacy settings for blocking prefetching from uBlock Origin or Nano Defender for Adguard for Desktop and Adguard for Android. 
 $$link[rel="next"]
@@ -18,5 +18,5 @@ $$link[rel="prefetch"]
 $$link[rel="preconnect"]
 $$link[rel="preload"]
 $$link[rel="dns-prefetch"]
-! This rule is responsible for mitigating pings. 
+! This rule is responsible for mitigating hyperlink auditing and pings. 
 ||*$ping
