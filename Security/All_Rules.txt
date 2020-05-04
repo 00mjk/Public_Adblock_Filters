@@ -5,7 +5,7 @@
 ! Version: 05.04.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: All rules from other security lists.
+! Description: Rules from all security lists.
 ! Use them at your own risk.
 ! ====================================================================================================================
 ! WebSockets are not restrained by the same-origin policy, an attacker can easily initiate a WebSocket request 
