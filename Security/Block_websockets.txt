@@ -1,0 +1,18 @@
+! Title: Security - Block Cross-Site WebSocket Hijacking (CSWSH)
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 15 days
+! Version: 05.04.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Block Websockets for all domains. Websockets are a security risk since they are not subjected to Same-Origin Policy and can be used for Cross-Site Hijacking. 
+! Use them at your own risk.
+! ====================================================================================================================
+! WebSockets are not restrained by the same-origin policy, an attacker can easily initiate a WebSocket request 
+!(i.e. the handshake/upgrade process) from a malicious webpage targeting 
+! the ws:// or wss:// endpoint URL of the attacked application. Inspired by LennyFox.
+! Guidance: https://www.christian-schneider.net/CrossSiteWebSocketHijacking
+ws://*
+wss://*
+! For Adguard Browser Extension
+||*$websocket
