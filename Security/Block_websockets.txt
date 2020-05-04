@@ -13,7 +13,7 @@
 ! the ws:// or wss:// endpoint URL of the attacked application.
 ! Websockets can be used to scan for open TCP ports as well from private network. Inspired by LennyFox.
 ! Guidance: https://www.christian-schneider.net/CrossSiteWebSocketHijacking and https://datatracker.ietf.org/meeting/96/materials/slides-96-saag-1/
-ws://*
-wss://*
+ws://*$all
+wss://*$all
 ! For Adguard Browser Extension
 ||*$websocket
