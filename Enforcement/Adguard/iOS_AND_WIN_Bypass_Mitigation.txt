@@ -1,4 +1,4 @@
-! Title: Adguard for iOS, Android, and Windows Bypass Mitigation List
+! Title: Adguard for iOS, Android, and Windows Prefetching Mitigation List
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 10 days
@@ -20,3 +20,7 @@ $$link[rel="preload"]
 $$link[rel="dns-prefetch"]
 ! Associated with pings
 $$link[rel="pingback"]
+! Other prefetching techniques
+$$link[rel="subresource"]
+$$link[rel="prev"]
+$$link[rel="prerender"]
