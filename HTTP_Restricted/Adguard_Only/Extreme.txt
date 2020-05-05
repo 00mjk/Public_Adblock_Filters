@@ -1,18 +1,18 @@
-! Title: HTTP Restricted - Extreme for Adguard 
+! Title: HTTP Restricted - Extreme 
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 15 days
-! Version: 05.01.2020
+! Version: 05.05.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Newer version for all Adguard software. Block all HTTP websites and increases security when visiting HTTPS websites.
 ! Use them at your own risk.
 ! ====================================================================================================================
-! Block all HTTP insecure websites. From beerisgood.
+! Blocks all HTTP websites.
 http://*$all
-! Only allow third-party elements on HTTP websites that are essential for viewing content. 
+! Blocks Javascript for HTTPS websites on untrusted TLDs.
 https://*$script,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
-! This rule supports the syntax for Adguard for Android or Adguard for Desktop.
+! Block Javascript and frames on untrusted TLDs. More useable version of uBO medium mode for HTTPS.
 https://*$third-party,script,subdocument,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
 ! Try To Make HTTP Links HTTPS (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests)
 ||*$csp='upgrade-insecure-requests';
