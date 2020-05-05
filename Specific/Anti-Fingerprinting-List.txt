@@ -2,7 +2,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 15 days
-! Version: 04.30.2020
+! Version: 05.05.2020
 ! Source:
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: List of rules to mitigate browser fingerprinting to some extext.
@@ -32,6 +32,17 @@ com,net#%#Object.defineProperty(document, 'referrer', { get: function() { return
 com,net,~github.com#%#Object.defineProperty(document, 'referrer', { get: function() { return '' + window.location.hostname; } });
 
 pandora.com##+js(addEventListener-defuser.js, /pagehide|pageshow|hashchange/)
+
+!#if env_firefox
+! Inline scripts used for device fingerprinting - Cybo1927
+*##^script:has-text(ua-parser)
+*##^script:has-text(headerUA)
+*##^script:has-text(pluginDetect)
+*##^script:has-text(fontDetect)
+*##^script:has-text(platform.js)
+*##^script:has-text(eval)
+*##^script:has-text(navigator.sendBeacon)
+!#endif
 
 ! List of generic rules for Fingerprinting
 ! Random rules
