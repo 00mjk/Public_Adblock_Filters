@@ -1,15 +1,18 @@
-! Title: HTTP Security - Anti_3rd-Party HTTP for Adguard
+[AdBlockPlus 3.5]
+! Title: HTTP Restricted - Partially Untrusted
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 15 days
 ! Version: 05.05.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Intended for Adguard. Block third-party elements for HTTP websites.
+! Description: Allows only passive content to load from untrusted TLDs for HTTP websites and third-party HTTPS websites.
 ! Use them at your own risk.
 ! ====================================================================================================================
-! Blocks third-party content from HTTP websites.
-http://*^$third-party
+! Allows only passive content to load from untrusted TLDs for HTTP.
+http://*~stylesheet,~image,~media,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
+! Allows only passive content to load from untrusted TLDs for HTTPS. Based on Kees1958's uMatrix SOFT third-party block mode with whitelist to allow some TLD's.
+https://*$third-party,~stylesheet,~image,~media,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
 ! Try To Make HTTP Links HTTPS (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests)
 ||*$csp='upgrade-insecure-requests';
 ! Block 'Mixed Content' / Loading Of HTTP On HTTPS Sites (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content)

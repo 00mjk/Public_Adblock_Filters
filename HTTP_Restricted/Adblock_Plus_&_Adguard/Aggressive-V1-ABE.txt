@@ -1,22 +1,23 @@
-! Title: HTTP Restricted - Aggressive (Standard version) for uBlock Origin
+[AdBlockPlus 3.5]
+! Title: HTTP Restricted - Aggressive-Variant 1 for Adguard Adblocker Extension and Adblock Plus
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 15 days
-! Version: 05.01.2020
+! Version: 05.05.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Aggressive Standard version. Intended for uBlock Origin. Block all HTTP websites and increases security when visiting HTTPS websites.
+! Description: Aggressive Variant 1. Intended for Adguard Browser Extension and Adblock Plus. Increases security for HTTP and HTTPS websites.
 ! Use them at your own risk.
 ! ====================================================================================================================
 ! Blocks Javascript on all HTTP websites. 
 ! It is best to uBlock Origin, Policy Control or uMatrix to filter out Javascript.
 http://*$script
 ! Allows only third-party passive content to load on HTTP websites. More useable version of uBO hard mode for insecure HTTP.
-http://*$3p,~stylesheet,~image,~media
+http://*$third-party,~stylesheet,~image
 ! Blocks Javascript from untrusted TLDs on HTTPS websites. 
 https://*$script,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
-! Block Javascript and frames on untrusted TLDs. More useable version of uBO medium mode for HTTPS.
-https://*$3p,script,frame,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
+! Blocks third-party dangerous content on HTTPS websites. Rule for Adguard Adblock Extension. Only useful for web browser.
+https://*$third-party,object,script,subdocument,websocket,webrtc,ping,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
 ! Try To Make HTTP Links HTTPS (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests)
 ||*$csp='upgrade-insecure-requests';
 ! Block 'Mixed Content' / Loading Of HTTP On HTTPS Sites (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content)

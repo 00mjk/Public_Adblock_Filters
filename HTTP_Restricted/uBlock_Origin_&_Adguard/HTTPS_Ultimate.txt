@@ -1,11 +1,11 @@
-! Title: HTTP Restricted - HTTPS_Only
+! Title: HTTP Restricted - HTTPS Ultimate for uBlock Origin and Adguard
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 15 days
-! Version: 04.26.2020
+! Version: 05.05.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Enforces HTTPS Only Browsing. This is useful for online banking and sensitive tasks.
+! Description: Intended for uBlock Origin and Adguard. Enforces HTTPS Only Browsing to where HTTP connections are prevented. Useful for online banking and sensitive tasks. Will cause website breakage.
 ! Use them at your own risk.
 ! ====================================================================================================================
 ! Blocks all HTTP websites.
@@ -14,3 +14,5 @@ http://*^$all
 ||*$csp='upgrade-insecure-requests';
 ! Block 'Mixed Content' / Loading Of HTTP On HTTPS Sites (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content)
 ||*$csp='block-all-mixed-content';
+! Prevent any non-HTTPS connection
+||*^$csp=default-src https:

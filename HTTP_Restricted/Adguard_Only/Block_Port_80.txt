@@ -1,14 +1,16 @@
-! Title: HTTP Restricted - Light for uBlock Origin
+! Title: HTTP Restricted - Block Port 80 for Adguard
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 15 days
-! Version: 04.26.2020
+! Version: 05.05.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Intended for uBlock Origin. Block untrusted elements from third-party HTTP websites of untrusted TLDs.
+! Description: Intended for Adguard. Block Port 80 for HTTP network traffic and websites. This is useful for online banking and sensitive tasks.
 ! Use them at your own risk.
 ! ====================================================================================================================
-! Only allow passive content from HTTP websites originating from untrusted domains. More useable version of uBO hard mode for insecure HTTP.
-http://*$3p,~stylesheet,~image,~media,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
+! Blocks Port 80 for HTTP network traffic and websites.
+*:80^$network
 ! Try To Make HTTP Links HTTPS (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests)
 ||*$csp='upgrade-insecure-requests';
+! Block 'Mixed Content' / Loading Of HTTP On HTTPS Sites (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content)
+||*$csp='block-all-mixed-content';
