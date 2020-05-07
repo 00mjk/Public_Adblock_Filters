@@ -2,17 +2,18 @@
 ! Title: HTTP Restricted - Fully Untrusted
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Expires: 15 days
-! Version: 05.05.2020
+! Expires: 8 hours
+! Version: 05.07.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Allows only passive content to load from untrusted TLDs for HTTP and HTTPS websites.
 ! Use them at your own risk.
+! Attribution: Cybo1927, LennyFox, Yuki2178, rdsu-pt, Kees1958
 ! ====================================================================================================================
 ! Allows only passive content to load from untrusted TLDs for HTTP.
-http://*~stylesheet,~image,~media,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
+http://*$~stylesheet,~image,~media,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
 ! Allows only passive content to load from untrusted TLDs for HTTPS.
-https://*~stylesheet,~image,~media,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
+https://*$~stylesheet,~image,~media,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
 ! Try To Make HTTP Links HTTPS (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests)
 ||*$csp='upgrade-insecure-requests';
 ! Block 'Mixed Content' / Loading Of HTTP On HTTPS Sites (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content)

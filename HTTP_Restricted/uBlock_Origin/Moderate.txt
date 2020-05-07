@@ -1,19 +1,20 @@
 ! Title: HTTP Restricted - Moderate (Standard version) for uBlock Origin 
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Expires: 15 days
-! Version: 05.05.2020
+! Expires: 8 hours
+! Version: 05.07.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Moderate Standard version. Intended for uBlock Origin. Increases security when visiting HTTP and HTTPS websites.
 ! Use them at your own risk.
+! Attribution: Cybo1927, LennyFox, Yuki2178, rdsu-pt, Kees1958
 ! ====================================================================================================================
-! Block Javascript on all HTTP websites. This is not suggested for Adguard for Desktop due to misinterpertation of filtering modifiers is possible. 
+! Blocks Javascript on all HTTP websites excluding third-party domains. 
 ! It is best to uBlock Origin, Policy Control or uMatrix to filter out Javascript.
-http://*$script
+http://*$script,~3p
 ! Only allows third-party passive content to load from HTTP websites. More useable version of uBO hard mode for insecure HTTP.
 http://*$3p,~stylesheet,~image,~media
-! Block Javascript and Frames on untrusted TLDs. More useable version of uBO medium mode for HTTPS.
+! Block third-party Javascript and frames on untrusted TLDs. More useable version of uBO medium mode for HTTPS.
 https://*$3p,script,frame,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
 ! Try To Make HTTP Links HTTPS (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests)
 ||*$csp='upgrade-insecure-requests';

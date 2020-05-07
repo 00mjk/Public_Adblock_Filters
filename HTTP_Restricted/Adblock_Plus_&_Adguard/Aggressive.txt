@@ -2,21 +2,22 @@
 ! Title: HTTP Restricted - Aggressive (Standard version) for Adguard and Adblock Plus
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Expires: 15 days
-! Version: 05.05.2020
+! Expires: 8 hours
+! Version: 05.06.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Aggressive Standard Version. Intended for Adguard and Adblock Plus. Block all HTTP websites and increases security when visiting HTTPS websites.
 ! Use them at your own risk.
+! Attribution: Cybo1927, LennyFox, Yuki2178, rdsu-pt, Kees1958
 ! ====================================================================================================================
-! Blocks Javascript on all HTTP websites.  
+! Blocks Javascript on all HTTP websites excluding third-party domains.
 ! It is best to uBlock Origin, Policy Control or uMatrix to filter out Javascript.
-http://*$script
+http://*$script,~third-party
 ! Allows only third-party passive content to load on HTTP websites. More useable version of uBO hard mode for insecure HTTP.
 http://*$third-party,~stylesheet,~image,~media
-! Blocks Javascript from untrusted TLDs on HTTPS websites.
-https://*$script,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
-! Block Javascript and frames on untrusted TLDs. More useable version of uBO medium mode for HTTPS.
+!  Blocks Javascript from untrusted TLDs on HTTPS websites excluding third-party domains.
+https://*$script,~third-party,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
+! Block third-party Javascript and frames on untrusted TLDs. More useable version of uBO medium mode for HTTPS.
 https://*$third-party,script,subdocument,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
 ! Try To Make HTTP Links HTTPS (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests)
 ||*$csp='upgrade-insecure-requests';

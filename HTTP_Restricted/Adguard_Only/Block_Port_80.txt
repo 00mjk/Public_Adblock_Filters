@@ -1,12 +1,13 @@
 ! Title: HTTP Restricted - Block Port 80 for Adguard
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Expires: 15 days
-! Version: 05.05.2020
+! Expires: 8 hours
+! Version: 05.07.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Intended for Adguard. Block Port 80 for HTTP network traffic and websites. This is useful for online banking and sensitive tasks.
 ! Use them at your own risk.
+! Attribution: Cybo1927, DDE_Server (Malwaretips), beerisgood.
 ! ====================================================================================================================
 ! Blocks Port 80 for HTTP network traffic and websites.
 *:80^$network

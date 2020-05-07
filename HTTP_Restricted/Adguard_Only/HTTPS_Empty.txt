@@ -1,12 +1,13 @@
 ! Title: HTTP Restricted - HTTP_Empty for Adguard
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Expires: 15 days
-! Version: 05.05.2020
+! Expires: 8 hours
+! Version: 05.06.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Intended for Adguard. Neuteres requests to HTTP websites. This is useful for online banking and sensitive tasks.
 ! Use them at your own risk.
+! Attribution: Cybo1927, beerisgood
 ! ====================================================================================================================
 ! Neuters requests to HTTP websites. 
 http://*^$empty
