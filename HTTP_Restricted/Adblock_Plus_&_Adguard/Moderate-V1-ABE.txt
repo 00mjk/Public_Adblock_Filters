@@ -1,0 +1,20 @@
+[AdBlockPlus 3.5]
+! Title: HTTP Restricted - Moderate-Variant 1 for Adguard Adblocker Extension and Adblock Plus
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 8 hours
+! Version: 05.09.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Moderate Variant 1. Intended for Adguard Browser Extension and Adblock Plus. Increases security when browsing HTTP and HTTPS websites.
+! Use them at your own risk.
+! Attribution: Cybo1927, LennyFox, Yuki2178, rdsu-pt, Kees1958
+! ====================================================================================================================
+! Guidance: Some of these lists are an usable version of uBO hard mode and/or medium mode. See https://github.com/gorhill/uBlock/wiki/Blocking-mode
+! Blocks Javascript and frames on all HTTP websites forces first-party domains.
+! This will cause conflicts with if using uBlock Origin, Policy Control or uMatrix with Adguard to filter out Javascript.
+http://*$~third-party,script,subdocument
+! Only allows third-party passive content to load from HTTP websites. 
+http://*$third-party,~stylesheet,~image
+! Blocks third-party dangerous content on HTTPS websites. Rule for Adguard Adblock Extension. Only useful for web browser. 
+https://*$third-party,object,script,subdocument,websocket,webrtc,ping,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu

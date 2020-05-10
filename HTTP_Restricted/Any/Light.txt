@@ -1,0 +1,16 @@
+[AdBlockPlus 3.5]
+! Title: HTTP Restricted - Light
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 8 hours
+! Version: 05.09.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Block untrusted elements from third-party HTTP websites.
+! Use them at your own risk.
+! Attribution: Cybo1927, LennyFox, Yuki2178, rdsu-pt, Kees1958
+! ====================================================================================================================
+! Guidance: Some of these lists are an usable version of uBO hard mode and/or medium mode. See https://github.com/gorhill/uBlock/wiki/Blocking-mode
+! Only allow third-party passive content from HTTP websites. 
+http://*$third-party,~stylesheet,~image
+

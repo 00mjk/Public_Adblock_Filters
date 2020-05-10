@@ -1,0 +1,18 @@
+[AdBlockPlus 3.5]
+! Title: HTTP Restricted - Untrusted 3rd-Party - HTTP & HTTPS
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 8 hours
+! Version: 05.09.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Block untrusted elements from third-party HTTP websites and HTTPS of untrusted TLDs.
+! Use them at your own risk.
+! Attribution: Cybo1927, LennyFox, Yuki2178, rdsu-pt, Kees1958.
+! ====================================================================================================================
+! Guidance: Some of these lists are an usable version of uBO hard mode and/or medium mode. See https://github.com/gorhill/uBlock/wiki/Blocking-mode, 
+! Only allows third-party passive content to load from HTTPS websites. 
+https://*$third-party,~stylesheet,~image,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
+! Only allows third-party passive content to load from HTTP websites. 
+http://*$third-party,~stylesheet,~image,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
+
