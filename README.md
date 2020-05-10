@@ -11,7 +11,7 @@ Blocklists I created that can be shared and distributed worldwide.
 
 * `HTTP_Restricted` - Filters intended to enhance the security of your web browser when visiting HTTP and HTTPS websites. 
 
-* `Personal` - Filters I used for my personal use. The idea or concept of any lists in this folder were alreadly created by someone. This is not meant to be duplicated. 
+* `Personal` - Filters I used for my personal use. The idea or concept of any lists in this folder were alreadly created by someone. Any lists in this folder is not meant for your use. 
 
 * `Reserved_IP`  - Block reserved IP addresses from your private network, ISP global address range, DHCPv6 server, and wide area network that should not be freely connected to. 
 
