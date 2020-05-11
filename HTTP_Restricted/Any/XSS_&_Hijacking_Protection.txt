@@ -1,8 +1,9 @@
-! Title: HTTP_Restricted - Cross-Site Scripting and Hijacking Protection 
+[AdBlockPlus 3.5]
+! Title: HTTP_Restricted - Cross-Site Scripting (XSS) and Hijacking Protection 
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
-! Version: 05.09.2020
+! Version: 05.11.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description:  This list includes rules to protect against some cross-site-scripting and hijacking attacks. This is meant to be used along with HTTP_Restricted lists for more secure browsing.
@@ -26,7 +27,7 @@ wss://*$all
 ! Block Javascript on HTTP websites.
 ||*^$csp=script-src https:
 ! Stop frames from being embedded on HTTP websites. Mitigates some clickjacking attacks.
-||*^$csp=frame-ancestors 'none'
+||*^$csp=frame-ancestors https:
 ! Stop frames being loaded on HTTP websites.
 ||*^$csp=frame-src https:
 ! Stop plugins from loading on webpages on HTTP websites
