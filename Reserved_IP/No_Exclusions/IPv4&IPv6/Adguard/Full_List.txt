@@ -1,8 +1,8 @@
 ! Title: Reserved IP Adguard List No Exclusions Added for IPv4 & IPv6 - Full List 
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Expires: 15 days
-! Version: 04.27.2020
+! Expires: 8 hours
+! Version: 05.12.2020
 ! Source:
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Intended for devices that support IPv4 and IPv6 traffic with Adguard. These are an example of reserved IP addresses that should be blocked for to increase security against network attacks from outbound traffic. Deprecated and Localhost IP addresses are enabled.
