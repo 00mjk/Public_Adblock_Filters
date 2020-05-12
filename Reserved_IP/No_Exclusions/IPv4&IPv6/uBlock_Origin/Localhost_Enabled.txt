@@ -7,7 +7,7 @@
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Intended for devices that support IPv4 and IPv6 traffic with uBlock Origin. These are an example of vulnerable IP addresses that should be blocked for increasing security against network attacks from outbound traffic. Localhost IP addresses are enabled.
 ! ========================================================================================
-! Blocking dangerous IP addresses in uBlock Origin or NanoDefender
+! Blocking reserved IP addresses in uBlock Origin or NanoDefender
 ! Outbound requests to these IP addresses should be blocked
 ! unless for a specific reason such as mangaging network administration, an external server, etc.
 ! Guidance: Wikipedia - Reserved IP Addresses (https://en.wikipedia.org/wiki/Reserved_IP_addresses),

@@ -8,6 +8,13 @@
 ! Description: Intended for devices that support IPv4 and IPv6 traffic with Adguard. These are an example of reserved IP addresses that should be blocked for to increase security against network attacks from outbound traffic. Localhost IP addresses are enabled.
 ! Use them at your own risk.
 ! =========================================================================================
+! Blocking reserved IP addresses in Adguard
+! Outbound requests to these IP addresses should be blocked
+! unless for a specific reason such as mangaging network administration, an external server, etc.
+! Guidance: Wikipedia - Reserved IP Addresses (https://en.wikipedia.org/wiki/Reserved_IP_addresses),
+! IANA IPv4 Special Purpose Registry (https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml),
+! and IANA IPv6 Special Purpose Registry (https://www.iana.org/assignments/iana-ipv6-special-registry/iana-ipv6-special-registry.xhtml)
+! ==============================================================================================================================================
 ! === Source-Only Addresses ====
 ! 0.* and [::] IP address ranges have no destination requests.
 0.*^$network
