@@ -7,6 +7,7 @@
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: List of rules to mitigate browser fingerprinting to some extext.
 ! Use them at your own risk.
+! Attribution: Cybo1927
 ! =======================================================================================================================================
 ! Prevent browser fingerprinting some JavaScript APIs.
 ! Navigator API

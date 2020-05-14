@@ -1,0 +1,19 @@
+[AdBlockPlus 3.5]
+! Title: Anti_3rd-Party HTTP for Adguard and AdBlockPlus
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 8 hours
+! Version: 05.14.2020-Rev1
+! Source: 
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Intended for Adguard and Adblock Plus. Block third-party elements for HTTP websites.
+! Use them at your own risk.
+! Attribution: Cybo1927
+! ====================================================================================================================
+! Blocks third-party content from HTTP websites.
+http://*$third-party
+! Try To Make HTTP Links HTTPS (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests)
+||*^$csp=upgrade-insecure-requests;
+! Block 'Mixed Content' / Loading Of HTTP On HTTPS Sites (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content)
+||*^$csp=block-all-mixed-content;
+
