@@ -1,0 +1,15 @@
+! Title: HTTP Insecure Resources - Anti_3rd-Party HTTP for uBlock Origin
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 8 hours
+! Version: 05.17.2020-Rev1
+! Source: 
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Intended for Adguard and Adblock Plus. Block third-party elements for HTTP websites.
+! Use them at your own risk.
+! Attribution: Cybo1927
+! ====================================================================================================================
+! Blocks third-party content from HTTP websites.
+http://*$third-party,all
+
+

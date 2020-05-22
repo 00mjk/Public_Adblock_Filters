@@ -1,0 +1,14 @@
+! Title: HTTP Insecure Downloads - Executables for Adguard
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 8 hours
+! Version: 05.22.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Executables File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
+! Use them at your own risk.
+! ============================================================================
+! Executable File Extensions
+/^http:\/\/*\.(exe|apk|app|appx|appxbundle|com|elf|bin)$/$empty
+
+
