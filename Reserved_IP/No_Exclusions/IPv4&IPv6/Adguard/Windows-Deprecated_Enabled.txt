@@ -1,11 +1,11 @@
-! Title: Reserved IP Adguard List No Exclusions Added for IPv4 & IPv6 - Full List 
+! Title: Reserved IP Adguard for Windows List No Exclusions Added for IPv4 & IPv6 - Deprecated Enabled
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
 ! Version: 05.12.2020
 ! Source:
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Intended for devices that support IPv4 and IPv6 traffic with Adguard. These are an example of reserved IP addresses that should be blocked for to increase security against network attacks from outbound traffic. Deprecated and Localhost IP addresses are enabled.
+! Description: Intended for devices that support IPv4 and IPv6 traffic with Adguard for Windows. These are an example of reserved IP addresses that should be blocked for to increase security against network attacks from outbound traffic. Deprecated IP addresses are enabled.
 ! Use them at your own risk.
 ! =========================================================================================
 ! Blocking reserved IP addresses in Adguard
@@ -47,9 +47,9 @@
 ! === Localhost Ranges =======
 ! Optional: Adguard does not filter out localhost connections by default. You can use the following rules to filter out localhost traffic. Exclusions for localhost traffic may be needed.
 ! Websites like leoaffairs.com use localhost to bypass your adblocker. So, this is needed to block loopholes in regards to adblocking.
-127.*^$network, 
-[::1]^$network, 
-||localhost^$empty   
+!127.*^$network, 
+![::1]^$network, 
+!||localhost^$empty   
 ! ======== IPv6 Home ISP DHCPv6 Server & Prefix ========
 ! Suggested: Add IPv6 address range associated with your DHCPv6 server or prefix of your Home ISP.
 ! This can be found from logging into your home router or gateway. 
