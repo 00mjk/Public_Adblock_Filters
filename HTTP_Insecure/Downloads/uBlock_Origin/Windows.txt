@@ -1,0 +1,14 @@
+! Title: HTTP Insecure Downloads - Windows for uBlock Origin
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 8 hours
+! Version: 05.22.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
+! Use them at your own risk.
+! ============================================================================
+! Dangerous File Extensions for Microsoft Windows
+! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
+/^http:\/\/(?:[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+).*\.(?:msi|exe|bat|dll|hta|jar|msu|pif|ps1|ps2|reg|scr|sys|vbe|vbs)*$/$doc,popup
+
