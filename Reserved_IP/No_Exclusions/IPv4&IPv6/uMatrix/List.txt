@@ -1,11 +1,11 @@
-! Title: Reserved IP uMatrix List No Exclusions Added for IPv4 & IPv6 - Localhost Enabled
+! Title: Reserved IP uMatrix List No Exclusions Added for IPv4 & IPv6
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
 ! Version: 05.12.2020
 ! Source:
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Intended for devices that support IPv4 and IPv6 traffic with Adguard. These are an example of reserved IP addresses that should be blocked for to increase security against network attacks from outbound traffic. Localhost IP addresses are enabled.
+! Description: Intended for devices that support IPv4 and IPv6 traffic with uMatrix. These are an example of reserved IP addresses that should be blocked for to increase security against network attacks from outbound traffic. Deprecated and Localhost IP addresses are enabled.
 ! Use them at your own risk.
 ! =======================================================================================================================================
 ! Blocking reserved IP addresses in uMatrix
@@ -27,7 +27,7 @@
 * 192.0.0 * block
 ! === Stateless Address AutoConfiguration or Link-Local Addresses ==== 
 ! 169.254.* and [fe**:*] IP ranges is intended when your device is not set to static address or DHCP server. 
-!* 169.254 * block
+* 169.254 * block
 ! === Private IPv4 Address Range ======
 ! These ranges are used for IP addresses associated for a private network. 
 * 10 * block
@@ -41,7 +41,16 @@
 * 192.168 * block
 ! === Deprecated IP Address Ranges =======
 ! Optional: 192.88.99.* and [2002:*] range are deprecated. Should not be used. Can be problematic for legacy devices. These rules are disabled for caution. 
-!* 192.88.89 * block
+* 192.88.89 * block
+! === Multicast IP Address Ranges ======
+! 224.*/4 and [ff**:*] ranges is group communication where data transmission is addressed to a group of destination computers simultaneously. Not needed by all software.
+* 224 * block
+* 225 * block
+* 226 * block
+* 227 * block
+* 228 * block
+* 229 * block
+* 23* * block
 ! === Localhost Ranges =======
 ! Websites like leoaffairs.com use localhost to bypass your adblocker. So, this is needed to block loopholes in regards to adblocking.
 * [::1] * block

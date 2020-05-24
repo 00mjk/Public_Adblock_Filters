@@ -11,9 +11,9 @@
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
 ! This list does not block Javascript.
 ! Block HTTP domain names for Windows file extensions.
-/^(?:http://[.0-9A-Za-z-]+\.[A-Za-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:msi|exe|bat|dll|hta|jar|jse|msu|pif|ps1|ps2|reg|scr|sys|vbe|vbs)(?:\?[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]*)?)*$/$doc,popup
+/^(?:http://[.0-9A-Za-z-]+\.[A-Za-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:msi|exe|bat|dll|hta|jar|jse|msu|pif|ps1|ps2|reg|scr|sys|vbe|vbs)(?:\?[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]*)?)*$/$all
 ! Block IPv4 addresses from HTTP traffic for Windows file extensions.
-/^(?:http://(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:msi|exe|bat|dll|hta|jar|jse|jse|msu|pif|ps1|ps2|reg|scr|sys|vbe|vbs)(?:\?[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]*)?)*$/$doc,popup
+/^(?:http://(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:msi|exe|bat|dll|hta|jar|jse|jse|msu|pif|ps1|ps2|reg|scr|sys|vbe|vbs)(?:\?[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]*)?)*$/$all
 ! Block IPv6 addresses from HTTP traffic in standard notation for Windows file extensions.
-/^(?:http://\[(?:[A-Fa-f0-9]{1,4}:){7}[A-Fa-f0-9]{1,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:msi|exe|bat|dll|hta|jar|jse|msu|pif|ps1|ps2|reg|scr|sys|vbe|vbs)(?:\?[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]*)?)*$/$doc,popup
+/^(?:http://\[(?:[A-Fa-f0-9]{1,4}:){7}[A-Fa-f0-9]{1,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:msi|exe|bat|dll|hta|jar|jse|msu|pif|ps1|ps2|reg|scr|sys|vbe|vbs)(?:\?[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]*)?)*$/$all
 
