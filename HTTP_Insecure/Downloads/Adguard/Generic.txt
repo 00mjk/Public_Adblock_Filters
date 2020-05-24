@@ -2,12 +2,15 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
-! Version: 05.23.2020
+! Version: 05.24.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Generic File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
 ! Use them at your own risk.
 ! ============================================================================
-! Generic File Extensions
-/^http:\/\/(?:[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+).*\.(?:cnf|conf|cfg|log|asc|txt|bak|bk|bin|dat|dsk|raw)*$/$empty
-
+! Block HTTP domain names for generic file extensions.
+/^(?:http://[.0-9A-Za-z-]+\.[A-Za-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:cnf|conf|cfg|log|asc|txt|bak|bk|bin|dat|dsk|raw)(?:\?[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]*)?)*$/$empty
+! Block IPv4 addresses from HTTP traffic for generic file extensions.
+/^(?:http://(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:cnf|conf|cfg|log|asc|txt|bak|bk|bin|dat|dsk|raw)(?:\?[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]*)?)*$/$empty
+! Block IPv6 addresses from HTTP traffic in generic notation for Windows file extensions.
+/^(?:http://\[(?:[A-Fa-f0-9]{1,4}:){7}[A-Fa-f0-9]{1,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:cnf|conf|cfg|log|asc|txt|bak|bk|bin|dat|dsk|raw)(?:\?[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]*)?)*$/$empty
