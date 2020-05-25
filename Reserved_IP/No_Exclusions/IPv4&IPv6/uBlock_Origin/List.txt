@@ -2,7 +2,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
-! Version: 05.24.2020
+! Version: 05.25.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Intended for devices that support IPv4 and IPv6 traffic with uBlock Origin. These are an example of reserved IP addresses that should be blocked for to increase security against network attacks from outbound traffic. Deprecated and Localhost IP addresses are enabled.
@@ -20,8 +20,26 @@
 ||0.*.*.*^$all
 ||[::]^$all
 ! === IP ranges used by Mobile Carriers or for Carrier-Grade NAT ===
-! 100.64.* and 192.0.0.* is used by Mobile ISPs (carriers).
+! 100.64.0.0/10 and 192.0.0.* is used by Mobile ISPs (carriers).
 ||100.64.*.*^$all
+||100.65.*.*^$all
+||100.66.*.*^$all
+||100.67.*.*^$all
+||100.68.*.*^$all
+||100.69.*.*^$all
+||100.7*.*.*^$all
+||100.8*.*.*^$all
+||100.9*.*.*^$all
+||100.10*.*.*^$all
+||100.11*.*.*^$all
+||100.120.*.*^$all
+||100.121.*.*^$all
+||100.122.*.*^$all
+||100.123.*.*^$all
+||100.124.*.*^$all
+||100.125.*.*^$all
+||100.126.*.*^$all
+||100.127.*.*^$all
 ||192.0.0.*^$all
 ! === Stateless Address AutoConfiguration or Link-Local Addresses ==== 
 ! 169.254.* and [fe**:*] IP ranges is intended when your device is not set to static address or DHCP server. 

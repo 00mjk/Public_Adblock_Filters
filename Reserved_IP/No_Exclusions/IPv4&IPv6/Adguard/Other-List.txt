@@ -2,7 +2,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
-! Version: 05.24.2020
+! Version: 05.25.2020
 ! Source:
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Intended for devices that support IPv4 and IPv6 traffic for other Adguard software excluding Adguard for Windows. These are an example of reserved IP addresses that should be blocked for to increase security against network attacks from outbound traffic. Localhost IP addresses are excluded.
@@ -23,6 +23,24 @@
 ! === IP ranges used by Mobile Carriers or for Carrier-Grade NAT ===
 ! 100.64.* and 192.0.0.* is used by Mobile ISPs (carriers).
 100.64.*^$network
+100.65.*^$network
+100.66.*^$network
+100.67.*^$network
+100.68.*^$network
+100.69.*^$network
+100.7*.*^$network
+100.8*.*^$network
+100.9*.*^$network
+100.10*.*^$network
+100.11*.*^$network
+100.120.*^$network
+100.121.*^$network
+100.122.*^$network
+100.123.*^$network
+100.124.*^$network
+100.125.*^$network
+100.126.*^$network
+100.127.*^$network
 192.0.0.*^$network
 ! === Stateless Address AutoConfiguration or Link-Local Addresses ==== 
 ! 169.254.* and [fe**:*] IP ranges is intended when your device is not set to static address or DHCP server. 

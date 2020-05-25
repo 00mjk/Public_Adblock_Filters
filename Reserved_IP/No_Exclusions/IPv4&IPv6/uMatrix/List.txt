@@ -2,7 +2,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
-! Version: 05.12.2020
+! Version: 05.25.2020
 ! Source:
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Intended for devices that support IPv4 and IPv6 traffic with uMatrix. These are an example of reserved IP addresses that should be blocked for to increase security against network attacks from outbound traffic. Deprecated and Localhost IP addresses are enabled.
@@ -22,8 +22,26 @@
 * 0 * block
 * [::] * block
 ! === IP ranges used by Mobile Carriers or for Carrier-Grade NAT ===
-! 100.64.* and 192.0.0.* is used by Mobile ISPs (carriers).
+! 100.64.0.0/10 and 192.0.0.* is used by Mobile ISPs (carriers).
 * 100.64 * block
+* 100.65 * block
+* 100.66.* block
+* 100.67 * block
+* 100.68 * block
+* 100.69 * block
+* 100.7* * block
+* 100.8* * block
+* 100.9* * block
+* 100.10* * block
+* 100.11* * block
+* 100.120 * block
+* 100.121 * block
+* 100.122 * block
+* 100.123 * block
+* 100.124 * block
+* 100.125 * block
+* 100.126 * block
+* 100.127 * block
 * 192.0.0 * block
 ! === Stateless Address AutoConfiguration or Link-Local Addresses ==== 
 ! 169.254.* and [fe**:*] IP ranges is intended when your device is not set to static address or DHCP server. 
