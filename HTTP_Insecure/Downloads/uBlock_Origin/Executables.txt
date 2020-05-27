@@ -14,5 +14,5 @@
 ! Block IPv4 addresses from HTTP traffic for executable file extensions.
 /^(?:http://(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:exe|apk|app|appx|appxbundle|elf|bin|com)(?:\?[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]*)?)*$/$all
 ! Block IPv6 addresses in standard notation for executable file extensions.
-/^(?:http://\[(?:[A-Fa-f0-9]{1,4}:){7}[A-Fa-f0-9]{1,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:(?:\?[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]*)?)*$/$doc,popup
+/^(?:http://\[(?:[A-Fa-f0-9]{1,4}:){7}[A-Fa-f0-9]{1,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:exe|apk|app|appx|appxbundle|elf|bin|com)(?:\?[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]*)?)*$/$all
 
