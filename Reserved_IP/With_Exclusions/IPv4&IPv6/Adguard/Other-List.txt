@@ -7,7 +7,7 @@
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Intended for devices that support IPv4 and IPv6 traffic for other Adguard software excluding Adguard for Windows. These are an example of reserved IP addresses that should be blocked for to increase security against network attacks from outbound traffic. Localhost IP addresses are excluded. Exclusions are added to this list.
 ! Use them at your own risk.
-! Attribution: gwarser (https://github.com/ghacksuserjs/ghacks-user.js/wiki/4.2.3-uMatrix)
+! Attribution: gwarser
 ! =========================================================================================
 ! Blocking private network IP addresses in Adguard
 ! Outbound requests to these IP addresses should be blocked
