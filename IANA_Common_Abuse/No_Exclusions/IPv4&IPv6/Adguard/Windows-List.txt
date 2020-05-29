@@ -1,0 +1,37 @@
+! Title: IANA Common Abuse Adguard for Windows Only List No Exclusions Added for IPv4 & IPv6 - Localhost Encluded
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 8 hours
+! Version: 05.29.2020
+! Source:
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Intended for devices that support IPv4 and IPv6 traffic for Adguard for Windows. List of IP addresses classified by IANA that are associated with the private network or LAN that should be blocked for to increase security against network attacks from outbound traffic. Localhost IP addresses are included.
+! Use them at your own risk.
+! Attribution and Sources:  gwarser (https://github.com/gwarser/filter-lists/blob/master/lan-block.txt)
+! =========================================================================================
+! Blocking commonly abused reserved IP addresses in Adguard
+! Outbound requests to these IP addresses should be blocked
+! unless for a specific reason such as mangaging network administration, an external server, etc.
+! Guidance: IANA Abuse - https://www.iana.org/abuse and https://www.iana.org/help/abuse-answers)
+! Multicast and other unallocated (reserved) IP addresses are excluded since they are used for legitimate purposes or not common, see https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xml
+! ==========================================================================================
+! This list does not block traffic for the following protocols: ICMP, ICMPv6, DHCP, DHCPv6, ARP, etc.
+! === Stateless Address AutoConfiguration or Link-Local Addresses ==== 
+!  IP ranges is intended when your device is not set to static address or DHCP server. 169.254.0.0/16 and fe80::/10 ranges.
+169.254.*^$network
+! === Private IPv4 & IPv6 Address Range ======
+! These ranges are used for IP addresses associated for a private network. 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16, and fc00::/7 ranges.
+10.*^$network
+172.16.*^$network
+172.17.*^$network
+172.18.*^$network
+172.19.*^$network
+172.2*.*^$network
+172.30.*^$network
+172.31.*^$network
+192.168.*^$network
+! === Localhost Ranges =======
+! Adguard for Windows is the only Adguard software program to filter localhost. You can use the following rules to filter out localhost traffic. Exclusions for localhost traffic may be needed.
+! Websites like leoaffairs.com use localhost to bypass your adblocker. So, this is needed to block loopholes in regards to adblocking.
+127.*^$network
+[::1]^$network   

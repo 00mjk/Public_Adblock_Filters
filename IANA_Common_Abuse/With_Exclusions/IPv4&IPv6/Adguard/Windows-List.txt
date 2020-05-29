@@ -8,7 +8,7 @@
 ! Description: Intended for devices that support IPv4 and IPv6 traffic for Adguard for Windows. These are an example of reserved IP addresses that should be blocked for to increase security against network attacks from outbound traffic. Localhost rules added to this list. Exclusions are added to this list.
 ! Use them at your own risk.
 ! =========================================================================================
-! Blocking reserved IP addresses in Adguard
+! Blocking commonly abused reserved IP addresses in Adguard
 ! Outbound requests to these IP addresses should be blocked
 ! unless for a specific reason such as mangaging network administration, an external server, etc.
 ! Guidance: Wikipedia - Reserved IP Addresses (https://en.wikipedia.org/wiki/Reserved_IP_addresses),
@@ -37,10 +37,6 @@
 ! Websites like leoaffairs.com use localhost to bypass your adblocker. So, this is needed to block loopholes in regards to adblocking.
 127.*^$network
 [::1]^$network 
-! ======== IPv6 Home ISP DHCPv6 Server & Prefix ========
-! Recommended: Add IPv6 address range associated with your DHCPv6 server or prefix of your Home ISP.
-! This can be found from logging into your home router or gateway. 
-! The rule below is example for ISP Starnet, Czech Republic from the designated prefix example given [2a02:768:7c07:713e::/64]
 ! ==== Common Exclusions ======
 ! These are examples of IP addresses used for legitimate purposes
 ! Localhost exclusions are possible for DNS traffic, local servers for Python programming and proxy servers (Tor, NordVPN, TorGuard, Shadowsocks).

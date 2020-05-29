@@ -1,25 +1,21 @@
-! Title: Reserved IP Adguard Other Software List With Exclusions Added for IPv4 & IPv6
+! Title: IANA Common Abuse Adguard Other Software List With Exclusions Added for IPv4 & IPv6
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
 ! Version: 05.29.2020
 ! Source:
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Intended for devices that support IPv4 and IPv6 traffic for other Adguard software excluding Adguard for Windows. These are an example of reserved IP addresses that should be blocked for to increase security against network attacks from outbound traffic. Localhost IP addresses are excluded. Exclusions are added to this list.
+! Description: Intended for devices that support IPv4 and IPv6 traffic for other Adguard software. List of IP addresses classified by IANA that are associated with the private network or LAN that should be blocked for to increase security against network attacks from outbound traffic. Localhost IP addresses are exempt. Exclusions are added to this list.
 ! Use them at your own risk.
 ! Attribution: gwarser
 ! =========================================================================================
-! Blocking private network IP addresses in Adguard
+! Blocking commonly abused reserved IP addresses in Adguard
 ! Outbound requests to these IP addresses should be blocked
 ! unless for a specific reason such as mangaging network administration, an external server, etc.
-! Guidance: Wikipedia - Reserved IP Addresses (https://en.wikipedia.org/wiki/Private_network),
-! IANA Abuse (https://www.iana.org/abuse)
+! Guidance: IANA Abuse - https://www.iana.org/abuse and https://www.iana.org/help/abuse-answers)
+! Multicast and other unallocated (reserved) IP addresses are excluded since they are used for legitimate purposes or not common, see https://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xml
 ! ==============================================================================================================================================
 ! This list does not block traffic for the following protocols: ICMP, ICMPv6, DHCP, DHCPv6, ARP, etc.
-! === Source-Only Addresses ====
-! 0.* and [::] IP address ranges have no destination requests.
-0.*^$network
-[::]^$network
 ! === Stateless Address AutoConfiguration or Link-Local Addresses ==== 
 ! 169.254.* and [fe**:*] IP ranges is intended when your device is not set to static address or DHCP server. 
 169.254.*^$network
@@ -35,13 +31,6 @@
 172.30.*^$network
 172.31.*^$network
 192.168.*^$network 
-! ======== IPv6 Home ISP DHCPv6 Server & Prefix ========
-! Recommended: Add IPv6 address range associated with your DHCPv6 server or prefix of your Home ISP.
-! This can be found from logging into your home router or gateway. 
-! The rule below is example for ISP Starnet, Czech Republic from the designated prefix example given [2a02:768:7c07:713e::/64]
-! This will be enough to cover IPv6 addresses associated with your DHCPv6 server of your Home ISP. No other rules from Home ISP are needed. 
-! It is recommended to use the $network modifer for full protection for this kind of rule.
-! [2a02:768:7c07:713e:*]^$network
 ! ==== Common Exclusions ======
 ! These are examples of IP addresses used for legitimate purposes
 ! Localhost exclusions are excluded.
