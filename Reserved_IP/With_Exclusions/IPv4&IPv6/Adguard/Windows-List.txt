@@ -1,0 +1,89 @@
+! Title: Reserved IP Adguard for Windows Only List With Exclusions Added for IPv4 & IPv6
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 8 hours
+! Version: 05.29.2020
+! Source:
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Intended for devices that support IPv4 and IPv6 traffic for Adguard for Windows. These are an example of reserved IP addresses that should be blocked for to increase security against network attacks from outbound traffic. Localhost rules added to this list. Exclusions are added to this list.
+! Use them at your own risk.
+! =========================================================================================
+! Blocking reserved IP addresses in Adguard
+! Outbound requests to these IP addresses should be blocked
+! unless for a specific reason such as mangaging network administration, an external server, etc.
+! Guidance: Wikipedia - Reserved IP Addresses (https://en.wikipedia.org/wiki/Reserved_IP_addresses),
+! IANA IPv4 Special Purpose Registry (https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml),
+! and IANA IPv6 Special Purpose Registry (https://www.iana.org/assignments/iana-ipv6-special-registry/iana-ipv6-special-registry.xhtml)
+! ==============================================================================================================================================
+! This list does not block traffic for the following protocols: ICMP, ICMPv6, DHCP, DHCPv6, ARP, etc.
+! === Stateless Address AutoConfiguration or Link-Local Addresses ==== 
+! 169.254.* and [fe**:*] IP ranges is intended when your device is not set to static address or DHCP server. 
+169.254.*^$network
+! For full protection from [fc**:*] and [fd**:*] addresses please check IPv6Raw-List.txt.
+! === Private IPv4 & IPv6 Address Range ======
+! These ranges are used for IP addresses associated for a private network. 
+10.*^$network
+172.16.*^$network
+172.17.*^$network
+172.18.*^$network
+172.19.*^$network
+172.2*.*^$network
+172.30.*^$network
+172.31.*^$network
+192.168.*^$network
+! For full protection from [fc**:*] and [fd**:*] addresses please check IPv6Raw-List.txt.
+! === Localhost Ranges =======
+! Adguard for Windows is the only Adguard software program to filter localhost. You can use the following rules to filter out localhost traffic. Exclusions for localhost traffic may be needed.
+! Websites like leoaffairs.com use localhost to bypass your adblocker. So, this is needed to block loopholes in regards to adblocking.
+127.*^$network
+[::1]^$network 
+! ======== IPv6 Home ISP DHCPv6 Server & Prefix ========
+! Recommended: Add IPv6 address range associated with your DHCPv6 server or prefix of your Home ISP.
+! This can be found from logging into your home router or gateway. 
+! The rule below is example for ISP Starnet, Czech Republic from the designated prefix example given [2a02:768:7c07:713e::/64]
+! ==== Common Exclusions ======
+! These are examples of IP addresses used for legitimate purposes
+! Localhost exclusions are possible for DNS traffic, local servers for Python programming and proxy servers (Tor, NordVPN, TorGuard, Shadowsocks).
+! Remove apps like Orbot and Shadowsocks (AdGuard -> Apps management -> Shadowsocks -> Disable protection) from filtering to avoid issues.
+! DNS Traffic
+@@127.0.0.1:53^$network
+@@[::1]:53^$network
+@@127.0.0.1:853^$network
+@@[::1]:853^$network
+@@127.0.0.1:5353^$network
+@@[::1]:5353^$network
+! Freenet, local servers for Python or Julia Jupyter Notebook, and Django Webserver
+@@127.0.0.1:8888^$network
+@@[::1]:8888^$network 
+@@127.0.0.1:8000^$network
+@@[::1]:8000^$network
+! I2P
+@@127.0.0.1:4444^$network
+@@[::1]:4444^$network
+! Tor 
+@@127.0.0.1:8118^$network
+@@[::1]:8118^$network
+@@127.0.0.1:9050^$network
+@@[::1]:9050^$network
+@@127.0.0.1:9040^$network
+@@[::1]:9040^$network
+! For Other SOCKS and HTTP Proxy Servers
+@@127.0.0.1:1080^$network
+@@[::1]:1080^$network
+@@127.0.0.1:1085^$network
+@@[::1]:1085^$network
+@@127.0.0.1:1090^$network
+@@[::1]:1090^$network
+! Login to router or gateway.
+@@10.0.0.1:80^$network
+@@10.0.0.1:443^$network
+@@10.0.1.1:80^$network
+@@10.0.1.1:443^$network
+@@172.16.0.1:80^$network
+@@172.16.0.1:443^$network
+@@172.16.1.1:80^$network
+@@172.16.1.1:443^$network
+@@192.168.0.1:80^$network
+@@192.168.0.1:443^$network
+@@192.168.1.1:80^$network
+@@192.168.1.1:443^$network
