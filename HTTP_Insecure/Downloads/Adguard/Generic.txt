@@ -12,5 +12,5 @@
 /^(?:http://[.0-9A-Za-z-]+\.[A-Za-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:cnf|conf|cfg|log|asc|txt|bak|bk|bin|dat|dsk|raw)(?:\?[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]*)?)*$/$empty
 ! Block IPv4 addresses from HTTP traffic for generic file extensions.
 /^(?:http://(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:cnf|conf|cfg|log|asc|txt|bak|bk|bin|dat|dsk|raw)(?:\?[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]*)?)*$/$empty
-! Block IPv6 addresses from HTTP traffic in generic notation for Windows file extensions.
+! Block IPv6 addresses from HTTP traffic in standard notation for Windows file extensions.
 /^(?:http://\[(?:[A-Fa-f0-9]{1,4}:){7}[A-Fa-f0-9]{1,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:cnf|conf|cfg|log|asc|txt|bak|bk|bin|dat|dsk|raw)(?:\?[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]*)?)*$/$empty
