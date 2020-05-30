@@ -1,3 +1,4 @@
+﻿[uBlock Origin]
 ! Title: HTTP Insecure Downloads - Android for uBlock Origin [Experimental]
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
@@ -7,7 +8,6 @@
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Experimental. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
 ! Use them at your own risk.
-! Attribution: Cybo1927
 ! ====================================================================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
 ! Block HTTP domain names for Android file extensions.
