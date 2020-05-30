@@ -1,5 +1,5 @@
 ﻿[uBlock Origin]
-! Title: HTTP Insecure Downloads - Windows for uBlock Origin [Experimental]
+! Title: HTTP Insecure Downloads - Windows for uBlock Origin
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
