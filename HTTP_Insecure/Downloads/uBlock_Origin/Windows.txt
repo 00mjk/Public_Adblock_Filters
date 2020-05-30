@@ -6,7 +6,7 @@
 ! Version: 05.29.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Experimental. Windows File extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
+! Description: Windows File extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
 ! Use them at your own risk.
 ! ============================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
