@@ -1,16 +1,20 @@
-! Title: HTTP Insecure Downloads - Executables for Adguard
+! Title: HTTP Insecure Downloads - Executables for Adguard [Experimental]
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
-! Version: 05.24.2020
+! Version: 05.29.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Executables File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
+! Description: Experimental. Executables File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
 ! Use them at your own risk.
 ! ============================================================================
 ! Block HTTP domain names for executable file extensions.
-/^(?:http://[.0-9A-Za-z-]+\.[A-Za-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:exe|apk|app|appx|appxbundle|elf|bin|com)(?:\?[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]*)?)*$/$empty
+/^(?:http://[.0-9A-Za-z-]+\.[A-Za-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:exe|apk|app|appx|appxbundle|elf|bin|com))$/$empty
 ! Block IPv4 addresses from HTTP traffic for executable file extensions.
-/^(?:http://(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:exe|apk|app|appx|appxbundle|elf|bin|com)(?:\?[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]*)?)*$/$empty
+/^(?:http://(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:exe|apk|app|appx|appxbundle|elf|bin|com))$/$empty
 ! Block IPv6 addresses in standard notation for executable file extensions.
-/^(?:http://\[(?:[A-Fa-f0-9]{1,4}:){7}[A-Fa-f0-9]{1,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:exe|apk|app|appx|appxbundle|elf|bin|com)(?:\?[!"#$%&'()*+,./0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]*)?)*$/$empty
+/^(?:http://\[(?:[A-Fa-f0-9]{1,4}:){7}[A-Fa-f0-9]{1,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:exe|apk|app|appx|appxbundle|elf|bin|com))$/$empty
+! Block IPv6 addresses from HTTP traffic in compressed notation with at most 7 colons.
+/^(?:http://\[(?:[A-Fa-f0-9]{0,4}:){1,7}[A-Fa-f0-9]{0,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:exe|apk|app|appx|appxbundle|elf|bin|com))$/$empty
+! Block IPv6 addresses from HTTP traffic in compressed notation with at most 7 colons and 1 double colon.
+/^(?:http://\[(([0-9A-Fa-f]{1,4}:){1,7}|:)((:[0-9A-Fa-f]{1,4}){1,7}|:)\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:exe|apk|app|appx|appxbundle|elf|bin|com))$/$empty
