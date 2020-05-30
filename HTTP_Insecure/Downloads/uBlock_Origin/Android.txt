@@ -6,13 +6,13 @@
 ! Version: 05.29.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Experimental. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
+! Description: Experimental. Android file extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
 ! Use them at your own risk.
 ! ====================================================================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
-! Block HTTP domain names for Android file extensions.
-/^(?:http://[.0-9A-Za-z-]+\.[A-Za-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:elf|jar|odex|dex|so|apk))$/$all
-! Block IPv4 addresses from HTTP traffic for Android file extensions.
+! Block downloads from HTTP domain names.
+/^(?:http://[.0-9a-z-]+\.[a-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:elf|jar|odex|dex|so|apk))$/$all
+! Block downloads from IPv4 addresses from HTTP traffic.
 /^(?:http://(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:elf|jar|odex|dex|so|apk))$/$all
-! Block IPv6 addresses from HTTP traffic in standard notation for Android file extensions.
-/^(?:http://\[(?:[A-Fa-f0-9]{1,4}:){7}[A-Fa-f0-9]{1,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:elf|jar|odex|dex|so|apk))$/$all
+! Block downloads  from IPv6 addresses in standard notation.
+/^(?:http://\[(?:[a-f0-9]{1,4}:){7}[a-f0-9]{1,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:elf|jar|odex|dex|so|apk))$/$all
