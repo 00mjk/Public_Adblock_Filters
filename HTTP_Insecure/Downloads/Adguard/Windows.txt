@@ -5,11 +5,7 @@
 ! Version: 05.29.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-<<<<<<< Updated upstream
-! Description: Windows File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
-=======
 ! Description: Experimental. Windows File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
->>>>>>> Stashed changes
 ! Use them at your own risk.
 ! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; based on NoVirusThanks SysHardener, including (.dll,.exe. and .msi) and excluding (.js)     
 ! ============================================================================
