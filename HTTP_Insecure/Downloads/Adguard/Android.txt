@@ -2,35 +2,12 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
-! Version: 05.29.2020
+! Version: 06.01.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Experimental. Android File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
+! Description: Incomplete. Android File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
 ! Use them at your own risk.
 ! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://download.geo.drweb.com/pub/drweb/android/light/HTML/en/
 ! ============================================================================
-! Block downloads from HTTP domain names.
-/^(?:http://[.0-9a-z-]+\.[a-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:elf|jar|odex|dex|so|apk))$/$empty
-! Block downloads from IPv4 addresses from HTTP traffic.
-/^(?:http://(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:elf|jar|odex|dex|so|apk))$/$empty
-! Block downloads  from IPv6 addresses in standard notation.
-/^(?:http://\[(?:[a-f0-9]{1,4}:){7}[a-f0-9]{1,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:elf|jar|odex|dex|so|apk))$/$empty
-! Block downloads from IPv6 addresses from HTTP traffic in compressed notation with at most 7 colons.
-/^(?:http://\[(?:[a-f0-9]{0,4}:){1,7}[a-f0-9]{0,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:elf|jar|odex|dex|so|apk))$/$empty
-! Block downloads from IPv6 addresses from HTTP traffic in compressed notation with at most 7 colons and 1 double colon.
-/^(?:http://\[(([0-9a-f]{1,4}:){1,7}|:)((:[0-9a-f]{1,4}){1,7}|:)\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:elf|jar|odex|dex|so|apk))$/$empty
-! Block downloads from IPv6 addresses from HTTP traffic in compressed notation with at 8 colons.
-/^(?:http://\[((?:[a-f0-9]{1,4}:){7}:|:(:[a-f0-9]{1,4}){7})\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:elf|jar|odex|dex|so|apk))$/$empty
-! ==== In All Caps ====
-! Block downloads from HTTP domain names.
-/^(?:http://[.0-9a-z-]+\.[a-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:ELF|JAR|ODEX|DEX|SO|APK))$/$empty
-! Block downloads from IPv4 addresses from HTTP traffic.
-/^(?:http://(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:ELF|JAR|ODEX|DEX|SO|APK))$/$empty
-! Block downloads  from IPv6 addresses in standard notation.
-/^(?:http://\[(?:[a-f0-9]{1,4}:){7}[a-f0-9]{1,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:ELF|JAR|ODEX|DEX|SO|APK))$/$empty
-! Block downloads from IPv6 addresses from HTTP traffic in compressed notation with at most 7 colons.
-/^(?:http://\[(?:[a-f0-9]{0,4}:){1,7}[a-f0-9]{0,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:ELF|JAR|ODEX|DEX|SO|APK))$/$empty
-! Block downloads from IPv6 addresses from HTTP traffic in compressed notation with at most 7 colons and 1 double colon.
-/^(?:http://\[(([0-9a-f]{1,4}:){1,7}|:)((:[0-9a-f]{1,4}){1,7}|:)\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:ELF|JAR|ODEX|DEX|SO|APK))$/$empty
-! Block downloads from IPv6 addresses from HTTP traffic in compressed notation with at 8 colons.
-/^(?:http://\[((?:[a-f0-9]{1,4}:){7}:|:(:[a-f0-9]{1,4}){7})\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:ELF|JAR|ODEX|DEX|SO|APK))$/$empty
+! File extensions: elf, jar, odex, dex, so, apk
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][lL][fF])|(?:[jJ][aA][rR])|(?:[oO]?[dD][eE][xX])|(?:[sS][oO])|(?:[aA][pP][kK]))([/?].*)?$/$empty

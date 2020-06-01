@@ -3,37 +3,14 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
-! Version: 05.29.2020
+! Version: 05.31.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Experimental. Executable File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
+! Description: Incomplete. Executable File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
 ! Use them at your own risk.
-! Attribution: RegexBuddy and RegexMagic; https://askubuntu.com/questions/156392/what-is-the-equivalent-of-an-exe-file; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://www.computerhope.com/issues/ch001789.htm
+! Attribution: RegexBuddy and RegexMagic; https://askubuntu.com/questions/156392/what-is-the-equivalent-of-an-exe-file; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media 
+! Other Attribution: https://www.computerhope.com/issues/ch001789.htm
 ! ============================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
-! Block downloads from HTTP domain names.
-/^(?:http://[.0-9a-z-]+\.[a-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:exe|apk|app|appx|appxbundle|elf|bin|com|bat|gadget|msi))$/$all
-! Block downloads from IPv4 addresses from HTTP traffic.
-/^(?:http://(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:exe|apk|app|appx|appxbundle|elf|bin|com|bat|gadget|msi))$/$all
-! Block downloads  from IPv6 addresses in standard notation.
-/^(?:http://\[(?:[a-f0-9]{1,4}:){7}[a-f0-9]{1,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:exe|apk|app|appx|appxbundle|elf|bin|com|bat|gadget|msi))$/$all
-! Block downloads from IPv6 addresses from HTTP traffic in compressed notation with at most 7 colons.
-/^(?:http://\[(?:[a-f0-9]{0,4}:){1,7}[a-f0-9]{0,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:exe|apk|app|appx|appxbundle|elf|bin|com|bat|gadget|msi))$/$all
-! Block downloads from IPv6 addresses from HTTP traffic in compressed notation with at most 7 colons and 1 double colon.
-/^(?:http://\[(([0-9a-f]{1,4}:){1,7}|:)((:[0-9a-f]{1,4}){1,7}|:)\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:exe|apk|app|appx|appxbundle|elf|bin|com|bat|gadget|msi))$/$all
-! Block downloads from IPv6 addresses from HTTP traffic in compressed notation with at 8 colons.
-/^(?:http://\[((?:[a-f0-9]{1,4}:){7}:|:(:[a-f0-9]{1,4}){7})\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:exe|apk|app|appx|appxbundle|elf|bin|com|bat|gadget|msi))$/$all
-! ==== In All Caps ====
-! Block downloads from HTTP domain names.
-/^(?:http://[.0-9a-z-]+\.[a-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:EXE|APK|APP|APPX|APPXBUNDLE|ELF|BIN|COM|BAT|GADGET|MSI))$/$all
-! Block downloads from IPv4 addresses from HTTP traffic.
-/^(?:http://(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:EXE|APK|APP|APPX|APPXBUNDLE|ELF|BIN|COM|BAT|GADGET|MSI))$/$all
-! Block downloads  from IPv6 addresses in standard notation.
-/^(?:http://\[(?:[a-f0-9]{1,4}:){7}[a-f0-9]{1,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:EXE|APK|APP|APPX|APPXBUNDLE|ELF|BIN|COM|BAT|GADGET|MSI))$/$all
-! Block downloads from IPv6 addresses from HTTP traffic in compressed notation with at most 7 colons.
-/^(?:http://\[(?:[a-f0-9]{0,4}:){1,7}[a-f0-9]{0,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:EXE|APK|APP|APPX|APPXBUNDLE|ELF|BIN|COM|BAT|GADGET|MSI))$/$all
-! Block downloads from IPv6 addresses from HTTP traffic in compressed notation with at most 7 colons and 1 double colon.
-/^(?:http://\[(([0-9a-f]{1,4}:){1,7}|:)((:[0-9a-f]{1,4}){1,7}|:)\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:EXE|APK|APP|APPX|APPXBUNDLE|ELF|BIN|COM|BAT|GADGET|MSI))$/$all
-! Block downloads from IPv6 addresses from HTTP traffic in compressed notation with at 8 colons.
-/^(?:http://\[((?:[a-f0-9]{1,4}:){7}:|:(:[a-f0-9]{1,4}){7})\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:EXE|APK|APP|APPX|APPXBUNDLE|ELF|BIN|COM|BAT|GADGET|MSI))$/$all
-
+! File extensions: exe, apk, app, appx, appxbundle, elf, bin, com, bat, gadget, msi
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][xX][eE])|(?:[aA][pP][kK])|(?:[aA][pP][pP][xX]?([bB][uU][nN][dD][lL][eE])?)|(?:[bB][iI][nN])|(?:[cC][oO][mM])|(?:[bB][aA][tT])|(?:[gG][aA][dD][gG][eE][tT])|(?:[mM][sS][iI]))([/?].*)?$/$all

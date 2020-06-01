@@ -3,37 +3,14 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
-! Version: 05.29.2020
+! Version: 06.01.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Experimental. Windows File extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
+! Description: Incomplete. Windows File extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
 ! Use them at your own risk.
-! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; based on NoVirusThanks SysHardener, including (.dll,.exe. and .msi) and excluding (.js)  
+! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; 
+! Other Attribtion: NoVirusThanks SysHardener, including (.dll,.exe. and .msi) and excluding (.js)  
 ! ============================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
-! This list does not block Javascript.
-! Block downloads from HTTP domain names.
-/^(?:http://[.0-9a-z-]+\.[a-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:vbs|vbe|jse|wsf|wsh|hta|scr|pif|reg|jar|bat|ps1|exe|msi|dll))$/$all
-! Block downloads from IPv4 addresses from HTTP traffic.
-/^(?:http://(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:vbs|vbe|jse|wsf|wsh|hta|scr|pif|reg|jar|bat|ps1|exe|msi|dll))$/$all
-! Block downloads  from IPv6 addresses in standard notation.
-/^(?:http://\[(?:[a-f0-9]{1,4}:){7}[a-f0-9]{1,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:vbs|vbe|jse|wsf|wsh|hta|scr|pif|reg|jar|bat|ps1|exe|msi|dll))$/$all
-! Block downloads from IPv6 addresses from HTTP traffic in compressed notation with at most 7 colons.
-/^(?:http://\[(?:[a-f0-9]{0,4}:){1,7}[a-f0-9]{0,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:vbs|vbe|jse|wsf|wsh|hta|scr|pif|reg|jar|bat|ps1|exe|msi|dll))$/$all
-! Block downloads from IPv6 addresses from HTTP traffic in compressed notation with at most 7 colons and 1 double colon.
-/^(?:http://\[(([0-9a-f]{1,4}:){1,7}|:)((:[0-9a-f]{1,4}){1,7}|:)\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:vbs|vbe|jse|wsf|wsh|hta|scr|pif|reg|jar|bat|ps1|exe|msi|dll))$/$all
-! Block downloads from IPv6 addresses from HTTP traffic in compressed notation with at 8 colons.
-/^(?:http://\[((?:[a-f0-9]{1,4}:){7}:|:(:[a-f0-9]{1,4}){7})\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:vbs|vbe|jse|wsf|wsh|hta|scr|pif|reg|jar|bat|ps1|exe|msi|dll))$/$all
-! ==== In All Caps =====
-! Block downloads from HTTP domain names.
-/^(?:http://[.0-9a-z-]+\.[a-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:VBS|VBE|JSE|WSF|WSH|HTA|SCR|PIF|REG|JAR|BAT|PS1|EXE|MSI|DLL))$/$all
-! Block downloads from IPv4 addresses from HTTP traffic.
-/^(?:http://(?:[0-9]{1,3}\.){3}[0-9]{1,3}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:VBS|VBE|JSE|WSF|WSH|HTA|SCR|PIF|REG|JAR|BAT|PS1|EXE|MSI|DLL))$/$all
-! Block downloads  from IPv6 addresses in standard notation.
-/^(?:http://\[(?:[a-f0-9]{1,4}:){7}[a-f0-9]{1,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:VBS|VBE|JSE|WSF|WSH|HTA|SCR|PIF|REG|JAR|BAT|PS1|EXE|MSI|DLL))$/$all
-! Block downloads from IPv6 addresses from HTTP traffic in compressed notation with at most 7 colons.
-/^(?:http://\[(?:[a-f0-9]{0,4}:){1,7}[a-f0-9]{0,4}\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:VBS|VBE|JSE|WSF|WSH|HTA|SCR|PIF|REG|JAR|BAT|PS1|EXE|MSI|DLL))$/$all
-! Block downloads from IPv6 addresses from HTTP traffic in compressed notation with at most 7 colons and 1 double colon.
-/^(?:http://\[(([0-9a-f]{1,4}:){1,7}|:)((:[0-9a-f]{1,4}){1,7}|:)\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:VBS|VBE|JSE|WSF|WSH|HTA|SCR|PIF|REG|JAR|BAT|PS1|EXE|MSI|DLL))$/$all
-! Block downloads from IPv6 addresses from HTTP traffic in compressed notation with at 8 colons.
-/^(?:http://\[((?:[a-f0-9]{1,4}:){7}:|:(:[a-f0-9]{1,4}){7})\](?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,}/[.0-9A-Z_a-z-]+\.(?:VBS|VBE|JSE|WSF|WSH|HTA|SCR|PIF|REG|JAR|BAT|PS1|EXE|MSI|DLL))$/$all
+! This list does not block Javascript (.js) files. File extensions: vbs, vbe, jse, wsf, wsh, scr, pif, reg, jar, bat, ps1, ps2, exe, msi, dll
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[vV][bB]([sS]|[eE]))|(?:[jJ][sS][eE])|(?:[wW][sS]([fF]|[hH]))|(?:[sS][cC][rR])|(?:[pP][iI][fF])|(?:[rR][eE][gG])|(?:[jJ][aA][rR])|(?:[bB][aA][tT])|(?:[pP][sS][1])|(?:[pP][sS][2])|(?:[eE][xX][eE])(?:[mM][sS][iI])|(?:[dD][lL][lL]))([/?].*)?$/$all
