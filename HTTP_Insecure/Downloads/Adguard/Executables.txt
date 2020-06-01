@@ -8,7 +8,7 @@
 ! Description: Incomplete. Executable File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
 ! Use them at your own risk.
 ! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://askubuntu.com/questions/156392/what-is-the-equivalent-of-an-exe-file; 
-! Other Attribution: https://www.computerhope.com/issues/ch001789.htm
+! Other Attribution: https://www.computerhope.com/issues/ch001789.htm; https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression
 ! ======================================================================================================================================================================================================================================
 ! File extensions: exe, apk, app, appx, appxbundle, elf, bin, com, bat, gadget, msi
 /^http:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][xX][eE])|(?:[aA][pP][kK])|(?:[aA][pP][pP][xX]?([bB][uU][nN][dD][lL][eE])?)|(?:[bB][iI][nN])|(?:[cC][oO][mM])|(?:[bB][aA][tT])|(?:[gG][aA][dD][gG][eE][tT])|(?:[mM][sS][iI]))([/?].*)?$/$empty

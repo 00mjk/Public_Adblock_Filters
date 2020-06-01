@@ -8,7 +8,8 @@
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Incomplete. Video file extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
 ! Use them at your own risk.
-! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://www.computerhope.com/issues/ch001789.htm
+! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://www.computerhope.com/issues/ch001789.htm; 
+! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression
 ! ====================================================================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
 ! File extensions: 3p2, 3gp, avi, flv, m4v, mkv, mov, mp4, mpg, mpeg, rm, swf, vob, wmv.

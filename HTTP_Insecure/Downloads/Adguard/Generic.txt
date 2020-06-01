@@ -7,7 +7,8 @@
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Incomplete. Generic File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
 ! Use them at your own risk.
-! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://en.wikipedia.org/wiki/List_of_file_formats
+! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://en.wikipedia.org/wiki/List_of_file_formats; 
+! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression
 ! ============================================================================
 ! File extensions: cnf, conf, cfg, log, asc, txt, bak, bin, dat, dsk, raw
 /^http:\/\/.+(/.+){0,}/.+\.(?:(?:[cC][nN][fF])|(?:[cC][oO][nN][fF])(?:[cC][fF][gG])|(?:[lL][oO][gG])|(?:[aA][sS][cC])|(?:[tT][xX][tT])|(?:[bB][iI][nN])|(?:[dD][aA][tT])|(?:[dD][sS][kK])|(?:[rR][aA][wW]))([/?].*)?$/$empty

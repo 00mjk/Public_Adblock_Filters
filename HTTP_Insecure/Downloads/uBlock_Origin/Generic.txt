@@ -9,6 +9,7 @@
 ! Description: Incomplete. Generic file extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
 ! Use them at your own risk.
 ! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://en.wikipedia.org/wiki/List_of_file_formats
+! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression
 ! ============================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
 ! File extensions: cnf, conf, cfg, log, asc, txt, bak, bin, dat, dsk, raw
