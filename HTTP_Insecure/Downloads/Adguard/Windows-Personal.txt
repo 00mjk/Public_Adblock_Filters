@@ -11,5 +11,5 @@
 ! Other Attribution: NoVirusThanks SysHardener, including (.dll,.exe. and .msi) and excluding (.js); https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression     
 ! ============================================================================
 ! This list does not block Javascript (.js) files.
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][xX][eE])(?:[mM][sS][iI]))([/?].*)?$/$all
-/^https?:\/\/.+(/.+){0,}/.+\.(?:(?:[vV][bB]([sS]|[eE]))|(?:[jJ][sS][eE])|(?:[wW][sS]([fF]|[hH]))|(?:[sS][cC][rR])|(?:[pP][iI][fF])|(?:[rR][eE][gG])|(?:[jJ][aA][rR])|(?:[bB][aA][tT])|(?:[pP][sS][1])|(?:[pP][sS][2])|(?:[dD][lL][lL]))([/?].*)?$/$all
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][xX][eE])(?:[mM][sS][iI]))([/?].*)?$/$empty
+/^https?:\/\/.+(/.+){0,}/.+\.(?:(?:[vV][bB]([sS]|[eE]))|(?:[jJ][sS][eE])|(?:[wW][sS]([fF]|[hH]))|(?:[sS][cC][rR])|(?:[pP][iI][fF])|(?:[rR][eE][gG])|(?:[jJ][aA][rR])|(?:[bB][aA][tT])|(?:[pP][sS][1])|(?:[pP][sS][2])|(?:[dD][lL][lL]))([/?].*)?$/$empty
