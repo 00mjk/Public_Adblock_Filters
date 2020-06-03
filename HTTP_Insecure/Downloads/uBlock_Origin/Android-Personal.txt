@@ -13,4 +13,4 @@
 ! ============================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
 /^https?:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][lL][fF])|(?:[jJ][aA][rR])|(?:[oO]?[dD][eE][xX])|(?:[sS][oO]))([#?].*)?$/$all
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[aA][pP][kK][sS]))([#?].*)?$/$all
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[aA][pP][kK][sS]?))([#?].*)?$/$all
