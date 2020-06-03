@@ -9,8 +9,8 @@
 ! Description: Incomplete. Image file extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
 ! Use them at your own risk.
 ! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://www.computerhope.com/issues/ch001789.htm
-! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression
+! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 ! ====================================================================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
 ! File extensions: bmp, gif, jpeg, jpg,  png, psd, svg, tif, tiff, ico.
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[bB][mM][pP])|(?:[gG][iI][fF])|(?:[jJ][pP][eE]?[gG])|(?:[pP][nN][gG])|(?:[pP][sS][dD])|(?:[sS][vV][gG])|(?:[tT][iI][fF][fF]?)|(?:[iI][cC][oO]))([/?].*)?$/$all
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[bB][mM][pP])|(?:[gG][iI][fF])|(?:[jJ][pP][eE]?[gG])|(?:[pP][nN][gG])|(?:[pP][sS][dD])|(?:[sS][vV][gG])|(?:[tT][iI][fF][fF]?)|(?:[iI][cC][oO]))([#?].*)?$/$all

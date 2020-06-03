@@ -9,8 +9,8 @@
 ! Description: Incomplete. Executable File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
 ! Use them at your own risk.
 ! Attribution: RegexBuddy and RegexMagic; https://askubuntu.com/questions/156392/what-is-the-equivalent-of-an-exe-file; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media 
-! Other Attribution: https://www.computerhope.com/issues/ch001789.htm; https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression
+! Other Attribution: https://www.computerhope.com/issues/ch001789.htm; https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 ! ============================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
 ! File extensions: exe, apk, app, appx, appxbundle, elf, bin, com, bat, gadget, msi
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][xX][eE])|(?:[aA][pP][kK])|(?:[aA][pP][pP][xX]?([bB][uU][nN][dD][lL][eE])?)|(?:[bB][iI][nN])|(?:[cC][oO][mM])|(?:[bB][aA][tT])|(?:[gG][aA][dD][gG][eE][tT])|(?:[mM][sS][iI]))([/?].*)?$/$all
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][xX][eE])|(?:[aA][pP][kK])|(?:[aA][pP][pP][xX]?([bB][uU][nN][dD][lL][eE])?)|(?:[bB][iI][nN])|(?:[cC][oO][mM])|(?:[bB][aA][tT])|(?:[gG][aA][dD][gG][eE][tT])|(?:[mM][sS][iI]))([#?].*)?$/$all

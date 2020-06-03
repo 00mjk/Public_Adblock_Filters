@@ -8,7 +8,7 @@
 ! Description: Incomplete. Android File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard. Personal Version.
 ! Use them at your own risk.
 ! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://download.geo.drweb.com/pub/drweb/android/light/HTML/en/
-! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression
+! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 ! ============================================================================
-/^https?:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][lL][fF])|(?:[jJ][aA][rR])|(?:[oO]?[dD][eE][xX])|(?:[sS][oO]))([/?].*)?$/$empty
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[aA][pP][kK]))([/?].*)?$/$empty
+/^https?:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][lL][fF])|(?:[jJ][aA][rR])|(?:[oO]?[dD][eE][xX])|(?:[sS][oO]))([#?].*)?$/$empty
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[aA][pP][kK]))([#?].*)?$/$empty
