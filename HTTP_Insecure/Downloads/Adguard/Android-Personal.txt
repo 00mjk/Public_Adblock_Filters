@@ -11,4 +11,4 @@
 ! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 ! ============================================================================
 /^https?:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][lL][fF])|(?:[jJ][aA][rR])|(?:[oO]?[dD][eE][xX])|(?:[sS][oO]))([#?].*)?$/$empty
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[aA][pP][kK]))([#?].*)?$/$empty
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[aA][pP][kK][sS]?))([#?].*)?$/$empty
