@@ -1,3 +1,4 @@
+[uBlock Origin]
 ! Title: HTTP Insecure Resources - Anti_3rd-Party HTTP for uBlock Origin
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
