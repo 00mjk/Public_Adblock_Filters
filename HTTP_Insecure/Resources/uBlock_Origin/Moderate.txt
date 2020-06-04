@@ -1,8 +1,9 @@
-! Title: HTTP Insecure Resources - Moderate (Standard version) for uBlock Origin 
+[uBlock Origin]
+! Title: HTTP Insecure Resources - Moderate for uBlock Origin 
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
-! Version: 05.09.2020
+! Version: 06.04.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Moderate Standard version. Intended for uBlock Origin. Increases security when visiting HTTP and HTTPS websites.
@@ -16,4 +17,4 @@ http://*$~3p,script,frame
 ! Only allows third-party passive content to load from HTTP websites. 
 http://*$3p,~stylesheet,~image
 ! Block third-party Javascript and frames on untrusted TLDs. More useable version of uBO medium mode for HTTPS.
-https://*$3p,script,frame,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
+https://*$3p,script,frame,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|

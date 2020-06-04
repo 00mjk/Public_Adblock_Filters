@@ -1,9 +1,9 @@
 [AdBlockPlus 3.5]
-! Title: HTTP Insecure Resources - Aggressive (Standard version) for Adguard and Adblock Plus
+! Title: HTTP Insecure Resources - Aggressive for Adguard and Adblock Plus 
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
-! Version: 05.09.2020
+! Version: 06.04.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Aggressive Standard Version. Intended for Adguard and Adblock Plus. Increases security when browsing HTTP and HTTPS websites.
@@ -16,6 +16,7 @@
 http://*$~third-party,script,subdocument
 ! Allows only third-party passive content to load on HTTP websites.
 http://*$third-party,~stylesheet,~image
-!  Blocks Javascript and frames from untrusted TLDs on HTTPS websites from first-party domains.
-https://*$script,subdocument,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
+!  Blocks Javascript and frames from untrusted TLDs on HTTPS websites.
+ps://*$script,subdocument,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
+
 

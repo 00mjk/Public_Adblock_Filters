@@ -3,7 +3,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
-! Version: 05.09.2020
+! Version: 06.04.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Block untrusted elements from third-party HTTP websites and HTTPS of untrusted TLDs.
@@ -12,7 +12,7 @@
 ! ====================================================================================================================
 ! Guidance: Some of these lists are an usable version of uBO hard mode and/or medium mode. See https://github.com/gorhill/uBlock/wiki/Blocking-mode, 
 ! Only allows third-party passive content to load from HTTPS websites. 
-https://*$third-party,~stylesheet,~image,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
+https://*$third-party,~stylesheet,~image,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
 ! Only allows third-party passive content to load from HTTP websites. 
-http://*$third-party,~stylesheet,~image,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
+http://*$third-party,~stylesheet,~image,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
 

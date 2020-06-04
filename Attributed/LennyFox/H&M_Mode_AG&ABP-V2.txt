@@ -1,12 +1,12 @@
 [AdBlockPlus 3.5]
-! Title: LennyFox's Medium and Hard Mode for Adguard and Adblock Plus 
+! Title: LennyFox's Medium and Hard Mode for Adguard and Adblock Plus - Variant 2
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
 ! Version: 06.04.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
-! Description: Provides an usable version of uBO medium and hard mode. Supports Adguard and Adblock Plus syntax.
+! Description: Provides an usable version of uBO medium and hard mode. Supports Adguard Android, iOS, Mac, and Adblock Plus syntax.
 ! Use them at your own risk.
 ! Attribution: LennyFox
 ! ====================================================================================================================
@@ -15,4 +15,4 @@ http://$~third-party,script,domain=~com|~eu|~info|~net|~nl|~org|
 ! Block insecure (HTTP) third-party content except stylesheet, image and media
 http://*$third-party,~stylesheet,~image,~media
 ! Block third-party scripts and (i)frames except on the listed (top level) domains
-https://*$third-party,script,subdocument,domain=~com|~eu|~info|~net|~nl|~org|
+https://*$third-party,script,object,subdocument,websocket,domain=~com|~eu|~info|~net|~nl|~org|

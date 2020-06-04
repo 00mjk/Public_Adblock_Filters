@@ -1,4 +1,5 @@
-! Title: HTTP Insecure Resources - Aggressive (Standard version) for uBlock Origin
+[uBlock Origin]
+! Title: HTTP Insecure Resources - Aggressive for uBlock Origin
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
@@ -16,4 +17,4 @@ http://*$~3p,script,frame
 ! Allows only third-party passive content to load on HTTP websites. 
 http://*$3p,~stylesheet,~image
 ! Block third-party Javascript and frames on untrusted TLDs. More useable version of uBO medium mode for HTTPS.
-https://*$script,frame,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
+https://*$script,frame,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|

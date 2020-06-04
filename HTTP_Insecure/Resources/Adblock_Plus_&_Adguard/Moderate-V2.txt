@@ -3,7 +3,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
-! Version: 05.09.2020
+! Version: 06.04.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Moderate Variant 2. Intended for Adguard for Windows, Android, iOS, Mac, and Adblock Plus. Increases security when browsing HTTP and HTTPS websites.
@@ -17,4 +17,4 @@ http://*$~third-party,script,subdocument
 ! Allows only third-party passive content to load on HTTP websites. 
 http://*$third-party,~stylesheet,~image
 ! Blocks third-party dangerous content on HTTPS websites. This rule supports the syntax for Adguard for Android or Adguard for Desktop.
-https://*$third-party,object,script,subdocument,websocket,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
+https://*$third-party,object,script,subdocument,websocket,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|

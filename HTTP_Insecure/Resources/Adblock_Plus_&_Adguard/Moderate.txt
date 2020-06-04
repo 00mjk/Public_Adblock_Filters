@@ -1,9 +1,9 @@
 [AdBlockPlus 3.5]
-! Title: HTTP Insecure Resources - Moderate (Standard version) for Adguard and Adblock Plus
+! Title: HTTP Insecure Resources - Moderate for Adguard and Adblock Plus
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
-! Version: 05.09.2020
+! Version: 06.04.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Moderate Standard Version. Intended for Adguard and Adblock Plus. Increases security when browsing HTTP and HTTPS websites.
@@ -17,4 +17,4 @@ http://*$~third-party,script,subdocument
 ! Only allows third-party passive content to load from HTTP websites. 
 http://*$third-party,~stylesheet,~image
 ! Block third-party Javascript and frames on untrusted TLDs from HTTPS websites. More useable version of uBO medium mode for HTTPS.
-https://*$third-party,script,subdocument,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu
+https://*$third-party,script,subdocument,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
