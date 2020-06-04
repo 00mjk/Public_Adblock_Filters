@@ -12,6 +12,6 @@
 ! ====================================================================================================================
 ! Guidance: Some of these lists are an usable version of uBO hard mode and/or medium mode. See https://github.com/gorhill/uBlock/wiki/Blocking-mode
 ! Allows only passive content to load from untrusted TLDs for HTTP.
-http://*$~stylesheet,~image,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
+http://*$~stylesheet,~image,~media,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
 ! Allows only third-party passive content to load from untrusted TLDs for HTTPS. Based on Kees1958's uMatrix SOFT third-party block mode with whitelist to allow some TLD's.
-https://*$third-party,~stylesheet,~image,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
+https://*$third-party,~stylesheet,~image,~media,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|

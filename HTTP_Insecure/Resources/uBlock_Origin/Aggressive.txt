@@ -3,7 +3,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
-! Version: 05.09.2020
+! Version: 06.04.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Aggressive Standard version. Intended for uBlock Origin. Block all HTTP websites and increases security when visiting HTTPS websites.
@@ -11,10 +11,12 @@
 ! Attribution: Cybo1927, LennyFox, Yuki2178, rdsu-pt, Kees1958
 ! ====================================================================================================================
 ! Guidance: Some of these lists are an usable version of uBO hard mode and/or medium mode. See https://github.com/gorhill/uBlock/wiki/Blocking-mode
-! Blocks Javascript and frames on all HTTP websites forces first-party domains.  
+! Blocks Javascript on all HTTP websites forces first-party domains for HTTP websites.  
 ! It is best to uBlock Origin, Policy Control or uMatrix to filter out Javascript.
-http://*$~3p,script,frame
+http://*$~3p,script
 ! Allows only third-party passive content to load on HTTP websites. 
-http://*$3p,~stylesheet,~image
-! Block third-party Javascript and frames on untrusted TLDs. More useable version of uBO medium mode for HTTPS.
-https://*$script,frame,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
+http://*$3p,~stylesheet,~image,~media
+! Block Javascript on untrusted TLDs on first-party domains for HTTPS websites. 
+https://*$~3p,script,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
+! Block third-party Javascript and frames on untrusted TLDs on third-party domains for HTTPS websites. More useable version of uBO medium mode for HTTPS.
+https://*$3p,script,frame,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|

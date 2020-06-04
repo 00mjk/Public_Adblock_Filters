@@ -11,10 +11,10 @@
 ! Attribution: Cybo1927, LennyFox, Yuki2178, rdsu-pt, Kees1958
 ! ====================================================================================================================
 ! Guidance: Some of these lists are an usable version of uBO hard mode and/or medium mode. See https://github.com/gorhill/uBlock/wiki/Blocking-mode
-! Blocks Javascript and frames on all HTTP websites forces first-party domains.
+! Blocks Javascript on all HTTP websites forces first-party domains.
 ! This will cause conflicts with if using uBlock Origin, Policy Control or uMatrix with Adguard to filter out Javascript.
-http://*$~third-party,script,subdocument
+http://*$~third-party,script
 ! Allows only third-party passive content to load on HTTP websites. 
-http://*$third-party,~stylesheet,~image
+http://*$third-party,~stylesheet,~image,~media
 ! Blocks third-party dangerous content on HTTPS websites. This rule supports the syntax for Adguard for Android or Adguard for Desktop.
 https://*$third-party,object,script,subdocument,websocket,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|

@@ -13,8 +13,10 @@
 ! Guidance: Some of these lists are an usable version of uBO hard mode and/or medium mode. See https://github.com/gorhill/uBlock/wiki/Blocking-mode.
 ! Block all HTTP insecure websites.
 http://*$all
-!  Blocks Javascript from untrusted TLDs on HTTPS websites.
-https://*$script,frame,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
+! Block Javascript on untrusted TLDs on first-party domains for HTTPS websites. 
+https://*$~3p,script,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
+! Block third-party Javascript and frames on untrusted TLDs on third-party domains for HTTPS websites. More useable version of uBO medium mode for HTTPS.
+https://*$3p,script,frame,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
 ! Try To Make HTTP Links HTTPS (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests)
 ||*^$csp=upgrade-insecure-requests;
 ! Block 'Mixed Content' / Loading Of HTTP On HTTPS Sites (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content)

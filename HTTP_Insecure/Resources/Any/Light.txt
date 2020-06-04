@@ -12,5 +12,5 @@
 ! ====================================================================================================================
 ! Guidance: Some of these lists are an usable version of uBO hard mode and/or medium mode. See https://github.com/gorhill/uBlock/wiki/Blocking-mode
 ! Only allow third-party passive content from HTTP websites. 
-http://*$third-party,~stylesheet,~image
+http://*$third-party,~stylesheet,~image,~media
 
