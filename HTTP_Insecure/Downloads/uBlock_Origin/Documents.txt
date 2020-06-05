@@ -8,9 +8,10 @@
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Incomplete. Document File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
 ! Use them at your own risk.
-! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; HardConfigurator
+! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; HardConfigurator; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 ! Other Attribution: https://www.computerhope.com/issues/ch001789.htm, https://en.wikipedia.org/wiki/List_of_Microsoft_Office_filename_extensions
 ! ============================================================================
+! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
 ! Common document extensions: odp, key, csv, ods, odt, pdf, rtf, tex, wpd, pub, xps.
 /^http:\/\/.+(/.+){0,}/.+\.(?:(?:[pP][dD][fF])|(?:[rR][tT][fF])|(?:[cC][sS][vV])|(?:[tT][eE][xX])|(?:[wW][pP][dD])|(?:[pP][uU][bB])|(?:[xX][pP][sS])|(?:[kK][eE][yY]))([#?].*)?$/$all
 ! Microsoft Office Word extensions: docb, docm, dotm, dotx, dot, wbk, doc, docx
