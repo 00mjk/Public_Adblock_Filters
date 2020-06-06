@@ -2,13 +2,13 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
-! Version: 06.01.2020
+! Version: 06.06.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Incomplete. Executable File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
 ! Use them at your own risk.
-! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://askubuntu.com/questions/156392/what-is-the-equivalent-of-an-exe-file; 
-! Other Attribution: https://www.computerhope.com/issues/ch001789.htm; https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
-! ======================================================================================================================================================================================================================================
-! File extensions: exe, apk, app, appx, appxbundle, elf, bin, com, bat, gadget, msi
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][xX][eE])|(?:[aA][pP][kK])|(?:[aA][pP][pP][xX]?([bB][uU][nN][dD][lL][eE])?)|(?:[bB][iI][nN])|(?:[cC][oO][mM])|(?:[bB][aA][tT])|(?:[gG][aA][dD][gG][eE][tT])|(?:[mM][sS][iI]))([#?].*)?$/$empty
+! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://askubuntu.com/questions/156392/what-is-the-equivalent-of-an-exe-file; https://www.howtogeek.com/137270/50-file-extensions-that-are-potentially-dangerous-on-windows/
+! Other Attribution: https://www.computerhope.com/issues/ch001789.htm; https://www.howtogeek.com/137270/50-file-extensions-that-are-potentially-dangerous-on-windows/; https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+======================================================================================================================================================================================================================================
+! File extensions: exe, apk(s), app, appx, appxbundle, elf, bin, com, bat, gadget, msi, pif, msp, scr, hta, cpl, msc, jar
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][xX][eE])|(?:[pP][iI][fF])|(?:[aA][pP][kK][sS]?)|(?:[aA][pP][pP][xX]?([bB][uU][nN][dD][lL][eE])?)|(?:[bB][iI][nN])|(?:[cC][oO][mM])|(?:[bB][aA][tT])|(?:[gG][aA][dD][gG][eE][tT])|(?:[mM][sS]([iI]|[pP]|[cC]))|(?:[sS][cC][rR])|(?:[hH][tT][aA])|(?:[jJ][aA][rR]))([#?].*)?$/$empty

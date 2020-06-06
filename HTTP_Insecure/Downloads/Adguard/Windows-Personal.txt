@@ -2,14 +2,14 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
-! Version: 06.01.2020
+! Version: 06.06.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Incomplete. Windows File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
 ! Use them at your own risk.
-! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
-! Other Attribution: NoVirusThanks SysHardener, including (.dll,.exe. and .msi) and excluding (.js); https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression     
+! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol; https://www.howtogeek.com/137270/50-file-extensions-that-are-potentially-dangerous-on-windows/
+! Other Attribution: NoVirusThanks SysHardener, including (.dll,.exe., .vb, .wsc, .ws, .ps2, and .msi) and excluding (.js); https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression     
 ! ============================================================================
-! This list does not block Javascript (.js) files.
+! File extensions: vb, vbs, vbe, jse, ws, wsc, wsf, wsh, scr, pif, reg, jar, bat, ps1, ps2, exe, msi, dll
 /^http:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][xX][eE])(?:[mM][sS][iI]))([#?].*)?$/$empty
-/^https?:\/\/.+(/.+){0,}/.+\.(?:(?:[vV][bB]([sS]|[eE]))|(?:[jJ][sS][eE])|(?:[wW][sS]([fF]|[hH]))|(?:[sS][cC][rR])|(?:[pP][iI][fF])|(?:[rR][eE][gG])|(?:[jJ][aA][rR])|(?:[bB][aA][tT])|(?:[pP][sS][1])|(?:[pP][sS][2])|(?:[dD][lL][lL]))([#?].*)?$/$empty
+/^https?:\/\/.+(/.+){0,}/.+\.(?:(?:[vV][bB]([sS]|[eE]))|(?:[jJ][sS][eE])|(?:[wW][sS]([fF]|[hH]|[cC])?)|(?:[sS][cC][rR])|(?:[pP][iI][fF])|(?:[rR][eE][gG])|(?:[jJ][aA][rR])|(?:[bB][aA][tT])|(?:[pP][sS][1])|(?:[pP][sS][2])|(?:[dD][lL][lL]))([#?].*)?$/$empty
