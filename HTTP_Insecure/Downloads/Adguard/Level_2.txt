@@ -1,4 +1,4 @@
-! Title: HTTP Insecure Downloads -Level 2 for Adguard 
+! Title: HTTP Insecure Downloads - Level 2 for Adguard 
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
