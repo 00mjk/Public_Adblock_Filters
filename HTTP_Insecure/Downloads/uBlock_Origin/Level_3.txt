@@ -16,16 +16,16 @@
 ! Level 3:  Executables + System + Archives + Documents
 ! Level 4: Executables + System + Archives + Documents + Images + Audio + Video + Generic  
 ! File extensions: exe, apk(s), app, appx, appxbundle, elf, bin, com, bat, gadget, msi, pif, msp, scr, hta, cpl, msc, jar
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][xX][eE])|(?:[pP][iI][fF])|(?:[aA][pP][kK][sS]?)|(?:[aA][pP][pP][xX]?([bB][uU][nN][dD][lL][eE])?)|(?:[bB][iI][nN])|(?:[cC][oO][mM])|(?:[bB][aA][tT])|(?:[gG][aA][dD][gG][eE][tT])|(?:[mM][sS]([iI]|[pP]|[cC]))|(?:[sS][cC][rR])|(?:[hH][tT][aA])|(?:[jJ][aA][rR]))([#?].*)?$/$empty
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][xX][eE])|(?:[pP][iI][fF])|(?:[aA][pP][kK][sS]?)|(?:[aA][pP][pP][xX]?([bB][uU][nN][dD][lL][eE])?)|(?:[bB][iI][nN])|(?:[cC][oO][mM])|(?:[bB][aA][tT])|(?:[gG][aA][dD][gG][eE][tT])|(?:[mM][sS]([iI]|[pP]|[cC]))|(?:[sS][cC][rR])|(?:[hH][tT][aA])|(?:[jJ][aA][rR]))([#?].*)?$/$all
 ! Common Microsoft Windows scripts: bat, cmd, vb, vbs, vbe, jse, ws, wsf, wsc, wsh, ps1, ps1xml, ps2, ps2xml, psc1, psc2, msh, msh1, msh2, mshxml, msh1xml, msh2xml
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[vV][bB]([sS]|[eE])?)|(?:[jJ][sS][eE])|(?:[wW][sS]([fF]|[hH]|[cC])?)|(?:[bB][aA][tT])|(?:[pP][sS][1]([xX][mM][lL])?)|(?:[pP][sS][2]([xX][mM][lL])?)|(?:[mM][sS][hH]([1]|[2])?([xX][mM][lL])?)|(?:[pP][sS][cC]([1]|[2])))([#?].*)?$/$empty
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[vV][bB]([sS]|[eE])?)|(?:[jJ][sS][eE])|(?:[wW][sS]([fF]|[hH]|[cC])?)|(?:[bB][aA][tT])|(?:[pP][sS][1]([xX][mM][lL])?)|(?:[pP][sS][2]([xX][mM][lL])?)|(?:[mM][sS][hH]([1]|[2])?([xX][mM][lL])?)|(?:[pP][sS][cC]([1]|[2])))([#?].*)?$/$all
 ! Archive common file extensions. File extensions: 7z, arj, deb, pkg, rar, rpm, tar.gz, gz, tar, z, zip.
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[7][Zz])|(?:[aA][rR][jJ])|(?:[dD][eE][bB])|(?:[pP][kK][gG])|(?:[gG][zZ])|(?:[rR][aA][rR])|(?:[tT][aA][rR]([.][gG][zZ])?)|(?:[zZ]([iI][pP])?))([#?].*)?$/$empty! Common document extensions: odp, key, csv, ods, odt, pdf, rtf, tex, wpd, pub, xps.
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[pP][dD][fF])|(?:[rR][tT][fF])|(?:[cC][sS][vV])|(?:[tT][eE][xX])|(?:[wW][pP][dD])|(?:[pP][uU][bB])|(?:[xX][pP][sS])|(?:[kK][eE][yY]))([#?].*)?$/$empty
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[7][Zz])|(?:[aA][rR][jJ])|(?:[dD][eE][bB])|(?:[pP][kK][gG])|(?:[gG][zZ])|(?:[rR][aA][rR])|(?:[tT][aA][rR]([.][gG][zZ])?)|(?:[zZ]([iI][pP])?))([#?].*)?$/$all! Common document extensions: odp, key, csv, ods, odt, pdf, rtf, tex, wpd, pub, xps.
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[pP][dD][fF])|(?:[rR][tT][fF])|(?:[cC][sS][vV])|(?:[tT][eE][xX])|(?:[wW][pP][dD])|(?:[pP][uU][bB])|(?:[xX][pP][sS])|(?:[kK][eE][yY]))([#?].*)?$/$all
 ! Microsoft Office Word extensions: docb, docm, dotm, dotx, dot, wbk, doc, docx
 ! Microsoft Office Excel extensions: xls, xlsx, xlt, xlm, xlsm, xltx, xltm, xlsb, xla, xlam, xll, xlw
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[dD][oO][cC]([bB]|[mM]|[xX])?)|(?:[dD][oO][tT]([mM]|[xX]?))|(?:[wW][bB][kK])|(?:[xX][lL][sS]([xX]|[mM]|[bB]?))(?:[xX][lL][tT]([xX]|[mM]?))|(?:[xX][lL]([lL]|[wW]|[aA][mM]?)))([#?].*)?$/$empty
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[dD][oO][cC]([bB]|[mM]|[xX])?)|(?:[dD][oO][tT]([mM]|[xX]?))|(?:[wW][bB][kK])|(?:[xX][lL][sS]([xX]|[mM]|[bB]?))(?:[xX][lL][tT]([xX]|[mM]?))|(?:[xX][lL]([lL]|[wW]|[aA][mM]?)))([#?].*)?$/$all
 ! Microsoft Office Powerpoint extensions: ppt, pptx, pot, pptm, potm, potx, ppam, ppsx, ppsm, sldx, sldm
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[pP]([oO]|[pP])[tT]([xX]|[mM])?)|(?:[pP][pP]([aA]|[sS])[mM])|(?:[pP][pP][sS]([xX]|[mM]))|(?:[oO][dD]([pP]|[sS]|[tT]))|(?:[sS][lL][dD]([xX]|[mM])))([#?].*)?$/$empty
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[pP]([oO]|[pP])[tT]([xX]|[mM])?)|(?:[pP][pP]([aA]|[sS])[mM])|(?:[pP][pP][sS]([xX]|[mM]))|(?:[oO][dD]([pP]|[sS]|[tT]))|(?:[sS][lL][dD]([xX]|[mM])))([#?].*)?$/$all
 ! Microsoft Office Access extensions: mdb, adn, accdr, accdt, accda, mdw, accde, mam, maq, mar, mat, maf, laccdb, ade, adp, cdb, mda, mdn, mdt, mdf, mde, ldb.
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[aA][cC][cC][dD]([aA]|[tT]|[eE]|[rR]))|(?:[lL][aA][cC][cC][dD][bB])|(?:[aA][dD]([eE]|[pP]))|(?:([cC]|[lL])[dD][bB])|(?:[mM][aA]([mM]|[qQ]|[rR]|[tT]|[fF]))|(?:[mM][dD]([bB]|[tT]|[wW]|[fF]|[nN]|[aA])))([#?].*)?$/$empty
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[aA][cC][cC][dD]([aA]|[tT]|[eE]|[rR]))|(?:[lL][aA][cC][cC][dD][bB])|(?:[aA][dD]([eE]|[pP]))|(?:([cC]|[lL])[dD][bB])|(?:[mM][aA]([mM]|[qQ]|[rR]|[tT]|[fF]))|(?:[mM][dD]([bB]|[tT]|[wW]|[fF]|[nN]|[aA])))([#?].*)?$/$all
