@@ -1,0 +1,38 @@
+! Title: HTTP Insecure Downloads - Level 4 for Adguard 
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 8 hours
+! Version: 06.08.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Incomplete. Level 4. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
+! Use them at your own risk.
+! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; HardConfigurator; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+! Other Attribution: https://www.computerhope.com/issues/ch001789.htm, https://en.wikipedia.org/wiki/List_of_Microsoft_Office_filename_extensions
+! ============================================================================
+! Level 1: Executables + System
+! Level 2: Executables + System + Archives
+! Level 3:  Executables + System + Archives + Documents
+! Level 4: Executables + System + Archives + Documents + Images + Audio + Video + Generic 
+! File extensions: exe, apk(s), app, appx, appxbundle, elf, bin, com, bat, gadget, msi, pif, msp, scr, hta, cpl, msc, jar
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][xX][eE])|(?:[pP][iI][fF])|(?:[aA][pP][kK][sS]?)|(?:[aA][pP][pP][xX]?([bB][uU][nN][dD][lL][eE])?)|(?:[bB][iI][nN])|(?:[cC][oO][mM])|(?:[bB][aA][tT])|(?:[gG][aA][dD][gG][eE][tT])|(?:[mM][sS]([iI]|[pP]|[cC]))|(?:[sS][cC][rR])|(?:[hH][tT][aA])|(?:[jJ][aA][rR]))([#?].*)?$/$empty
+! Common Microsoft Windows scripts: bat, cmd, vb, vbs, vbe, jse, ws, wsf, wsc, wsh, ps1, ps1xml, ps2, ps2xml, psc1, psc2, msh, msh1, msh2, mshxml, msh1xml, msh2xml
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[vV][bB]([sS]|[eE])?)|(?:[jJ][sS][eE])|(?:[wW][sS]([fF]|[hH]|[cC])?)|(?:[bB][aA][tT])|(?:[pP][sS][1]([xX][mM][lL])?)|(?:[pP][sS][2]([xX][mM][lL])?)|(?:[mM][sS][hH]([1]|[2])?([xX][mM][lL])?)|(?:[pP][sS][cC]([1]|[2])))([#?].*)?$/$empty
+! Archive common file extensions. File extensions: 7z, arj, deb, pkg, rar, rpm, tar.gz, gz, tar, z, zip.
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[7][Zz])|(?:[aA][rR][jJ])|(?:[dD][eE][bB])|(?:[pP][kK][gG])|(?:[gG][zZ])|(?:[rR][aA][rR])|(?:[tT][aA][rR]([.][gG][zZ])?)|(?:[zZ]([iI][pP])?))([#?].*)?$/$empty! Common document extensions: odp, key, csv, ods, odt, pdf, rtf, tex, wpd, pub, xps.
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[pP][dD][fF])|(?:[rR][tT][fF])|(?:[cC][sS][vV])|(?:[tT][eE][xX])|(?:[wW][pP][dD])|(?:[pP][uU][bB])|(?:[xX][pP][sS])|(?:[kK][eE][yY]))([#?].*)?$/$empty
+! Microsoft Office Word extensions: docb, docm, dotm, dotx, dot, wbk, doc, docx
+! Microsoft Office Excel extensions: xls, xlsx, xlt, xlm, xlsm, xltx, xltm, xlsb, xla, xlam, xll, xlw
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[dD][oO][cC]([bB]|[mM]|[xX])?)|(?:[dD][oO][tT]([mM]|[xX]?))|(?:[wW][bB][kK])|(?:[xX][lL][sS]([xX]|[mM]|[bB]?))(?:[xX][lL][tT]([xX]|[mM]?))|(?:[xX][lL]([lL]|[wW]|[aA][mM]?)))([#?].*)?$/$empty
+! Microsoft Office Powerpoint extensions: ppt, pptx, pot, pptm, potm, potx, ppam, ppsx, ppsm, sldx, sldm
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[pP]([oO]|[pP])[tT]([xX]|[mM])?)|(?:[pP][pP]([aA]|[sS])[mM])|(?:[pP][pP][sS]([xX]|[mM]))|(?:[oO][dD]([pP]|[sS]|[tT]))|(?:[sS][lL][dD]([xX]|[mM])))([#?].*)?$/$empty
+! Microsoft Office Access extensions: mdb, adn, accdr, accdt, accda, mdw, accde, mam, maq, mar, mat, maf, laccdb, ade, adp, cdb, mda, mdn, mdt, mdf, mde, ldb.
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[aA][cC][cC][dD]([aA]|[tT]|[eE]|[rR]))|(?:[lL][aA][cC][cC][dD][bB])|(?:[aA][dD]([eE]|[pP]))|(?:([cC]|[lL])[dD][bB])|(?:[mM][aA]([mM]|[qQ]|[rR]|[tT]|[fF]))|(?:[mM][dD]([bB]|[tT]|[wW]|[fF]|[nN]|[aA])))([#?].*)?$/$empty
+! File extensions: bmp, gif, jpeg, jpg,  png, psd, svg, tif, tiff, ico.
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[bB][mM][pP])|(?:[gG][iI][fF])|(?:[jJ][pP][eE]?[gG])|(?:[pP][nN][gG])|(?:[pP][sS][dD])|(?:[sS][vV][gG])|(?:[tT][iI][fF][fF]?)|(?:[iI][cC][oO]))([#?].*)?$/$empty
+! File extensions: aif, cda, mid, midi, mp3, mpa, ogg, wav, wma, wpl
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[aA][iI][fF])|(?:[cC][dD][aA])|(?:[mM][iI][dD][iI]?)|(?:[mM][pP][3])|(?:[mM][pP][aA])|(?:[oO][gG][gG])|(?:[wW][aA][vV])|(?:[vV][mM][aA])|(?:[wW][pP][lL]))([#?].*)?$/$empty
+! File extensions: 3p2, 3gp, avi, flv, m4v, mkv, mov, mp4, mpg, mpeg, rm, swf, vob, wmv.
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[3][pP][2])|(?:[3][gG][pP])|(?:[aA][vV][iI])|(?:[fF][lL][vV])|(?:[mM][4][vV])|(?:[mM][kK][vV])|(?:[mM][oO][vV])|(?:[mM][pP][4])|(?:[mM][pP][eE]?[gG])|(?:[rR][mM])|(?:[sS][wW][fF])|(?:[vV][oO][bB])|(?:[vV][mM][vV]))([#?].*)?$/$empty
+! File extensions: cnf, conf, cfg, log, asc, txt, bak, bin, dat, dsk, raw
+/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[cC][nN][fF])|(?:[cC][oO][nN][fF])(?:[cC][fF][gG])|(?:[lL][oO][gG])|(?:[aA][sS][cC])|(?:[tT][xX][tT])|(?:[bB][iI][nN])|(?:[dD][aA][tT])|(?:[dD][sS][kK])|(?:[rR][aA][wW]))([#?].*)?$/$empty

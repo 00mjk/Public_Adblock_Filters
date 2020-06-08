@@ -2,7 +2,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Expires: 8 hours
-! Version: 06.01.2020
+! Version: 06.08.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
 ! Description: Incomplete. Android File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard. Personal Version.
@@ -10,5 +10,6 @@
 ! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://download.geo.drweb.com/pub/drweb/android/light/HTML/en/
 ! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 ! ============================================================================
+! File extensions: elf, jar, odex, dex, so, apks
 /^https?:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][lL][fF])|(?:[jJ][aA][rR])|(?:[oO]?[dD][eE][xX])|(?:[sS][oO]))([#?].*)?$/$empty
 /^http:\/\/.+(/.+){0,}/.+\.(?:(?:[aA][pP][kK][sS]?))([#?].*)?$/$empty
