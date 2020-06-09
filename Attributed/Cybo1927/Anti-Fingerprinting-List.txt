@@ -1,13 +1,13 @@
 ! Title: Anti-Fingerprinting List
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/adblock-lists
-! Expires: 15 days
-! Version: 05.05.2020
+! Expires: 8 hours
+! Version: 06.09.2020
 ! Source:
 ! Issues: https://github.com/InnoScorpio/adblock-lists
-! Description: Non-advised, experimental. Avoid using since it is problematic. List of rules to mitigate browser fingerprinting to some extext.
+! Description: Inadvisable, Experimental. Avoid using since it is problematic. List of rules to mitigate browser fingerprinting to some extext.
 ! Use them at your own risk.
-! Attribution: Cybo1927
+! Attribution: Cybo1927 (https://github.com/Cybo1927/Hosts/blob/master/Experimental%20Hosts)
 ! =======================================================================================================================================
 ! Prevent browser fingerprinting some JavaScript APIs.
 ! Navigator API
@@ -34,13 +34,13 @@
 
 ! pandora.com##+js(addEventListener-defuser.js, /pagehide|pageshow|hashchange/)
 
-! !#if env_firefox
+!#if env_firefox
 ! Inline scripts used for device fingerprinting - Cybo1927
-! *##^script:has-text(ua-parser)
-! *##^script:has-text(headerUA)
-! *##^script:has-text(pluginDetect)
-! *##^script:has-text(fontDetect)
-! *##^script:has-text(platform.js)
-! *##^script:has-text(eval)
-! *##^script:has-text(navigator.sendBeacon)
-! !#endif
+*##^script:has-text(ua-parser)
+*##^script:has-text(headerUA)
+*##^script:has-text(pluginDetect)
+*##^script:has-text(fontDetect)
+*##^script:has-text(platform.js)
+*##^script:has-text(eval)
+*##^script:has-text(navigator.sendBeacon)
+!#endif

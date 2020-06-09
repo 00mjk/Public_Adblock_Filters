@@ -2,12 +2,12 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/adblock-lists
 ! Expires: 8 hours
-! Version: 05.14.2020-Rev1
+! Version: 06.09.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/adblock-lists
 ! Description: Block third-party elements for HTTP websites.
 ! Use them at your own risk.
-! Attribution: Cybo1927
+! Attribution: Cybo1927 (https://github.com/Cybo1927/Hosts/blob/master/Anti/Anti%20Third-Party%20HTTP)
 ! ====================================================================================================================
 ! Blocks third-party content from HTTP websites.
 http://*^$third-party,all
