@@ -1,10 +1,10 @@
 ! Title: HTTP Insecure Downloads - Executables for Adguard 
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
-! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Homepage: https://github.com/InnoScorpio/adblock-lists
 ! Expires: 8 hours
 ! Version: 06.06.2020
 ! Source: 
-! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Issues: https://github.com/InnoScorpio/adblock-lists
 ! Description: Incomplete. Executable File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
 ! Use them at your own risk.
 ! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://askubuntu.com/questions/156392/what-is-the-equivalent-of-an-exe-file; https://www.howtogeek.com/137270/50-file-extensions-that-are-potentially-dangerous-on-windows/

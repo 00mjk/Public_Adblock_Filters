@@ -1,10 +1,10 @@
 ! Title: Behind-the-Scene Mitigation for uBlock Origin
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
-! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Homepage: https://github.com/InnoScorpio/adblock-lists
 ! Expires: 15 days
 ! Version: 05.04.2020
 ! Source:
-! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Issues: https://github.com/InnoScorpio/adblock-lists
 ! Description: Behind-the-scene network requests are network requests which uBlock or uMatrix cannot associate with a specific tab in your browser. These can be abused by extensions in your web browser or made by web pages using navigator.sendBeacon(), hyperlink auditing, etc. 
 ! Use them at your own risk.
 ! =======================================================================================================================================

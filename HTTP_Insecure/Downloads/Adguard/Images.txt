@@ -1,10 +1,10 @@
 ! Title: HTTP Insecure Downloads - Images for Adguard
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
-! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Homepage: https://github.com/InnoScorpio/adblock-lists
 ! Expires: 8 hours
 ! Version: 06.01.2020
 ! Source: 
-! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Issues: https://github.com/InnoScorpio/adblock-lists
 ! Description: Incomplete. Image file extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
 ! Use them at your own risk.
 ! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://www.computerhope.com/issues/ch001789.htm

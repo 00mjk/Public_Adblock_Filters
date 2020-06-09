@@ -1,11 +1,11 @@
 ﻿[uBlock Origin]
 ! Title: HTTP Insecure Downloads - Executables for uBlock Origin 
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
-! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Homepage: https://github.com/InnoScorpio/adblock-lists
 ! Expires: 8 hours
 ! Version: 06.08.2020
 ! Source: 
-! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Issues: https://github.com/InnoScorpio/adblock-lists
 ! Description: Incomplete. Executable File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
 ! Use them at your own risk.
 ! Attribution: RegexBuddy and RegexMagic; https://askubuntu.com/questions/156392/what-is-the-equivalent-of-an-exe-file; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media 

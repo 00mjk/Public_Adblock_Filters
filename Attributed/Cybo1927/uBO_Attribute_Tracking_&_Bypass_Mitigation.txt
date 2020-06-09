@@ -1,10 +1,10 @@
 ! Title: uBlock Origin Attribute Tracking and Bypass Mitigation List
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
-! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Homepage: https://github.com/InnoScorpio/adblock-lists
 ! Expires: 10 days
 ! Version: 05.14.2020-Rev1
 ! Source:
-! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Issues: https://github.com/InnoScorpio/adblock-lists
 ! Description: Includes a list of rules to prevent ad and tracking servers from compromising your privacy or bypassing uBlock Origin or Nano Adblocker.
 ! Use them at your own risk.
 ! Attribution: Cybo1927
@@ -22,7 +22,7 @@
 *##+js(ra, data-google-query-id, a[data-google-query-id])
 *##+js(ra, data-obtrack, a[data-obtrack])
 *##+js(ra, data-oburl, a[data-oburl])
-! Based on InnoScorpio's "iOS_AND_WIN_Bypass_Mitigation" (https://github.com/InnoScorpio/Public_Adblock_Filters/blob/cc2163038a319a2a181091bf0c1bc448dee6bafa/Enforcement/Adguard/iOS_AND_WIN_Bypass_Mitigation.txt)
+! Based on InnoScorpio's "iOS_AND_WIN_Bypass_Mitigation" (https://github.com/InnoScorpio/adblock-lists/blob/cc2163038a319a2a181091bf0c1bc448dee6bafa/Enforcement/Adguard/iOS_AND_WIN_Bypass_Mitigation.txt)
 ! These two rules replicate the same privacy settings for blocking prefetching from uBlock Origin or Nano Defender for Adguard for Desktop and Adguard for Android. 
 *##+js(ra, rel, link[rel*="next"])
 *##+js(ra, rel, link[rel*="prefetch"])

@@ -1,10 +1,10 @@
 ! Title: HTTP Insecure Upgrade - HTTPS Only for uBlock Origin and Adguard
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
-! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Homepage: https://github.com/InnoScorpio/adblock-lists
 ! Expires: 8 hours
 ! Version: 05.17.2020-Rev1
 ! Source: 
-! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Issues: https://github.com/InnoScorpio/adblock-lists
 ! Description: Intended for uBlock Origin and Adguard. Enforces HTTPS Only Browsing. This is useful for online banking and sensitive tasks.
 ! Use them at your own risk.
 ! Attribution: beerisgood, Cybo1927

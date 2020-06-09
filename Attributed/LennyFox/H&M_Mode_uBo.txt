@@ -1,11 +1,11 @@
 [uBlock Origin]
 ! Title: LennyFox's Medium and Hard Mode for uBlock Origin 
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
-! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Homepage: https://github.com/InnoScorpio/adblock-lists
 ! Expires: 8 hours
 ! Version: 06.04.2020
 ! Source: 
-! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Issues: https://github.com/InnoScorpio/adblock-lists
 ! Description: Provides an usable version of uBO medium and hard mode. Supports uBlock Origin syntax.
 ! Use them at your own risk.
 ! Attribution: LennyFox
