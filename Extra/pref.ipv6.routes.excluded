@@ -1,5 +1,5 @@
 List of IP addresses ranges that should be excluded from filtering in Adguard for Android. Blocking these IP address ranges can causes problems from accessing services (MMS, Voicemail, Wifi Calling, FM Radio, LAN, internet connection, etc.) on your device.
-Copy and paste these into Adguard for Android -> Settings -> Advanced Settings -> Low Level Settings - select pref.ipv6.routes.excluded
+Copy and paste these into Adguard for Android -> Settings -> Advanced Settings -> Low Level Settings - select pref.ipv6.routes.excluded.  (#) -- Specifies issues in https://github.com/AdguardTeam/AdguardForAndroid/issues unless noted.
 // Reserved subnets
 ::/128
 ::ffff:0:0/96 
