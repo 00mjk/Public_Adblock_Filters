@@ -1,4 +1,4 @@
-# Public_Adblock_Filters
-Blocklists I created that can be shared and distributed worldwide.
+# adblock-lists
+Adblock filters I created that can be shared and distributed worldwide.
 
 
