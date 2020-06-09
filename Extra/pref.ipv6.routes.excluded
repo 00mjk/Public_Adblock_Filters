@@ -1,0 +1,20 @@
+List of IP addresses ranges that should be excluded from filtering in Adguard for Android. Blocking these IP address ranges can causes problems from accessing services (MMS, Voicemail, Wifi Calling, FM Radio, LAN, internet connection, etc.) on your device.
+Copy and paste these into Adguard for Android -> Settings -> Advanced Settings -> Low Level Settings - select pref.ipv6.routes.excluded
+// Reserved subnets
+::/128
+::ffff:0:0/96 
+::ffff:0:0:0/96 
+64:ff9b::/96
+100::/64
+2001::/32
+2001:20::/28 
+fc00::/7
+fe80::/10
+ff00::/8
+
+// German O2 (Telefonica) Wifi Calling (#2334)
+2a02:3000::/23
+
+// T-Mobile/MetroPCS Interfaces
+2607:fb90::/32
+2607:fc20::/32
