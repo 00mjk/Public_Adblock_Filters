@@ -1,0 +1,39 @@
+! Title: Private IP List for uMatrix
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/adblock-lists
+! Expires: 8 hours
+! Version: 06.09.2020
+! Source:
+! Issues: https://github.com/InnoScorpio/adblock-lists
+! Description: Inadvisable. List of private IP addresses that should not be accessible by websites and browser addons for privacy. 
+! Use them at your own risk. This list can cause unintended consequences.
+! Attribution: Gwarser (https://github.com/gwarser/filter-lists/blob/master/lan-block.txt), https://en.wikipedia.org/wiki/Private_network, https://www.iana.org/abuse
+! Other Attribution: https://github.com/ghacksuserjs/ghacks-user.js/wiki/4.2.3-uMatrix
+! Known Issues: Using these rules can create conflict with CSS Exfil Protection in Firefox. 
+! =======================================================================================================================================
+! Due to uMatrix limitations, only specific IPv6 addresses can be blocked.
+! Import these on the My Rules tab of Temporary rules section using the Import from file... button of uMatrix in order for them to work properly. 
+! ===============================================================
+! === Source-Only Addresses ==== 
+! 0.* and [::] IP address ranges have no destination requests. Most likely to be used by browser extensions or the web browser. 
+* 0 * block
+* [::] * block
+! === Stateless Address AutoConfiguration or Link-Local Addresses ==== 
+! 169.254.* and fe80::/10 IP ranges is intended when your device is not set to static address or DHCP server. 
+* 169.254 * block
+! === Private IPv4 Address Range ======
+! These ranges are used for IP addresses associated for a private network. 
+* 10 * block
+* 172.16 * block
+* 172.17 * block
+* 172.18 * block
+* 172.19 * block
+* 172.2* * block
+* 172.30 * block
+* 172.31 * block
+* 192.168 * block
+! === Localhost Ranges =======
+! Websites like leoaffairs.com use localhost to bypass your adblocker. So, this is needed to block loopholes in regards to adblocking.
+* [::1] * block
+* 127 * block
+* localhost * block
