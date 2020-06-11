@@ -11,4 +11,4 @@
 ! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 ! ============================================================================
 ! File extensions: cnf, conf, cfg, log, asc, txt, bak, bin, dat, dsk, raw
-/^http:\/\/.+(/.+)?/.+\.(?:(?:[cC][nN][fF])|(?:[cC][oO][nN][fF])(?:[cC][fF][gG])|(?:[lL][oO][gG])|(?:[aA][sS][cC])|(?:[tT][xX][tT])|(?:[bB][iI][nN])|(?:[dD][aA][tT])|(?:[dD][sS][kK])|(?:[rR][aA][wW]))([#?].*)?$/$empty
+/^http:\/\/.+(\/.+)?\/.+\.(?:(?:[cC][nN][fF])|(?:[cC][oO][nN][fF])(?:[cC][fF][gG])|(?:[lL][oO][gG])|(?:[aA][sS][cC])|(?:[tT][xX][tT])|(?:[bB][iI][nN])|(?:[dD][aA][tT])|(?:[dD][sS][kK])|(?:[rR][aA][wW]))([#?].*)?$/$empty

@@ -11,4 +11,4 @@
 ! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 ! ====================================================================================================================
 ! File extensions: bmp, gif, jpeg, jpg,  png, psd, svg, tif, tiff, ico.
-/^http:\/\/.+(/.+)?/.+\.(?:(?:[bB][mM][pP])|(?:[gG][iI][fF])|(?:[jJ][pP][eE]?[gG])|(?:[pP][nN][gG])|(?:[pP][sS][dD])|(?:[sS][vV][gG])|(?:[tT][iI][fF][fF]?)|(?:[iI][cC][oO]))([#?].*)?$/$empty
+/^http:\/\/.+(\/.+)?\/.+\.(?:(?:[bB][mM][pP])|(?:[gG][iI][fF])|(?:[jJ][pP][eE]?[gG])|(?:[pP][nN][gG])|(?:[pP][sS][dD])|(?:[sS][vV][gG])|(?:[tT][iI][fF][fF]?)|(?:[iI][cC][oO]))([#?].*)?$/$empty

@@ -13,4 +13,4 @@
 ! ====================================================================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
 ! File extensions: aif, cda, mid, midi, mp3, mpa, ogg, wav, wma, wpl
-/^http:\/\/.+(/.+)?/.+\.(?:(?:[aA][iI][fF])|(?:[cC][dD][aA])|(?:[mM][iI][dD][iI]?)|(?:[mM][pP][3])|(?:[mM][pP][aA])|(?:[oO][gG][gG])|(?:[wW][aA][vV])|(?:[vV][mM][aA])|(?:[wW][pP][lL]))([#?].*)?$/$all
+/^http:\/\/.+(\/.+)?\/.+\.(?:(?:[aA][iI][fF])|(?:[cC][dD][aA])|(?:[mM][iI][dD][iI]?)|(?:[mM][pP][3])|(?:[mM][pP][aA])|(?:[oO][gG][gG])|(?:[wW][aA][vV])|(?:[vV][mM][aA])|(?:[wW][pP][lL]))([#?].*)?$/$all

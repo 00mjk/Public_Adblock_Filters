@@ -13,4 +13,4 @@
 ! ====================================================================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
 ! File extensions: bmp, gif, jpeg, jpg,  png, psd, svg, tif, tiff, ico.
-/^http:\/\/.+(/.+)?/.+\.(?:(?:[bB][mM][pP])|(?:[gG][iI][fF])|(?:[jJ][pP][eE]?[gG])|(?:[pP][nN][gG])|(?:[pP][sS][dD])|(?:[sS][vV][gG])|(?:[tT][iI][fF][fF]?)|(?:[iI][cC][oO]))([#?].*)?$/$all
+/^http:\/\/.+(\/.+)?\/.+\.(?:(?:[bB][mM][pP])|(?:[gG][iI][fF])|(?:[jJ][pP][eE]?[gG])|(?:[pP][nN][gG])|(?:[pP][sS][dD])|(?:[sS][vV][gG])|(?:[tT][iI][fF][fF]?)|(?:[iI][cC][oO]))([#?].*)?$/$all

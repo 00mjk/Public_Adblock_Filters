@@ -13,4 +13,4 @@
 ! ============================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
 ! File extensions: exe, apk, apks, app, appx, appxbundle, elf, bin, com, bat, gadget, msi, pif, msp, scr, hta, cpl, msc, jar
-/^http:\/\/.+(/.+)?/.+\.(?:(?:[eE][xX][eE])|(?:[pP][iI][fF])|(?:[aA][pP][kK][sS]?)|(?:[aA][pP][pP][xX]?([bB][uU][nN][dD][lL][eE])?)|(?:[bB][iI][nN])|(?:[cC][oO][mM])|(?:[bB][aA][tT])|(?:[gG][aA][dD][gG][eE][tT])|(?:[mM][sS]([iI]|[pP]|[cC]))|(?:[sS][cC][rR])|(?:[hH][tT][aA])|(?:[jJ][aA][rR]))([#?].*)?$/$all
+/^http:\/\/.+(\/.+)?\/.+\.(?:(?:[eE][xX][eE])|(?:[pP][iI][fF])|(?:[aA][pP][kK][sS]?)|(?:[aA][pP][pP][xX]?([bB][uU][nN][dD][lL][eE])?)|(?:[bB][iI][nN])|(?:[cC][oO][mM])|(?:[bB][aA][tT])|(?:[gG][aA][dD][gG][eE][tT])|(?:[mM][sS]([iI]|[pP]|[cC]))|(?:[sS][cC][rR])|(?:[hH][tT][aA])|(?:[jJ][aA][rR]))([#?].*)?$/$all

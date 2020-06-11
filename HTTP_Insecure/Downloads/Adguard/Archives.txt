@@ -11,4 +11,4 @@
 ! Other Attribution: https://www.computerhope.com/issues/ch001789.htm, https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression
 ! ============================================================================
 ! Archive common file extensions. File extensions: 7z, arj, deb, pkg, rar, rpm, tar.gz, gz, tar, z, zip.
-/^http:\/\/.+(/.+)?/.+\.(?:(?:[7][Zz])|(?:[aA][rR][jJ])|(?:[dD][eE][bB])|(?:[pP][kK][gG])|(?:[gG][zZ])|(?:[rR][aA][rR])|(?:[tT][aA][rR]([.][gG][zZ])?)|(?:[zZ]([iI][pP])?))([#?].*)?$/$empty
+/^http:\/\/.+(\/.+)?\/.+\.(?:(?:[7][Zz])|(?:[aA][rR][jJ])|(?:[dD][eE][bB])|(?:[pP][kK][gG])|(?:[gG][zZ])|(?:[rR][aA][rR])|(?:[tT][aA][rR]([.][gG][zZ])?)|(?:[zZ]([iI][pP])?))([#?].*)?$/$empty
