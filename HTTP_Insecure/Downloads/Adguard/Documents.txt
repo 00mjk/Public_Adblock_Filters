@@ -2,7 +2,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/adblock-lists
 ! Expires: 8 hours
-! Version: 06.05.2020
+! Version: 06.11.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/adblock-lists
 ! Description: Incomplete. Document File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
@@ -11,11 +11,11 @@
 ! Other Attribution: https://www.computerhope.com/issues/ch001789.htm, https://en.wikipedia.org/wiki/List_of_Microsoft_Office_filename_extensions
 ! ============================================================================
 ! Common document extensions: odp, key, csv, ods, odt, pdf, rtf, tex, wpd, pub, xps.
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[pP][dD][fF])|(?:[rR][tT][fF])|(?:[cC][sS][vV])|(?:[tT][eE][xX])|(?:[wW][pP][dD])|(?:[pP][uU][bB])|(?:[xX][pP][sS])|(?:[kK][eE][yY]))([#?].*)?$/$empty
+/^http:\/\/.+(/.+)?/.+\.(?:(?:[pP][dD][fF])|(?:[rR][tT][fF])|(?:[cC][sS][vV])|(?:[tT][eE][xX])|(?:[wW][pP][dD])|(?:[pP][uU][bB])|(?:[xX][pP][sS])|(?:[kK][eE][yY]))([#?].*)?$/$empty
 ! Microsoft Office Word extensions: docb, docm, dotm, dotx, dot, wbk, doc, docx
 ! Microsoft Office Excel extensions: xls, xlsx, xlt, xlm, xlsm, xltx, xltm, xlsb, xla, xlam, xll, xlw
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[dD][oO][cC]([bB]|[mM]|[xX])?)|(?:[dD][oO][tT]([mM]|[xX]?))|(?:[wW][bB][kK])|(?:[xX][lL][sS]([xX]|[mM]|[bB]?))(?:[xX][lL][tT]([xX]|[mM]?))|(?:[xX][lL]([lL]|[wW]|[aA][mM]?)))([#?].*)?$/$empty
+/^http:\/\/.+(/.+)?/.+\.(?:(?:[dD][oO][cC]([bB]|[mM]|[xX])?)|(?:[dD][oO][tT]([mM]|[xX]?))|(?:[wW][bB][kK])|(?:[xX][lL][sS]([xX]|[mM]|[bB]?))(?:[xX][lL][tT]([xX]|[mM]?))|(?:[xX][lL]([lL]|[wW]|[aA][mM]?)))([#?].*)?$/$empty
 ! Microsoft Office Powerpoint extensions: ppt, pptx, pot, pptm, potm, potx, ppam, ppsx, ppsm, sldx, sldm
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[pP]([oO]|[pP])[tT]([xX]|[mM])?)|(?:[pP][pP]([aA]|[sS])[mM])|(?:[pP][pP][sS]([xX]|[mM]))|(?:[oO][dD]([pP]|[sS]|[tT]))|(?:[sS][lL][dD]([xX]|[mM])))([#?].*)?$/$empty
+/^http:\/\/.+(/.+)?/.+\.(?:(?:[pP]([oO]|[pP])[tT]([xX]|[mM])?)|(?:[pP][pP]([aA]|[sS])[mM])|(?:[pP][pP][sS]([xX]|[mM]))|(?:[oO][dD]([pP]|[sS]|[tT]))|(?:[sS][lL][dD]([xX]|[mM])))([#?].*)?$/$empty
 ! Microsoft Office Access extensions: mdb, adn, accdr, accdt, accda, mdw, accde, mam, maq, mar, mat, maf, laccdb, ade, adp, cdb, mda, mdn, mdt, mdf, mde, ldb.
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[aA][cC][cC][dD]([aA]|[tT]|[eE]|[rR]))|(?:[lL][aA][cC][cC][dD][bB])|(?:[aA][dD]([eE]|[pP]))|(?:([cC]|[lL])[dD][bB])|(?:[mM][aA]([mM]|[qQ]|[rR]|[tT]|[fF]))|(?:[mM][dD]([bB]|[tT]|[wW]|[fF]|[nN]|[aA])))([#?].*)?$/$empty
+/^http:\/\/.+(/.+)?/.+\.(?:(?:[aA][cC][cC][dD]([aA]|[tT]|[eE]|[rR]))|(?:[lL][aA][cC][cC][dD][bB])|(?:[aA][dD]([eE]|[pP]))|(?:([cC]|[lL])[dD][bB])|(?:[mM][aA]([mM]|[qQ]|[rR]|[tT]|[fF]))|(?:[mM][dD]([bB]|[tT]|[wW]|[fF]|[nN]|[aA])))([#?].*)?$/$empty

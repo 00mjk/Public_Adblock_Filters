@@ -3,7 +3,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/adblock-lists
 ! Expires: 8 hours
-! Version: 06.09.2020
+! Version: 06.11.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/adblock-lists
 ! Description: Incomplete. Android File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin. Personal Version.
@@ -12,5 +12,5 @@
 ! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 ! ============================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content. ! File extensions: elf, jar, odex, dex, so, apk, apks
-/^https?:\/\/.+(/.+){0,}/.+\.(?:(?:[eE][lL][fF])|(?:[jJ][aA][rR])|(?:[oO]?[dD][eE][xX])|(?:[sS][oO]))([#?].*)?$/$all
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[aA][pP][kK][sS]?))([#?].*)?$/$all
+/^https?:\/\/.+(/.+)?/.+\.(?:(?:[eE][lL][fF])|(?:[jJ][aA][rR])|(?:[oO]?[dD][eE][xX])|(?:[sS][oO]))([#?].*)?$/$all
+/^http:\/\/.+(/.+)?/.+\.(?:(?:[aA][pP][kK][sS]?))([#?].*)?$/$all

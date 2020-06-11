@@ -3,7 +3,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/adblock-lists
 ! Expires: 8 hours
-! Version: 06.08.2020
+! Version: 06.11.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/adblock-lists
 ! Description: Incomplete. Audio file extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
@@ -13,4 +13,4 @@
 ! ====================================================================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
 ! File extensions: aif, cda, mid, midi, mp3, mpa, ogg, wav, wma, wpl
-/^http:\/\/.+(/.+){0,}/.+\.(?:(?:[aA][iI][fF])|(?:[cC][dD][aA])|(?:[mM][iI][dD][iI]?)|(?:[mM][pP][3])|(?:[mM][pP][aA])|(?:[oO][gG][gG])|(?:[wW][aA][vV])|(?:[vV][mM][aA])|(?:[wW][pP][lL]))([#?].*)?$/$all
+/^http:\/\/.+(/.+)?/.+\.(?:(?:[aA][iI][fF])|(?:[cC][dD][aA])|(?:[mM][iI][dD][iI]?)|(?:[mM][pP][3])|(?:[mM][pP][aA])|(?:[oO][gG][gG])|(?:[wW][aA][vV])|(?:[vV][mM][aA])|(?:[wW][pP][lL]))([#?].*)?$/$all
