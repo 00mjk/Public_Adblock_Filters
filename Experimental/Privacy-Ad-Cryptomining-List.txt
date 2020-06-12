@@ -1,7 +1,7 @@
 ! Title: Combined Privacy, Ad, and Cryptomining
 ! Version: 06.10.2020
 ! License: Unlicense (https://choosealicense.com/licenses/unlicense/)
-! Homepage: https://github.com/InnoScorpio/adblock-lists
+! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Source: 
 ! Expires: Infinite
 ! Description: Experimental, needs testing. Generic rules to counter ad, tracking, & cryptomining scripts for HTML and Javascript from various sources.

@@ -1,7 +1,7 @@
 ! Title: Combined Invasive Domains
 ! Version: 6.10.2020
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
-! Homepage: https://github.com/InnoScorpio/adblock-lists
+! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Source: 
 ! Expires: Infinite
 ! Description: Experimental, needs testing. Absolute blocking of invasive domains used for tracking and invading privacy

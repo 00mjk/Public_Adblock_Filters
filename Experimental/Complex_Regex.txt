@@ -1,7 +1,7 @@
 ! Title: Combined Complex Regex
 ! Last updated: 6.10.2020
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
-! Homepage: https://github.com/InnoScorpio/adblock-lists
+! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Source: 
 ! Expires: Infinite
 ! Description: Experimental, needs testing. Expression based filtering rules

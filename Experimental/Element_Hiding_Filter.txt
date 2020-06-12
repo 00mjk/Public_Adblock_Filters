@@ -1,7 +1,7 @@
 ! Title: Combined Element Hiding Filter
 ! Version: 06.10.2020
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
-! Homepage: https://github.com/InnoScorpio/adblock-lists
+! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Source: 
 ! Expires: Infinite
 ! Description: Experimental, needs testing. Filters based on generic element hiding rules from uBlock-Filter-Plus, Blockzilla and Adversity.
