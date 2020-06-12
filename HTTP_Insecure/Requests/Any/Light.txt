@@ -1,5 +1,5 @@
 [AdBlockPlus 3.5]
-! Title: HTTP Insecure Resources - Light
+! Title: HTTP Insecure Requests - Light
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/adblock-lists
 ! Expires: 8 hours

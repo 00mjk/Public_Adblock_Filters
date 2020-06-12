@@ -1,5 +1,5 @@
-[uBlock Origin]
-! Title: HTTP Insecure Resources - Anti_3rd-Party HTTP for uBlock Origin
+[AdBlockPlus 3.5]
+! Title: HTTP Insecure Requests - Anti_3rd-Party HTTP for AdGuard and Adblock Plus
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/adblock-lists
 ! Expires: 8 hours
@@ -11,6 +11,6 @@
 ! Attribution: Cybo1927
 ! ====================================================================================================================
 ! Blocks third-party content from HTTP websites.
-http://*$third-party,all
+http://*$third-party
 
 

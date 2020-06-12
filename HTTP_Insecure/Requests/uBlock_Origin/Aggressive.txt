@@ -1,5 +1,5 @@
 [uBlock Origin]
-! Title: HTTP Insecure Resources - Aggressive for uBlock Origin
+! Title: HTTP Insecure Requests - Aggressive for uBlock Origin
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/adblock-lists
 ! Expires: 8 hours

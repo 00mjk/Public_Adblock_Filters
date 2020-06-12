@@ -1,5 +1,5 @@
 [AdBlockPlus 3.5]
-! Title: HTTP Insecure Resources - Untrusted 3rd-Party - HTTP & HTTPS
+! Title: HTTP Insecure Requests - Untrusted 3rd-Party - HTTP & HTTPS
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/adblock-lists
 ! Expires: 8 hours
