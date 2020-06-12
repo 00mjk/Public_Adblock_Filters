@@ -1,4 +1,4 @@
-# adblock-lists
-Adblock filters I created that can be shared and distributed worldwide.
+# Special-Hosts
+Adblock filters and blocklists that I have created.
 
 
