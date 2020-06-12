@@ -2,7 +2,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/adblock-lists
 ! Expires: 8 hours
-! Version: 06.11.2020
+! Version: 06.12.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/adblock-lists
 ! Description: Incomplete. Android File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard. Personal Version.
@@ -11,5 +11,5 @@
 ! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 ! ============================================================================
 ! File extensions: elf, jar, odex, dex, so, apk, apks
-/^https?:\/\/.+(\/.+)?\/.+\.(?:(?:[eE][lL][fF])|(?:[jJ][aA][rR])|(?:[oO]?[dD][eE][xX])|(?:[sS][oO]))([#?].*)?$/$empty
-/^http:\/\/.+(\/.+)?\/.+\.(?:(?:[aA][pP][kK][sS]?))([#?].*)?$/$empty
+/^https?://.+(/.+)?/.+\.(?:(?:[eE][lL][fF])|(?:[jJ][aA][rR])|(?:[oO]?[dD][eE][xX])|(?:[sS][oO]))([#?].*)?$/$empty
+/^http://.+(/.+)?/.+\.(?:(?:[aA][pP][kK][sS]?))([#?].*)?$/$empty

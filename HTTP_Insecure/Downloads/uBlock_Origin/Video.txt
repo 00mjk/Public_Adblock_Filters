@@ -3,7 +3,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/adblock-lists
 ! Expires: 8 hours
-! Version: 06.11.2020
+! Version: 06.12.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/adblock-lists
 ! Description: Incomplete. Video file extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
@@ -13,4 +13,4 @@
 ! ====================================================================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
 ! File extensions: 3p2, 3gp, avi, flv, m4v, mkv, mov, mp4, mpg, mpeg, rm, swf, vob, wmv.
-/^http:\/\/.+(\/.+)?\/.+\.(?:(?:[3][pP][2])|(?:[3][gG][pP])|(?:[aA][vV][iI])|(?:[fF][lL][vV])|(?:[mM][4][vV])|(?:[mM][kK][vV])|(?:[mM][oO][vV])|(?:[mM][pP][4])|(?:[mM][pP][eE]?[gG])|(?:[rR][mM])|(?:[sS][wW][fF])|(?:[vV][oO][bB])|(?:[vV][mM][vV]))([#?].*)?$/$all
+/^http://.+(/.+)?/.+\.(?:(?:[3][pP][2])|(?:[3][gG][pP])|(?:[aA][vV][iI])|(?:[fF][lL][vV])|(?:[mM][4][vV])|(?:[mM][kK][vV])|(?:[mM][oO][vV])|(?:[mM][pP][4])|(?:[mM][pP][eE]?[gG])|(?:[rR][mM])|(?:[sS][wW][fF])|(?:[vV][oO][bB])|(?:[vV][mM][vV]))([#?].*)?$/$all
