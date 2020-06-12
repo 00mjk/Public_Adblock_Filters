@@ -1,4 +1,4 @@
-# adblock-lists
-Adblock filters I created that can be shared and distributed worldwide.
+# Ad-Elements
+Adblock filters and blocklists that I have created.
 
 
