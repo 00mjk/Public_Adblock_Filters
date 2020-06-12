@@ -1,11 +1,11 @@
 ﻿[uBlock Origin]
 ! Title: HTTP Insecure Downloads - Windows for uBlock Origin
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
-! Homepage: https://github.com/InnoScorpio/adblock-lists
+! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
 ! Version: 06.12.2020
 ! Source: 
-! Issues: https://github.com/InnoScorpio/adblock-lists
+! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Incomplete. Windows File extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
 ! Use them at your own risk.
 ! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression

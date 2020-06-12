@@ -1,10 +1,10 @@
 ! Title: HTTP Insecure Downloads - Android for Adguard Personal Version
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
-! Homepage: https://github.com/InnoScorpio/adblock-lists
+! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
 ! Version: 06.12.2020
 ! Source: 
-! Issues: https://github.com/InnoScorpio/adblock-lists
+! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Incomplete. Android File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard. Personal Version.
 ! Use them at your own risk.
 ! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://download.geo.drweb.com/pub/drweb/android/light/HTML/en/

@@ -1,10 +1,10 @@
 ! Title: Private IP List for uMatrix
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
-! Homepage: https://github.com/InnoScorpio/adblock-lists
+! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
 ! Version: 06.09.2020
 ! Source:
-! Issues: https://github.com/InnoScorpio/adblock-lists
+! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Inadvisable. List of private IP addresses that should not be accessible by websites and browser addons for privacy. 
 ! Use them at your own risk. This list can cause unintended consequences.
 ! Attribution: Gwarser (https://github.com/gwarser/filter-lists/blob/master/lan-block.txt), https://en.wikipedia.org/wiki/Private_network, https://www.iana.org/abuse
