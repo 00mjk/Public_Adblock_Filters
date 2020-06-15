@@ -2,7 +2,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
-! Version: 06.12.2020
+! Version: 06.15.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Incomplete. Generic File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
@@ -10,5 +10,5 @@
 ! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://en.wikipedia.org/wiki/List_of_file_formats; 
 ! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 ! ============================================================================
-! File extensions: cnf, conf, cfg, log, asc, txt, bak, bin, dat, dsk, raw
-/^http://.+(/.+)?/.+\.(?:(?:[cC][nN][fF])|(?:[cC][oO][nN][fF])(?:[cC][fF][gG])|(?:[lL][oO][gG])|(?:[aA][sS][cC])|(?:[tT][xX][tT])|(?:[bB][iI][nN])|(?:[dD][aA][tT])|(?:[dD][sS][kK])|(?:[rR][aA][wW]))([#?].*)?$/$empty
+! File extensions: cnf, conf, cfg, log, asc, txt, bak, dat, dsk, raw
+/^http://.+(/.+)?/.+\.(?:(?:[cC][oO]?[nN][fF])|(?:[cC][fF][gG])|(?:[lL][oO][gG])|(?:[aA][sS][cC])|(?:[tT][xX][tT])|(?:[bB][iI][nN])|(?:[dD][aA][tT])|(?:[dD][sS][kK])|(?:[rR][aA][wW]))([#?].*)?$/$empty
