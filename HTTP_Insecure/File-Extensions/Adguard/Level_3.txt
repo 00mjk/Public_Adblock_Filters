@@ -1,0 +1,33 @@
+! Title: HTTP Insecure File Extensions - Level 3 for Adguard 
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Special-Hosts
+! Expires: 8 hours
+! Version: 06.17.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Special-Hosts
+! Description: Incomplete. Level 3. Block dangerous content that can be manipulated through HTTP connections and potentiemptyy harmful to devices. Intended for Adguard.
+! Use them at your own risk.
+! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; HardConfigurator; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+! Other Attribution: https://www.computerhope.com/issues/ch001789.htm, https://en.wikipedia.org/wiki/List_of_Microsoft_Office_filename_extensions; https://docs.google.com/document/d/1BRvhtleXB91bkTAq4Xde9vzDoLbcwIuaxaSko3eUQ14/edit
+! ============================================================================
+! Level 1: Executables + System
+! Level 2: Executables + System + Archives
+! Level 3: Executables + System + Archives + Documents
+! Level 4: Executables + System + Archives + Documents + Images + Audio + Video + Generic  
+! Executable File extensions: exe, apk, apks, app, appx, appxbundle, elf, bin, com, bat, gadget, msi, pif, msp, scr, hta, cpl, msc, jar
+/^http://.+(/.+)?/.+\.(?:(?:[eE][xX][eE])|(?:[pP][iI][fF])|(?:[aA][pP][kK][sS]?)|(?:[aA][pP][pP][xX]?([bB][uU][nN][dD][lL][eE])?)|(?:[bB][iI][nN])|(?:[cC][oO][mM])|(?:[bB][aA][tT])|(?:[gG][aA][dD][gG][eE][tT])|(?:[mM][sS]([iI]|[pP]|[cC]))|(?:[sS][cC][rR])|(?:[hH][tT][aA])|(?:[jJ][aA][rR])|(?:[cC][pP][lL]))([#?].*)?$/$empty
+! Common Microsoft Windows scripts: cmd, vb, vbs, vbe, jse, ws, wsf, wsc, wsh, ps1, ps1xml, ps2, ps2xml, psc1, psc2, msh, msh1, msh2, mshxml, msh1xml, msh2xml
+/^http://.+(/.+)?/.+\.(?:(?:[vV][bB]([sS]|[eE])?)|(?:[jJ][sS][eE])|(?:[wW][sS]([fF]|[hH]|[cC])?)|(?:[pP][sS][1]([xX][mM][lL])?)|(?:[pP][sS][2]([xX][mM][lL])?)|(?:[mM][sS][hH]([1]|[2])?([xX][mM][lL])?)|(?:[pP][sS][cC]([1]|[2])))([#?].*)?$/$empty
+! Other Microsoft Windows shortcuts, handles, libraries: dll, scr, inf, reg.
+/^http://.+(/.+)?/.+\.(?:(?:[dD][lL][lL)|(?:[sS][cC][rR])|(?:[wW][iI][nN][fF])|(?:[rR][eE][gG]))([#?].*)?$/$empty
+! Archive common file extensions. File extensions: 7z, arj, deb, pkg, rar, rpm, tar.gz, gz, tar, z, zip
+/^http://.+(/.+)?/.+\.(?:(?:[7][Zz])|(?:[aA][rR][jJ])|(?:[dD][eE][bB])|(?:[pP][kK][gG])|(?:[gG][zZ])|(?:[rR][aA][rR])|(?:[tT][aA][rR]([.][gG][zZ])?)|(?:[zZ]([iI][pP])?))([#?].*)?$/$empty
+! Common document extensions: odp, key, ods, odt, pdf, tex, wpd, pub, xps, db, dbf, epub, mobi
+/^http://.+(/.+)?/.+\.(?:(?:[pP][dD][fF])|(?:[tT][eE][xX])|(?:[wW][pP][dD])|(?:[eE]?[pP][uU][bB])|(?:[xX][pP][sS])|(?:[kK][eE][yY])|(?:[dD][bB][fF]?)|(?:[mM][oO][bB][iI]))([#?].*)?$$/$empty
+! Microsoft Office Word extensions: docb, docm, dotm, dotx, dot, wbk, doc, docx
+! Microsoft Office Excel extensions: xls, xlsx, xlt, xlm, xlsm, xltx, xltm, xlsb, xla, xlam, xll, xlw
+/^http://.+(/.+)?/.+\.(?:(?:[dD][oO][cC]([bB]|[mM]|[xX])?)|(?:[dD][oO][tT]([mM]|[xX]?))|(?:[wW][bB][kK])|(?:[xX][lL][sS]([xX]|[mM]|[bB]?))(?:[xX][lL][tT]([xX]|[mM]?))|(?:[xX][lL]([lL]|[wW]|[aA][mM]?)))([#?].*)?$/$empty
+! Microsoft Office Powerpoint extensions: ppt, pptx, pot, pptm, potm, potx, ppam, ppsx, ppsm, sldx, sldm
+/^http://.+(/.+)?/.+\.(?:(?:[pP]([oO]|[pP])[tT]([xX]|[mM])?)|(?:[pP][pP]([aA]|[sS])[mM])|(?:[pP][pP][sS]([xX]|[mM]))|(?:[oO][dD]([pP]|[sS]|[tT]))|(?:[sS][lL][dD]([xX]|[mM])))([#?].*)?$/$empty
+! Microsoft Office Access extensions: mdb, adn, accdr, accdt, accda, mdw, accde, mam, maq, mar, mat, maf, laccdb, ade, adp, cdb, mda, mdn, mdt, mdf, mde, ldb
+/^http://.+(/.+)?/.+\.(?:(?:[aA][cC][cC][dD]([aA]|[tT]|[eE]|[rR]))|(?:[lL][aA][cC][cC][dD][bB])|(?:[aA][dD]([eE]|[pP]))|(?:([cC]|[lL])[dD][bB])|(?:[mM][aA]([mM]|[qQ]|[rR]|[tT]|[fF]))|(?:[mM][dD]([bB]|[tT]|[wW]|[fF]|[nN]|[aA])))([#?].*)?$/$empty

@@ -1,0 +1,16 @@
+! Title: HTTP Insecure File Extensions - System for Adguard 
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Special-Hosts
+! Expires: 8 hours
+! Version: 06.17.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Special-Hosts
+! Description: Incomplete. Operating System Scripts, Handles, and Library File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
+! Use them at your own risk.
+! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; HardConfigurator; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+! Other Attribution: https://www.computerhope.com/issues/ch001789.htm, https://en.wikipedia.org/wiki/List_of_Microsoft_Office_filename_extensions; https://www.howtogeek.com/137270/50-file-extensions-that-are-potentially-dangerous-on-windows/
+! ============================================================================
+! Common Microsoft Windows scripts: cmd, vb, vbs, vbe, jse, ws, wsf, wsc, wsh, ps1, ps1xml, ps2, ps2xml, psc1, psc2, msh, msh1, msh2, mshxml, msh1xml, msh2xml
+/^http://.+(/.+)?/.+\.(?:(?:[vV][bB]([sS]|[eE])?)|(?:[jJ][sS][eE])|(?:[wW][sS]([fF]|[hH]|[cC])?)|(?:[pP][sS][1]([xX][mM][lL])?)|(?:[pP][sS][2]([xX][mM][lL])?)|(?:[mM][sS][hH]([1]|[2])?([xX][mM][lL])?)|(?:[pP][sS][cC]([1]|[2])))([#?].*)?$/$empty
+! Other Microsoft Windows shortcuts, handles, libraries: dll, scr, inf, reg, chm, isp, lib, lnk, nsh, shb, sys, vxd
+/^http://.+(/.+)?/.+\.(?:(?:[dD][lL][lL)|(?:[sS][cC][rR])|(?:[wW][iI][nN][fF])|(?:[rR][eE][gG])|(?:[cC][hH][mM])|(?:[iI][sS][pP])|(?:[lL][iI][bB])|(?:[lL][nN][kK])|(?:[nN][sS][hH])|(?:[sS][hH][bB])|(?:[sS][yY][sS])|(?:[vV][xX][dD]))([#?].*)?$/$empty

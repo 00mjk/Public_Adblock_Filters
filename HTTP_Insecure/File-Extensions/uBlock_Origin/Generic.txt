@@ -1,0 +1,18 @@
+﻿[uBlock Origin]
+! Title: HTTP Insecure File Extensions - Generic for uBlock Origin 
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Special-Hosts
+! Expires: 8 hours
+! Version: 06.17.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Special-Hosts
+! Description: Incomplete. Generic file extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
+! Use them at your own risk.
+! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://en.wikipedia.org/wiki/List_of_file_formats
+! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+! ============================================================================
+! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
+! Common generic file extensions: cnf, conf, cfg, log, asc, txt, bak, bk, dat, dsk, raw, ini, json, yaml, htm, html, csv, tsv
+/^http://.+(/.+)?/.+\.(?:(?:[cC][oO]?[nN][fF])|(?:[cC][fF][gG])|(?:[lL][oO][gG])|(?:[aA][sS][cC])|(?:[tT][xX][tT])|(?:[bB][aA]?[kK])|(?:[iI][nN][iI])|(?:[jJ][sS][oO][nN])|(?:[hH][tT][mM][lL]?)|(?:[yY][aA][mM][lL])|(?:[dD][aA][tT])|(?:[dD][sS][kK])|(?:[rR][aA][wW])|(?:([cC]|[tT])[sS][vV]))([#?].*)?$/$all
+! Other  miscellousness extensions: asp, aspx, php, jsp, xhtml, mhtml xml, sav, sql, sqlite, sqlite3, rtf
+/^http://.+(/.+){0,}/.+\.(?:(?:[aA][sS][pP][xX]?)|(?:[pP][hH][pP])|(?:[jJ][sS][pP])|(?:([xX]|[mM])[hH][tT][mM][lL])|(?:[xX][mM][lL])|(?:[sS][aA][vV])|(?:[sS][qQ][lL]([iI][tT][eE])?([3])?)|(?:[rR][tT][fF]))([#?].*)?$/$all
