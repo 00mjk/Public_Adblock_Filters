@@ -5,7 +5,7 @@
 ! Version: 06.17.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
-! Description: FFor all web files relevant to specific file extension, not meant to be accurate. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
+! Description: For all web files relevant to specific file extension, not meant to be accurate. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
 ! Use them at your own risk.
 ! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression
 ! Other Attribtion: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol; https://www.howtogeek.com/137270/50-file-extensions-that-are-potentially-dangerous-on-windows/
