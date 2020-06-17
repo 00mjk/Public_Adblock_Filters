@@ -2,7 +2,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
-! Version: 06.12.2020
+! Version: 06.17.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Incomplete. Document File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
@@ -10,8 +10,8 @@
 ! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; HardConfigurator; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 ! Other Attribution: https://www.computerhope.com/issues/ch001789.htm, https://en.wikipedia.org/wiki/List_of_Microsoft_Office_filename_extensions
 ! ============================================================================
-! Common document extensions: odp, key, csv, ods, odt, pdf, rtf, tex, wpd, pub, xps.
-/^http://.+(/.+)?/.+\.(?:(?:[pP][dD][fF])|(?:[rR][tT][fF])|(?:[cC][sS][vV])|(?:[tT][eE][xX])|(?:[wW][pP][dD])|(?:[pP][uU][bB])|(?:[xX][pP][sS])|(?:[kK][eE][yY]))([#?].*)?$/$empty
+! Common document extensions: odp, key, ods, odt, pdf, tex, wpd, pub, xps, db, dbf, epub, mobi
+/^http://.+(/.+)?/.+\.(?:(?:[pP][dD][fF])|(?:[tT][eE][xX])|(?:[wW][pP][dD])|(?:[eE]?[pP][uU][bB])|(?:[xX][pP][sS])|(?:[kK][eE][yY])|(?:[dD][bB][fF]?)|(?:[mM][oO][bB][iI]))([#?].*)?$/$empty
 ! Microsoft Office Word extensions: docb, docm, dotm, dotx, dot, wbk, doc, docx
 ! Microsoft Office Excel extensions: xls, xlsx, xlt, xlm, xlsm, xltx, xltm, xlsb, xla, xlam, xll, xlw
 /^http://.+(/.+)?/.+\.(?:(?:[dD][oO][cC]([bB]|[mM]|[xX])?)|(?:[dD][oO][tT]([mM]|[xX]?))|(?:[wW][bB][kK])|(?:[xX][lL][sS]([xX]|[mM]|[bB]?))(?:[xX][lL][tT]([xX]|[mM]?))|(?:[xX][lL]([lL]|[wW]|[aA][mM]?)))([#?].*)?$/$empty

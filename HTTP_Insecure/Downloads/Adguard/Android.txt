@@ -10,5 +10,5 @@
 ! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://download.geo.drweb.com/pub/drweb/android/light/HTML/en/
 ! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 ! ============================================================================
-! File extensions: elf, jar, odex, dex, so, apk, apks
+! Android File extensions: elf, jar, odex, dex, so, apk, apks
 /^http://.+(/.+)?/.+\.(?:(?:[eE][lL][fF])|(?:[jJ][aA][rR])|(?:[oO]?[dD][eE][xX])|(?:[sS][oO])|(?:[aA][pP][kK][sS]?))([#?].*)?$/$empty

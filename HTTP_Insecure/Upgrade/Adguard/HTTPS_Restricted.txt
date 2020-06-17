@@ -1,4 +1,4 @@
-! Title: HTTP Insecure Requests - Extreme for Adguard 
+! Title: HTTP Insecure Upgrade - HTTPS Restricted for Adguard 
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
@@ -8,15 +8,14 @@
 ! Description: Intended for Adguard. Block all HTTP websites and increases security when visiting HTTPS websites.
 ! Use them at your own risk.
 ! Attribution: Cybo1927, LennyFox, Yuki2178, rdsu-pt, Kees1958, beerisgood
+! Guidance: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests, https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content
 ! ====================================================================================================================
 ! Guidance: Some of these lists are an usable version of uBO hard mode and/or medium mode. See https://github.com/gorhill/uBlock/wiki/Blocking-mode
-! Blocks all HTTP websites from untrusted TLDs.
-http://*$all,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
-! This will cause conflicts with if using uBlock Origin, Policy Control or uMatrix with Adguard to filter out Javascript.
-http://*$~third-party,script,domain=gov|int|edu|mil|org|us|com|net|io|uk|ca|nz|au|mx|info|eu|
-! Allows only third-party passive content to load on HTTP websites.
-http://*$third-party,~stylesheet,~image,~media,domain=gov|int|edu|mil|org|us|com|net|io|uk|ca|nz|au|mx|info|eu|
+! Blocks all HTTP websites.
+http://*$all
 !  Blocks Javascript from untrusted TLDs of first-party domains.
 https://*$~third-party,script,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
 ! Blocks Javascript and frames from untrusted TLDs of third-party domains.
 https://*$third-party,script,subdocument,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
+! Try To Make HTTP Links HTTPS; Block 'Mixed Content' / Loading Of HTTP On HTTPS Sites
+||*^$csp=upgrade-insecure-requests; block-all-mixed-content

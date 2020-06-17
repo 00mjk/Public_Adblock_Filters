@@ -10,5 +10,5 @@
 ! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://www.computerhope.com/issues/ch001789.htm; 
 ! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 ! ====================================================================================================================
-! File extensions: aif, cda, mid, midi, mp3, mpa, ogg, wav, wma, wpl
+! Audio File extensions: aif, cda, mid, midi, mp3, mpa, ogg, wav, wma, wpl
 /^http://.+(/.+)?/.+\.(?:(?:[aA][iI][fF])|(?:[cC][dD][aA])|(?:[mM][iI][dD][iI]?)|(?:[mM][pP][3])|(?:[mM][pP][aA])|(?:[oO][gG][gG])|(?:[wW][aA][vV])|(?:[vV][mM][aA])|(?:[wW][pP][lL]))([#?].*)?$/$empty

@@ -12,6 +12,6 @@
 ! Other Attribtion: NoVirusThanks SysHardener, including (.dll,.exe., .vb, .wsc, .ws, .ps2, and .msi) and excluding (.js); https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression
 ! ============================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
-! File extensions: vb, vbs, vbe, jse,  ws, wsc, wsf, wsh, scr, pif, reg, jar, bat, ps1, ps2, exe, msi, dll
+! Windows File extensions: vb, vbs, vbe, jse,  ws, wsc, wsf, wsh, scr, pif, reg, jar, bat, ps1, ps2, exe, msi, dll
 /^http://.+(/.+)?/.+\.(?:(?:[eE][xX][eE])(?:[mM][sS][iI]))([#?].*)?$/$all
 /^https?://.+(/.+)?/.+\.(?:(?:[vV][bB]([sS]|[eE])?)|(?:[jJ][sS][eE])|(?:[wW][sS]([fF]|[hH]|[cC])?)|(?:[sS][cC][rR])|(?:[pP][iI][fF])|(?:[rR][eE][gG])|(?:[jJ][aA][rR])|(?:[bB][aA][tT])|(?:[pP][sS][1])|(?:[pP][sS][2])|(?:[dD][lL][lL]))([#?].*)?$/$all

@@ -12,5 +12,5 @@
 ! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 ! ====================================================================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
-! File extensions: elf, jar, odex, dex, so, apk, apks
+! Android File extensions: elf, jar, odex, dex, so, apk, apks
 /^http://.+(/.+)?/.+\.(?:(?:[eE][lL][fF])|(?:[jJ][aA][rR])|(?:[oO]?[dD][eE][xX])|(?:[sS][oO])|(?:[aA][pP][kK][sS]?))([#?].*)?$/$all
