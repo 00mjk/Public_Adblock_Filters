@@ -2,13 +2,13 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
-! Version: 06.17.2020
+! Version: 06.18.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
-! Description: Incomplete. Image file extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
+! Description: Not comprehensive or exhaustive. Image file extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
 ! Use them at your own risk.
 ! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://www.computerhope.com/issues/ch001789.htm
 ! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 ! ====================================================================================================================
-! Image File extensions: bmp, gif, jpeg, jpg,  png, psd, svg, tif, tiff, ico, djvu, djv
-/^http://.+(/.+)?/.+\.(?:(?:[bB][mM][pP])|(?:[gG][iI][fF])|(?:[jJ][pP][eE]?[gG])|(?:[pP][nN][gG])|(?:[pP][sS][dD])|(?:[sS][vV][gG])|(?:[tT][iI][fF][fF]?)|(?:[iI][cC][oO])|(?:[dD][jJ][vV][uU]?))([#?].*)?$/$empty
+! Image File extensions: bmp, gif, jpeg, jpg, png, psd, svg, svgv, tif, tiff, ico, djvu, djv, webp, hief, hiec
+/^http://.+(/.+)?/.+\.(?:(?:[bB][mM][pP])|(?:[gG][iI][fF])|(?:[jJ][pP][eE]?[gG])|(?:[pP][nN][gG])|(?:[pP][sS][dD])|(?:[sS][vV][gG][vV]?)|(?:[tT][iI][fF][fF]?)|(?:[iI][cC][oO])|(?:[dD][jJ][vV][uU]?)|(?:[wW][eE][bB][pP])|(?:[hH][iI][eE]([fF]|[cC]))([#?].*)?$/$empty

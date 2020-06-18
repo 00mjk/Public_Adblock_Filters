@@ -5,7 +5,7 @@
 ! Version: 06.12.2020
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
-! Description: Incomplete. Windows File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
+! Description: Not comprehensive or exhaustive. Windows File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
 ! Use them at your own risk.
 ! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 ! Other Attribution: NoVirusThanks SysHardener, including (.dll,.exe., .vb, .wsc, .ws, .ps2, and .msi) and excluding (.js); https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression    

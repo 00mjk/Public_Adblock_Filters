@@ -2,10 +2,10 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
-! Version: 06.09.2020
+! Version: 06.18.2020
 ! Source:
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
-! Description: Inadvisable. List of private IP addresses that should not be accessible by websites and browser addons for privacy. 
+! Description: Inadvisable. List of private IP addresses that should not be accessible via third-party from websites or browser extensions. 
 ! Use them at your own risk. This list can cause unintended consequences.
 ! Attribution: Gwarser (https://github.com/gwarser/filter-lists/blob/master/lan-block.txt), https://en.wikipedia.org/wiki/Private_network, https://www.iana.org/abuse
 ! Other Attribution: https://github.com/ghacksuserjs/ghacks-user.js/wiki/4.2.3-uMatrix
@@ -37,3 +37,18 @@
 * [::1] * block
 * 127 * block
 * localhost * block
+! === LAN Exclusions ===
+! LAN exclusions for IP ranges that are accessible through directly as first-party host or domain. 
+0 0 * allow
+10 10 * allow
+127 127 * allow
+169.254 169.254 * allow
+172.16 172.16 * allow
+172.17 172.17 * allow
+172.18 172.18 * allow
+172.19 172.19 * allow
+172.2* 172.2* * allow
+172.30 172.30 * allow
+172.31 172.31 * allow
+192.168 192.168 * allow
+localhost localhost * allow
