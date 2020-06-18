@@ -3,7 +3,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
-! Version: 06.17.2020
+! Version: 1 (Lastly dated - 06.18.2020)
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: For all web files relevant to specific file extension, not meant to be accurate. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
@@ -12,4 +12,4 @@
 ! Other Attribtion: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol; https://www.howtogeek.com/137270/50-file-extensions-that-are-potentially-dangerous-on-windows/
 ! ============================================================================
 ! Due to uBlock Origin limitations, the rules below can only block URLs with the specific file extension only containing HTML content.
-/^http://.+(/.+)?/.+\.([a-zA-Z0-9]+)([#?].*)?$/$all
+/^http://.+(/.+)?/.+\.([a-zA-Z0-9-]+)([/#?].*)?$/$all
