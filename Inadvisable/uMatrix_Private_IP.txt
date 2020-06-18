@@ -2,7 +2,8 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
-! Version: 06.18.2020
+! Version: 1-Stable (Lastly dated 06.18.2020)
+! Last modified: June 18, 2020, 23:27 UTC
 ! Source:
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Inadvisable. List of private IP addresses that should not be accessible via third-party from websites or browser extensions. 
@@ -39,6 +40,8 @@
 * localhost * block
 ! === LAN Exclusions ===
 ! LAN exclusions for IP ranges that are accessible through directly as first-party host or domain. 
+[::] [::] * allow
+[::1] [::1] * allow
 0 0 * allow
 10 10 * allow
 127 127 * allow
