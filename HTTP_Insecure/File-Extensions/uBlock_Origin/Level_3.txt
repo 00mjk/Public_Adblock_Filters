@@ -3,7 +3,7 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
-! Version: 1 (Lastly dated - 06.18.2020)
+! Version: 2 (Lastly dated - 06.18.2020)
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Not comprehensive or exhaustive. Level 3. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
@@ -26,7 +26,7 @@
 ! Other Known Archive file extensions: lz, lzip, lzh, lha, lzx, vhd, vhdx, xpi, crx, tgz, bz2, bzip2, bz, bzip, cab, ipa, xap, sis, sisx
 /^http://.+(/.+)?/.+\.(?:(?:[[lL][zZ]([iI][pP]|[xX]|[hH])?)|(?:[lL][hH][aA])|(?:[tT][gG][zZ])|(?:[vV][hH][dD][xX]?)|(?:[xX][pP][iI])|(?:[cC][rR][xX])|(?:[bB][zZ]([iI][pP])?[[2]?)|(?:[cC][aA][bB])|(?:[iI][pP][aA])|(?:[xX][aA][pP])|(?:[sS][iI][sS][xX]?))([/#?].*)?$/$all
 ! Common document extensions: odp, key, ods, odt, pdf, tex, wpd, pub, xps, db, dbf, epub, mobi
-/^http://.+(/.+)?/.+\.(?:(?:[pP][dD][fF])|(?:[tT][eE][xX])|(?:[wW][pP][dD])|(?:[eE]?[pP][uU][bB])|(?:[xX][pP][sS])|(?:[kK][eE][yY])|(?:[dD][bB][fF]?)|(?:[mM][oO][bB][iI]))([/#?].*)?$/$all
+/^http://.+(/.+)?/.+\.(?:(?:[oO][dD]([pP]|[sS][tT]))|(?:[pP][dD][fF])|(?:[tT][eE][xX])|(?:[wW][pP][dD])|(?:[eE]?[pP][uU][bB])|(?:[xX][pP][sS])|(?:[kK][eE][yY])|(?:[dD][bB][fF]?)|(?:[mM][oO][bB][iI]))([/#?].*)?$/$all
 ! Microsoft Office Word extensions: docb, docm, dotm, dotx, dot, wbk, doc, docx
 ! Microsoft Office Excel extensions: xls, xlsx, xlt, xlm, xlsm, xltx, xltm, xlsb, xla, xlam, xll, xlw
 /^http://.+(/.+)?/.+\.(?:(?:[dD][oO][cC]([bB]|[mM]|[xX])?)|(?:[dD][oO][tT]([mM]|[xX]?))|(?:[wW][bB][kK])|(?:[xX][lL][sS]([xX]|[mM]|[bB]?))(?:[xX][lL][tT]([xX]|[mM]?))|(?:[xX][lL]([lL]|[wW]|[aA][mM]?)))([/#?].*)?$/$all
