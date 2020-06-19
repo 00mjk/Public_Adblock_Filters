@@ -2,28 +2,29 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
-! Version: 1-Stable (Lastly dated 06.18.2020)
-! Last modified: June 18, 2020, 23:27 UTC
-! Source:
+! Version: 2-Stable (Lastly dated 06.18.2020)
+! Last Modified: June 19, 2020, 00:28 UTC
+! Source: https://raw.githubusercontent.com/InnoScorpio/Special-Hosts/master/Inadvisable/uMatrix_Private_IP.txt
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Inadvisable. List of private IP addresses that should not be accessible via third-party from websites or browser extensions. 
 ! Use them at your own risk. This list can cause unintended consequences.
-! Attribution: Gwarser (https://github.com/gwarser/filter-lists/blob/master/lan-block.txt), https://en.wikipedia.org/wiki/Private_network, https://www.iana.org/abuse
-! Other Attribution: https://github.com/ghacksuserjs/ghacks-user.js/wiki/4.2.3-uMatrix
+! Attribution: Gwarser (https://github.com/gwarser/filter-lists/blob/master/lan-block.txt), Thorin-Oakenpants (https://github.com/ghacksuserjs/ghacks-user.js/wiki/4.2.3-uMatrix)
+! References: https://en.wikipedia.org/wiki/Private_network, https://www.iana.org/abuse, https://en.wikipedia.org/wiki/Localhost, https://en.wikipedia.org/wiki/Link-local_address, https://en.wikipedia.org/wiki/0.0.0.0
 ! Known Issues: Using these rules can create conflict with CSS Exfil Protection in Firefox. 
-! =======================================================================================================================================
+! ==================================================================================================================================================================================================================
 ! Due to uMatrix limitations, only specific IPv6 addresses can be blocked.
 ! Import these on the My Rules tab of Temporary rules section using the Import from file... button of uMatrix in order for them to work properly. 
 ! ===============================================================
 ! === Source-Only Addresses ==== 
-! 0.* and [::] IP address ranges have no destination requests. Most likely to be used by browser extensions or the web browser. 
-* 0 * block
+! 0.0.0.0/0 (IPv6 equivalent [::]) have not destination requests. Most likely to be used by browser extensions or the web browser. 
+* 0.0.0.0 * block
 * [::] * block
 ! === Stateless Address AutoConfiguration or Link-Local Addresses ==== 
-! 169.254.* and fe80::/10 IP ranges is intended when your device is not set to static address or DHCP server. 
+! 169.254.0.0/16 and fe80::/10 IP ranges is intended when your device is not set to static address or DHCP server. 
 * 169.254 * block
 ! === Private IPv4 Address Range ======
-! These ranges are used for IP addresses associated for a private network. 
+! These ranges are used for IP addresses associated for a private network.
+! 10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16, fc00::/7 IP ranges for private network.   
 * 10 * block
 * 172.16 * block
 * 172.17 * block
@@ -34,17 +35,17 @@
 * 172.31 * block
 * 192.168 * block
 ! === Localhost Ranges =======
-! Websites like leoaffairs.com use localhost to bypass your adblocker. So, this is needed to block loopholes in regards to adblocking.
+! Websites like leoaffairs.com use localhost to bypass your adblocker.
 * [::1] * block
-* 127 * block
+* 127.0.0.1 * block
 * localhost * block
 ! === LAN Exclusions ===
 ! LAN exclusions for IP ranges that are accessible through directly as first-party host or domain. 
 [::] [::] * allow
 [::1] [::1] * allow
-0 0 * allow
+0.0.0.0 0.0.0.0 * allow
 10 10 * allow
-127 127 * allow
+127.0.0.1 127.0.0.1 * allow
 169.254 169.254 * allow
 172.16 172.16 * allow
 172.17 172.17 * allow
