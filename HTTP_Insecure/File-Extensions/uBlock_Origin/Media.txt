@@ -3,13 +3,15 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
-! Version: 1 (Lastly dated - 06.18.2020)
-! Source: 
+! Version: 1 (Last Date Indicated as Version - 06.18.2020)
+! Last Modified: June 20, 2020, 04:42 UTC
+! Source: https://raw.githubusercontent.com/InnoScorpio/Special-Hosts/master/HTTP_Insecure/File-Extensions/uBlock_Origin/Media.txt
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Not comprehensive or exhaustive. Audio and video file extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
 ! Use them at your own risk.
-! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://www.computerhope.com/issues/ch001789.htm; 
-! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+! Attribution: RegexMagic (Rule: ^http://(?:[0-9A-Za-z-]+\.)+[A-Za-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,19}/[.0-9A-Z_a-z-]+\.(?:jar|exe)$) ; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media (Rule: ^((https?|ftp)://|(www|ftp)\.)[a-z0-9-]+(\.[a-z0-9-]+)+([/?].*)?$)
+! References: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol; https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://www.w3.org/Addressing/URL/url-spec.html; https://en.wikipedia.org/wiki/Media_type; https://en.wikipedia.org/wiki/List_of_file_formats
+! Other References: https://blog.filestack.com/thoughts-and-knowledge/complete-list-audio-video-file-formats/; https://blog.filestack.com/thoughts-and-knowledge/audio-file-format-codec/;  https://www.computerhope.com/issues/ch001789.htm; 
 ! ====================================================================================================================
 ! Audio File extensions: aif, aiff, cda, mid, midi, mp3, mpa, ogg, wav, wma, wpl, gsm, oga, mogg, opus, flac, pcm
 /^http://.+(/.+)?/.+\.(?:(?:[aA][iI][fF][fF]?)|(?:[cC][dD][aA])|(?:[mM][iI][dD][iI]?)|(?:[mM][pP]([3]|[aA]))|(?:[mM]?[oO][gG][gG])|(?:[oO][pP][uU][sS])|(?:[pP][cC][mM])|(?:[wW][aA][vV])|(?:[vV][mM][aA])|(?:[gG][sS][mM])|(?:[wW][pP][lL])|(?:[fF][lL][aA][cC]))([/#?].*)?$/$all

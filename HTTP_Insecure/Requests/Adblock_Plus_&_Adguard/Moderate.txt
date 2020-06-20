@@ -4,11 +4,14 @@
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
 ! Version: 06.04.2020
-! Source: 
+! Last Modified: June 20, 2020, 04:42 UTC
+! Source: https://raw.githubusercontent.com/InnoScorpio/Special-Hosts/master/HTTP_Insecure/Requests/Adblock_Plus_%26_Adguard/Moderate.txt
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Moderate Standard Version. Intended for Adguard and Adblock Plus. Increases security when browsing HTTP and HTTPS websites.
 ! Use them at your own risk.
-! Attribution: Cybo1927, LennyFox, Yuki2178, rdsu-pt, Kees1958
+! Attribution: LennyFox, Yuki2178, rdsu-pt, Kees1958
+! Attribution: Cybo1927 (https://github.com/Cybo1927/Hosts/blob/master/Hosts), beerisgood 
+! References: https://malwaretips.com/threads/adblocking-innovation.98862/post-873158
 ! ====================================================================================================================
 ! Guidance: Some of these lists are an usable version of uBO hard mode and/or medium mode. See https://github.com/gorhill/uBlock/wiki/Blocking-mode
 ! Blocks Javascript on all HTTP websites forces first-party domains.

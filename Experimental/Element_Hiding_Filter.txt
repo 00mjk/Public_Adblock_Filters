@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Source: 
 ! Expires: Infinite
-! Description: Experimental, needs testing. Filters based on generic element hiding rules from uBlock-Filter-Plus, Blockzilla and Adversity.
+! Description: Experimental, needs testing, preview. Filters based on generic element hiding rules from uBlock-Filter-Plus, Blockzilla and Adversity.
 ! Use them at your own risk.
 ! ========================================================================================
 ###A9AdsMiddleBoxTop

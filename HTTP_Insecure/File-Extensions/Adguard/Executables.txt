@@ -2,13 +2,15 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
-! Version: 1 (Lastly dated - 06.18.2020)
-! Source: 
+! Version: 1 (Last Date Indicated as Version - 06.18.2020)
+! Last Modified: June 20, 2020, 04:42 UTC
+! Source: https://raw.githubusercontent.com/InnoScorpio/Special-Hosts/master/HTTP_Insecure/File-Extensions/Adguard/Executables.txt
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Not comprehensive or exhaustive. Executable File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
 ! Use them at your own risk.
-! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://askubuntu.com/questions/156392/what-is-the-equivalent-of-an-exe-file; https://www.howtogeek.com/137270/50-file-extensions-that-are-potentially-dangerous-on-windows/
-! Other Attribution: https://www.computerhope.com/issues/ch001789.htm; https://www.howtogeek.com/137270/50-file-extensions-that-are-potentially-dangerous-on-windows/; https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+! Attribution: RegexMagic (Rule: ^http://(?:[0-9A-Za-z-]+\.)+[A-Za-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,19}/[.0-9A-Z_a-z-]+\.(?:jar|exe)$) ; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media (Rule: ^((https?|ftp)://|(www|ftp)\.)[a-z0-9-]+(\.[a-z0-9-]+)+([/?].*)?$)
+! References: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol; https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://www.w3.org/Addressing/URL/url-spec.html; https://en.wikipedia.org/wiki/Media_type; https://en.wikipedia.org/wiki/List_of_file_formats
+! Other References: https://askubuntu.com/questions/156392/what-is-the-equivalent-of-an-exe-file; https://www.computerhope.com/issues/ch001789.htm; https://www.howtogeek.com/137270/50-file-extensions-that-are-potentially-dangerous-on-windows/; 
 ======================================================================================================================================================================================================================================
 ! Executable File extensions: exe, apk, apks, app, appx, appxbundle, elf, bin, com, bat, gadget, msi, msix, msixbundle, pif, msp, mst, msc, scr, hta, cpl, jar 
 /^http://.+(/.+)?/.+\.(?:(?:[eE][xX][eE])|(?:[pP][iI][fF])|(?:[aA][pP][kK][sS]?)|(?:([aA][pP][pP]|[mM][sS][iI])[xX]?([bB][uU][nN][dD][lL][eE])?)|(?:[bB][iI][nN])|(?:[cC][oO][mM])|(?:[bB][aA][tT])|(?:[gG][aA][dD][gG][eE][tT])|(?:[mM][sS]([tT]|[pP]|[cC]))|(?:[sS][cC][rR])|(?:[hH][tT][aA])|(?:[jJ][aA][rR])|(?:[cC][pP][lL]))([/#?].*)?$/$empty

@@ -4,9 +4,9 @@
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Source: 
 ! Expires: Infinite
-! Description: Experimental, needs testing. Expression based filtering rules
+! Description: Experimental, needs testing, preview. Expression based filtering rules
 ! Use them at your own risk.
-
+! =====================================================================================================================================================================================
 /^https?://(?:[^/]{0,2}(?:[^w/][^/]*)?\.)?ad(?:s(?:e?rv(?:er?)?)?|im(?:age|g)s?)?\d*(?:(?:\.[\w-]+){3,}|\.[\w-]+\.\w{3,}|\.[\w-]{4,}\.\w{2})/|/_*ad(?:se?rv(?:er?)?|im(?:age|g)s?|vertis(?:e(?:ments?)?|ing))\d*[\./]|\.ads?\d*[/-]|/ad(?:sv?\d{0,2}/|\d-|\d*/js/|j?/.+;.*[\?&])|^[^\?&]+/(?:load)?ads?(?:(?:frame|_[a-z]+)*\d*\.(?:js|php))?(?:$|[\?&])|[/\?&]ads?_?(?:id|type|size)=|[/\?&]view=ad(?:&|$)/
 /^http://[^/]+/m?w/\d+\.\d+/jstag|/www/delivery/|/a(?:js|fr|vw)(?:\.php)?\?|/(?:html|js)\.ng/|/aamsz=|/[ad]\.js$|://bwp\.[^/]+/search(?:$|\?)|(?:\.aff?ili(?:ate)?\..+|adsense(?:[_-]?\d+)?)\.js$/
 //creatives?//$third-party

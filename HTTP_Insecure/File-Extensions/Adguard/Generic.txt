@@ -2,13 +2,15 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
-! Version: 1 (Lastly dated - 06.18.2020)
-! Source: 
+! Version: 1 (Last Date Indicated as Version - 06.18.2020)
+! Last Modified: June 20, 2020, 04:42 UTC
+! Source: https://raw.githubusercontent.com/InnoScorpio/Special-Hosts/master/HTTP_Insecure/File-Extensions/Adguard/Generic.txt
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Not comprehensive or exhaustive. Generic File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
 ! Use them at your own risk.
-! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; https://en.wikipedia.org/wiki/List_of_file_formats; 
-! Other Attribution: https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+! Attribution: RegexMagic (Rule: ^http://(?:[0-9A-Za-z-]+\.)+[A-Za-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,19}/[.0-9A-Z_a-z-]+\.(?:jar|exe)$) ; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media (Rule: ^((https?|ftp)://|(www|ftp)\.)[a-z0-9-]+(\.[a-z0-9-]+)+([/?].*)?$)
+! References: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol; https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://www.w3.org/Addressing/URL/url-spec.html; https://en.wikipedia.org/wiki/Media_type; https://en.wikipedia.org/wiki/List_of_file_formats
+! Other References: https://www.computerhope.com/issues/ch001789.htm
 ! ============================================================================
 ! Common generic file extensions: cnf, conf, cfg, log, asc, txt, bak, bk, dat, dsk, raw, ini, json, yaml, htm, html, csv, tsv
 /^http://.+(/.+)?/.+\.(?:(?:[cC][oO]?[nN][fF])|(?:[cC][fF][gG])|(?:[lL][oO][gG])|(?:[aA][sS][cC])|(?:[tT][xX][tT])|(?:[bB][aA]?[kK])|(?:[iI][nN][iI])|(?:[jJ][sS][oO][nN])|(?:[hH][tT][mM][lL]?)|(?:[yY][aA][mM][lL])|(?:[dD][aA][tT])|(?:[dD][sS][kK])|(?:[rR][aA][wW])|(?:([cC]|[tT])[sS][vV]))([/#?].*)?$/$empty

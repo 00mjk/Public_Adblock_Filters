@@ -3,7 +3,8 @@
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
 ! Version: 06.09.2020
-! Source:
+! Last Modified: June 20, 2020, 04:42 UTC
+! Source: https://raw.githubusercontent.com/InnoScorpio/Special-Hosts/master/Attributed/Cybo1927/Anti-Fingerprinting-List.txt
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Inadvisable, Experimental. Avoid using since it is problematic. List of rules to mitigate browser fingerprinting to some extext.
 ! Use them at your own risk.

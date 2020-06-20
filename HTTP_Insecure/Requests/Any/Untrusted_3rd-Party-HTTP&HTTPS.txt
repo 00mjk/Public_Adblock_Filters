@@ -4,15 +4,16 @@
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
 ! Version: 06.04.2020
-! Source: 
+! Last Modified: June 20, 2020, 04:42 UTC
+! Source: https://raw.githubusercontent.com/InnoScorpio/Special-Hosts/master/HTTP_Insecure/Requests/Any/Untrusted_3rd-Party-HTTP%26HTTPS.txt
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Block untrusted elements from third-party HTTP websites and HTTPS of untrusted TLDs.
 ! Use them at your own risk.
-! Attribution: Cybo1927, LennyFox, Yuki2178, rdsu-pt, Kees1958.
+! Attribution: LennyFox, Yuki2178, rdsu-pt, Kees1958
+! References: https://malwaretips.com/threads/adblocking-innovation.98862/post-873126, https://malwaretips.com/threads/adblocking-innovation.98862/post-873319, https://malwaretips.com/threads/what-browser-extensions-are-you-using-in-2020.100036/post-878177
 ! ====================================================================================================================
 ! Guidance: Some of these lists are an usable version of uBO hard mode and/or medium mode. See https://github.com/gorhill/uBlock/wiki/Blocking-mode, 
 ! Only allows third-party passive content to load from HTTPS websites. 
 https://*$third-party,~stylesheet,~image,~media,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
 ! Only allows third-party passive content to load from HTTP websites. 
 http://*$third-party,~stylesheet,~image,~media,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
-

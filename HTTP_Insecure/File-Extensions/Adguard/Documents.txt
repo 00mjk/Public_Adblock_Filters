@@ -2,13 +2,15 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
-! Version: 2 (Lastly dated - 06.18.2020)
-! Source: 
+! Version: 2 (Last Date Indicated as Version - 06.18.2020)
+! Last Modified: June 20, 2020, 04:42 UTC
+! Source: https://raw.githubusercontent.com/InnoScorpio/Special-Hosts/master/HTTP_Insecure/File-Extensions/Adguard/Documents.txt
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Not comprehensive or exhaustive. Document File Extensions. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for Adguard.
 ! Use them at your own risk.
-! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; HardConfigurator; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
-! Other Attribution: https://www.computerhope.com/issues/ch001789.htm, https://en.wikipedia.org/wiki/List_of_Microsoft_Office_filename_extensions
+! Attribution: RegexMagic (Rule: ^http://(?:[0-9A-Za-z-]+\.)+[A-Za-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,19}/[.0-9A-Z_a-z-]+\.(?:jar|exe)$) ; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media (Rule: ^((https?|ftp)://|(www|ftp)\.)[a-z0-9-]+(\.[a-z0-9-]+)+([/?].*)?$)
+! References: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol; https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://www.w3.org/Addressing/URL/url-spec.html; https://en.wikipedia.org/wiki/Media_type; https://en.wikipedia.org/wiki/List_of_file_formats
+! Other References: https://www.computerhope.com/issues/ch001789.htm, https://en.wikipedia.org/wiki/List_of_Microsoft_Office_filename_extensions
 ! ============================================================================
 ! Common document extensions: odp, key, ods, odt, pdf, tex, wpd, pub, xps, db, dbf, epub, mobi
 /^http://.+(/.+)?/.+\.(?:(?:[oO][dD]([pP]|[sS][tT]))|(?:[pP][dD][fF])|(?:[tT][eE][xX])|(?:[wW][pP][dD])|(?:[eE]?[pP][uU][bB])|(?:[xX][pP][sS])|(?:[kK][eE][yY])|(?:[dD][bB][fF]?)|(?:[mM][oO][bB][iI]))([/#?].*)?$/$empty

@@ -4,11 +4,13 @@
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
 ! Version: 06.04.2020
-! Source: 
+! Last Modified: June 20, 2020, 04:42 UTC
+! Source: https://raw.githubusercontent.com/InnoScorpio/Special-Hosts/master/Attributed/LennyFox/H%26M_Mode_AG%26ABP.txt
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Provides an usable version of uBO medium and hard mode. Supports Adguard and Adblock Plus syntax.
 ! Use them at your own risk.
 ! Attribution: LennyFox
+! References: https://malwaretips.com/threads/adblocking-innovation.98862/post-873126, https://malwaretips.com/threads/adblocking-innovation.98862/post-873319, https://malwaretips.com/threads/what-browser-extensions-are-you-using-in-2020.100036/post-878177
 ! ====================================================================================================================
 ! Not included by default, for Microsoft Edge. Block insecure (HTTP) first-party content except stylesheet, image and media
 http://$~third-party,script,domain=~com|~eu|~info|~net|~nl|~org|

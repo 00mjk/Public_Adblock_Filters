@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Source: 
 ! Expires: Infinite
-! Description: Experimental, needs testing. Absolute blocking of invasive domains used for tracking and invading privacy
+! Description: Experimental, needs testing, preview. Absolute blocking of invasive domains used for tracking and invading privacy
 ! Use them at your own risk.
 ||*-a.akamaihd.net/a24/gsd.html?$third-party
 ||*-a.akamaihd.net/a24/scripts/gsd.js?$third-party

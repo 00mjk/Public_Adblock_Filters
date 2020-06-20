@@ -2,8 +2,9 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
-! Version: 06.09.2020
-! Source: 
+! Version: 1 (Last Date Indicated as Version - 06.09.2020)
+! Last Modified: June 20, 2020, 04:42 UTC
+! Source: https://raw.githubusercontent.com/InnoScorpio/Special-Hosts/master/Attributed/Cybo1927/Anti_3rd-Party_HTTP_uBO.txt
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Block third-party elements for HTTP websites.
 ! Use them at your own risk.

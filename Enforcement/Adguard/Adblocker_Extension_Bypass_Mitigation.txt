@@ -3,11 +3,12 @@
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 5 days
 ! Version: 05.13.2020-Rev1
-! Source:
+! Last Modified: June 20, 2020, 04:42 UTC
+! Source: https://raw.githubusercontent.com/InnoScorpio/Special-Hosts/master/Enforcement/Adguard/Adblocker_Extension_Bypass_Mitigation.txt
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Includes a list of rules to prevent ad and tracking servers from compromising your privacy or bypassing Adguard Adblocker Extension.
 ! Use them at your own risk.
-Attribution: Cybo1927 
+! Attribution: Cybo1927 (https://github.com/Cybo1927/Hosts/blob/master/Hosts)
 ! =======================================================================================================================================
 ! Not all rules will with every Adguard software program just simply import the filter for Adguard software. This list will improve overtime.
 ! Cybo1927 >> This avoids prefecting all together, this is the rule you will need the most.

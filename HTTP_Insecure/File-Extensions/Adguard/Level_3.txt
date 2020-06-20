@@ -2,13 +2,14 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
-! Version: 2 (Lastly dated - 06.18.2020)
+! Version: 3 (Last Date Indicated as Version - 06.18.2020)
+! Last Modified: June 20, 2020, 04:42 UTC
 ! Source: 
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Not comprehensive or exhaustive. Level 3. Block dangerous content that can be manipulated through HTTP connections and potentiemptyy harmful to devices. Intended for Adguard.
 ! Use them at your own risk.
-! Attribution: RegexBuddy and RegexMagic; Regular Expressions Cookbook, 2nd Edition from O'Reilly Media; HardConfigurator; https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
-! Other Attribution: https://www.computerhope.com/issues/ch001789.htm, https://en.wikipedia.org/wiki/List_of_Microsoft_Office_filename_extensions; https://docs.google.com/document/d/1BRvhtleXB91bkTAq4Xde9vzDoLbcwIuaxaSko3eUQ14/edit
+! Attribution: RegexMagic (Rule: ^http://(?:[0-9A-Za-z-]+\.)+[A-Za-z]{2,63}(?:/[!"#$%&'()*+,.0-9:;<=>?@A-Z[\\\]_`a-z{|}~^-]+){0,19}/[.0-9A-Z_a-z-]+\.(?:jar|exe)$); Regular Expressions Cookbook, 2nd Edition from O'Reilly Media (Rule: ^((https?|ftp)://|(www|ftp)\.)[a-z0-9-]+(\.[a-z0-9-]+)+([/?].*)?$)
+! References: https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol; https://stackoverflow.com/questions/374930/validating-file-types-by-regular-expression; https://docs.google.com/document/d/1BRvhtleXB91bkTAq4Xde9vzDoLbcwIuaxaSko3eUQ14/edit; https://www.w3.org/Addressing/URL/url-spec.html
 ! ============================================================================
 ! Level 1: Executables + System
 ! Level 2: Executables + System + Archives
@@ -20,8 +21,10 @@
 /^http://.+(/.+)?/.+\.(?:(?:[cC][mM][dD])|(?:[vV][bB]([sS]|[eE])?)|(?:[jJ][sS][eE])|(?:[sS][eE][tT][tT][iI][nN][gG][cC][oO][nN][tT][eE][nN][tT][-][mM][sS])|(?:[wW][sS]([fF]|[hH]|[cC])?)|(?:[pP][sS][1]([xX][mM][lL])?)|(?:[pP][sS][2]([xX][mM][lL])?)|(?:[mM][sS][hH]([1]|[2])?([xX][mM][lL])?)|(?:[pP][sS][cC]([1]|[2])))([/#?].*)?$/$empty
 ! Other Harmful Microsoft Windows shortcuts, handles, libraries: dll, inf, reg, chm, isp, lib, lnk, nsh, shb, shs, sys, vxd, iqy, bas, ocx, pcd, shs, url
 /^http://.+(/.+)?/.+\.(?:(?:[dD][lL][lL)|(?:[uU][rR][lL])|(?:[wW][iI][nN][fF])|(?:[rR][eE][gG])|(?:[cC][hH][mM])|(?:[iI][sS][pP])|(?:[iI][qQ][yY])|(?:[bB][aA][sS])|(?:[oO][cC][xX])|(?:[pP][cC][dD])|(?:[lL][iI][bB])|(?:[lL][nN][kK])|(?:[nN][sS][hH])|(?:[sS][hH]([bB]|[sS])|(?:[sS][yY][sS])|(?:[vV][xX][dD]))([/#?].*)?$/$empty
-! Archive common file extensions. File extensions: 7z, arj, deb, pkg, rar, rpm, tar.gz, gz, tar, z, zip
-/^http://.+(/.+)?/.+\.(?:(?:[7][Zz])|(?:[aA][rR][jJ])|(?:[dD][eE][bB])|(?:[pP][kK][gG])|(?:[gG][zZ])|(?:[rR][aA][rR])|(?:[tT][aA][rR]([.][gG][zZ])?)|(?:[zZ]([iI][pP])?))([/#?].*)?$/$empty
+! Common Archive file extensions: 7z, arj, deb, pkg, rar, rpm, tar.gz, gz, tar, z, zip, odex, dex, iso, img, so, dmg
+/^http://.+(/.+)?/.+\.(?:(?:[7][Zz])|(?:[aA][rR][jJ])|(?:[dD][eE][bB])|(?:[pP][kK][gG])|(?:[gG][zZ])|(?:[rR][aA][rR])|(?:[tT][aA][rR]([.][gG][zZ])?)|(?:[zZ]([iI][pP])?)|(?:[oO]?[dD][eE][xX])|(?:[iI]?[sS][oO])|(?:([iI]|[dD])[mM][gG]))([/#?].*)?$/$empty
+! Other Known Archive file extensions: lz, lzip, lzh, lha, lzx, vhd, vhdx, xpi, crx, tgz, bz2, bzip2, bz, bzip, cab, ipa, xap, sis, sisx
+/^http://.+(/.+)?/.+\.(?:(?:[[lL][zZ]([iI][pP]|[xX]|[hH])?)|(?:[lL][hH][aA])|(?:[tT][gG][zZ])|(?:[vV][hH][dD][xX]?)|(?:[xX][pP][iI])|(?:[cC][rR][xX])|(?:[bB][zZ]([iI][pP])?[[2]?)|(?:[cC][aA][bB])|(?:[iI][pP][aA])|(?:[xX][aA][pP])|(?:[sS][iI][sS][xX]?))([/#?].*)?$/$empty
 ! Common document extensions: odp, key, ods, odt, pdf, tex, wpd, pub, xps, db, dbf, epub, mobi
 /^http://.+(/.+)?/.+\.(?:(?:[oO][dD]([pP]|[sS][tT]))|(?:[pP][dD][fF])|(?:[tT][eE][xX])|(?:[wW][pP][dD])|(?:[eE]?[pP][uU][bB])|(?:[xX][pP][sS])|(?:[kK][eE][yY])|(?:[dD][bB][fF]?)|(?:[mM][oO][bB][iI]))([/#?].*)?$/$empty
 ! Microsoft Office Word extensions: docb, docm, dotm, dotx, dot, wbk, doc, docx

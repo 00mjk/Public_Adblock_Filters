@@ -3,13 +3,14 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
-! Version: 1 (Lastly dated - 06.17.2020)
-! Source: 
+! Version: 2 (Last Date Indicated as Version - 06.17.2020)
+! Last Modified: June 20, 2020, 04:42 UTC
+! Source: https://raw.githubusercontent.com/InnoScorpio/Special-Hosts/master/HTTP_Insecure/Upgrade/Adguard/HTTPS_Restricted.txt
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Intended for uBlock Origin. Block all HTTP websites and increases security when visiting HTTPS websites.
 ! Use them at your own risk.
-! Attribution: Cybo1927, LennyFox, Yuki2178, rdsu-pt, Kees1958
-! Guidance: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests, https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content
+! Attribution: Cybo1927 (https://github.com/Cybo1927/Hosts/blob/master/Hosts), LennyFox, Yuki2178, rdsu-pt, Kees1958, beerisgood 
+! References: https://malwaretips.com/threads/adblocking-innovation.98862/post-873126, https://malwaretips.com/threads/adblocking-innovation.98862/post-873158, https://malwaretips.com/threads/what-browser-extensions-are-you-using-in-2020.100036/post-878177
 ! ====================================================================================================================
 ! Some of these lists are an usable version of uBO hard mode and/or medium mode. See https://github.com/gorhill/uBlock/wiki/Blocking-mode.
 ! Blocks all HTTP websites.
@@ -18,5 +19,7 @@ http://*$all
 https://*$~3p,script,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
 ! Block third-party Javascript and frames on untrusted TLDs on third-party domains for HTTPS websites. More useable version of uBO medium mode for HTTPS.
 https://*$3p,script,frame,domain=~gov|~int|~edu|~mil|~org|~us|~com|~net|~io|~uk|~ca|~nz|~au|~mx|~info|~eu|
-! Try To Make HTTP Links HTTPS; Block 'Mixed Content' / Loading Of HTTP On HTTPS Sites
-||*^$csp=upgrade-insecure-requests; block-all-mixed-content
+! Try To Make HTTP Links HTTPS (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/upgrade-insecure-requests)
+||*^$csp=upgrade-insecure-requests;
+! Block 'Mixed Content' / Loading Of HTTP On HTTPS Sites (https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/block-all-mixed-content)
+||*^$csp=block-all-mixed-content;

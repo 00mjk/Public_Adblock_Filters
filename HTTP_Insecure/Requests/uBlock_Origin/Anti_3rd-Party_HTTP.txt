@@ -4,13 +4,12 @@
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
 ! Version: 05.17.2020-Rev1
-! Source: 
+! Last Modified: June 20, 2020, 04:42 UTC
+! Source: https://raw.githubusercontent.com/InnoScorpio/Special-Hosts/master/HTTP_Insecure/Requests/uBlock_Origin/Anti_3rd-Party_HTTP.txt
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Intended for Adguard and Adblock Plus. Block third-party elements for HTTP websites.
 ! Use them at your own risk.
-! Attribution: Cybo1927
+! Attribution: Cybo1927 (https://github.com/Cybo1927/Hosts/blob/master/Anti/Anti%20Third-Party%20HTTP)
 ! ====================================================================================================================
 ! Blocks third-party content from HTTP websites.
 http://*$third-party,all
-
-

@@ -2,21 +2,21 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
-! Version: 2-Stable (Lastly dated 06.18.2020)
-! Last Modified: June 19, 2020, 00:28 UTC
+! Version: 2-Stable (Last Date Indicated as Version - 06.18.2020)
+! Last Modified: June 20, 2020, 04:42 UTC
 ! Source: https://raw.githubusercontent.com/InnoScorpio/Special-Hosts/master/Inadvisable/uMatrix_Private_IP.txt
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Inadvisable. List of private IP addresses that should not be accessible via third-party from websites or browser extensions. 
 ! Use them at your own risk. This list can cause unintended consequences.
 ! Attribution: Gwarser (https://github.com/gwarser/filter-lists/blob/master/lan-block.txt), Thorin-Oakenpants (https://github.com/ghacksuserjs/ghacks-user.js/wiki/4.2.3-uMatrix)
-! References: https://en.wikipedia.org/wiki/Private_network, https://www.iana.org/abuse, https://en.wikipedia.org/wiki/Localhost, https://en.wikipedia.org/wiki/Link-local_address, https://en.wikipedia.org/wiki/0.0.0.0
-! Known Issues: Using these rules can create conflict with CSS Exfil Protection in Firefox. 
+! References: https://en.wikipedia.org/wiki/Private_network, https://www.iana.org/abuse, https://en.wikipedia.org/wiki/Localhost, https://en.wikipedia.org/wiki/Link-local_address, https://en.wikipedia.org/wiki/0.0.0.0 
+! Other References: https://firefox-source-docs.mozilla.org/remote/Security.html, https://www.ionos.com/digitalguide/server/know-how/localhost/, https://tools.ietf.org/html/rfc5735, https://www.chromium.org/developers/design-documents/network-settings
 ! ==================================================================================================================================================================================================================
 ! Due to uMatrix limitations, only specific IPv6 addresses can be blocked.
 ! Import these on the My Rules tab of Temporary rules section using the Import from file... button of uMatrix in order for them to work properly. 
 ! ===============================================================
-! === Source-Only Addresses ==== 
-! 0.0.0.0/0 (IPv6 equivalent [::]) have not destination requests. Most likely to be used by browser extensions or the web browser. 
+! === Source-Host Only Addresses ==== 
+! 0.0.0.0/32 (IPv6 equivalent [::]) have not destination requests. Most likely to be used by browser extensions or the web browser. 
 * 0.0.0.0 * block
 * [::] * block
 ! === Stateless Address AutoConfiguration or Link-Local Addresses ==== 
@@ -35,7 +35,7 @@
 * 172.31 * block
 * 192.168 * block
 ! === Localhost Ranges =======
-! Websites like leoaffairs.com use localhost to bypass your adblocker.
+! Websites like leoaffairs.com use localhost to bypass your adblocker. 127.0.0.1/32, ::1/128 IP ranges. 
 * [::1] * block
 * 127.0.0.1 * block
 * localhost * block
