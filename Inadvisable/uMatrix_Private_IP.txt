@@ -2,8 +2,8 @@
 ! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
-! Version: 2-Stable (Last Date Indicated as Version - 06.18.2020)
-! Last Modified: June 20, 2020, 04:42 UTC
+! Version: 3-Stable (Last Date Indicated as Version - 06.18.2020)
+! Last Modified: June 26, 2020, 4:07 UTC
 ! Source: https://raw.githubusercontent.com/InnoScorpio/Special-Hosts/master/Inadvisable/uMatrix_Private_IP.txt
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Inadvisable. List of private IP addresses that should not be accessible via third-party from websites or browser extensions. 
@@ -39,20 +39,46 @@
 * [::1] * block
 * 127.0.0.1 * block
 * localhost * block
+! === Hostnames associated with LAN ====
+! List hostnames associated with private IP addresses for the LAN
+* airbox.home * block
+* arcor.easybox * block
+* congstar.box * block
+* easy.box * block
+* fritz.box * block
+* giga.cube * block
+* hi.link * block
+* router.asus.com * block
+* routerlogin.com * block
+* routerlogin.net * block
+* samsung.router * block
+* speedport.ip * block
 ! === LAN Exclusions ===
-! LAN exclusions for IP ranges that are accessible through directly as first-party host or domain. 
-[::] [::] * allow
-[::1] [::1] * allow
-0.0.0.0 0.0.0.0 * allow
-10 10 * allow
-127.0.0.1 127.0.0.1 * allow
-169.254 169.254 * allow
-172.16 172.16 * allow
-172.17 172.17 * allow
-172.18 172.18 * allow
-172.19 172.19 * allow
-172.2* 172.2* * allow
-172.30 172.30 * allow
-172.31 172.31 * allow
-192.168 192.168 * allow
-localhost localhost * allow
+! LAN exclusions for IP ranges and hostnames that are accessible through directly as first-party host or domain. 
+[::] * * allow
+[::1] * * allow
+0.0.0.0 * * allow
+10 * * allow
+127.0.0.1 * * allow
+169.254 * * allow
+172.16 * * allow
+172.17 * * allow
+172.18 * * allow
+172.19 * * allow
+172.2* * * allow
+172.30 * * allow
+172.31 * * allow
+192.168 * * allow
+localhost * * allow
+airbox.home * * allow
+arcor.easybox * * allow
+congstar.box * * allow
+easy.box * * allow
+fritz.box * * allow
+giga.cube * * allow
+hi.link * * allow
+router.asus.com * * allow 
+routerlogin.com * * allow
+routerlogin.net * * allow
+samsung.router * * allow
+speedport.ip * * allow
