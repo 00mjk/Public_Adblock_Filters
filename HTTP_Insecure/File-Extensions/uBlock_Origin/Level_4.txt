@@ -4,7 +4,7 @@
 ! Homepage: https://github.com/InnoScorpio/Special-Hosts
 ! Expires: 8 hours
 ! Version: 4 (Last Date Indicated as Version - 06.18.2020)
-! Last Modified: June 30, 2020, 20:00 UTC
+! Last Modified: June 30, 2020, 20:09 UTC
 ! Source: https://raw.githubusercontent.com/InnoScorpio/Special-Hosts/master/HTTP_Insecure/File-Extensions/uBlock_Origin/Level_4.txt
 ! Issues: https://github.com/InnoScorpio/Special-Hosts
 ! Description: Not comprehensive or exhaustive. Level 4. Block dangerous content that can be manipulated through HTTP connections and potentially harmful to devices. Intended for uBlock Origin.
