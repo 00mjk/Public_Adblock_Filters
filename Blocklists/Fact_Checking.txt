@@ -1,0 +1,99 @@
+! Title: InnoScorpio's Fact Checking Blocklist
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Special-Hosts
+! Expires: 8 hours
+! Version: 1
+! Last Modified: July 3, 2020, 05:31 UTC
+! Source: 
+! Number of Entries: 86
+! Issues: https://github.com/InnoScorpio/Special-Hosts
+! Description: Fact checking blocklist
+! Use them at your own risk.
+! References: https://en.wikipedia.org/wiki/List_of_fact-checking_websites, https://credibilitycoalition.org/, https://en.wikipedia.org/wiki/Category:Fact-checking_websites
+! ============================================================================
+||abc.net.au/news/factcheck^
+||adfontesmedia.com^
+||africacheck.org^
+||altnews.in^
+||animalpolitico.com/sabueso^
+||aosfatos.org^
+||blackdotresearch.sg^
+||blogs.oglobo.globo.com/eissomesmo^
+||boatos.org^
+||boomlive.in^
+||bufale.net^
+||captainfact.io^
+||channel4.com/news/factcheck^
+||chequeado.com^
+||climatefeedback.org^
+||cnnchile.com/chilecheck^
+||colombiacheck.com^
+||congressoemfoco.uol.com.br^
+||correctiv.org^
+||cotejo.info^
+||debunk.eu^
+||deldichoalhecho.cl^
+||demaskuok.lt^
+||e-farsas.com^
+||e-veracruz.mx/autor/checadatos^
+||efectococuyo.com^
+||ellinikahoaxes.gr^
+||factcheck.ge^
+||factcheck.org^
+||factchecked.org
+||factchecker.gr^
+||factcheckni.org^
+||factcrescendo.com^
+||facthunt.in^
+||factly.in^
+||factscan.ca^
+||factuel.afp.com^
+||faktabaari.fi^
+||faktisk.no^
+||faktograf.hr^
+||faktyoxla.info^
+||fatabyyano.net^
+||fip.am^
+||fullfact.org^
+||gomaneh.net^
+||gossipcop.com^
+||hoax-slayer.com^
+||hoaxes.org^
+||hoaxmap.org^
+||indiatoday.in/fact-check^
+||jcej.info^
+||lemonde.fr/les-decodeurs^
+||mediabiasfactcheck.com^
+||mimikama.at^
+||newschecker.in^
+||newsguardtech.com^
+||newsmobile.in^
+||norumors.net
+||noticias.uol.com.br/confere^
+||ojo-publico.com/ojobionico^
+||opindia.com/category/fact-check^
+||our.news^
+||pagellapolitica.it^
+||piaui.folha.uol.com.br/lupa^
+||plazapublica.com.gt/content/conpruebas^
+||politifact.com^
+||polygraph.info^
+||projetocomprova.com.br^
+||quoteinvestigator.com^
+||realclearpolitics.com^
+||sebenarnya.my^
+||snopes.com^
+||stopfals.md^
+||straightdope.com^
+||tfc-taiwan.org.tw^
+||theferret.scot/fact-check^
+||thequint.com^
+||thewhistle.globes.co.il/feed^
+||truthorfiction.com^
+||usafacts.org^
+||uycheck.com^
+||verifikado.com^
+||vishvasnews.com^
+||volksverpetzer.de^
+||washingtonpost.com/news/fact-checker^
+||youturn.in^
