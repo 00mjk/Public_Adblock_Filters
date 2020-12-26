@@ -1,1 +1,1 @@
-## *This repository is now discontinued. Sorry for any inconvenience. Previous fork.*
+## *This repository is no longer active. Sorry for any inconvenience. Previous fork from the past.*
