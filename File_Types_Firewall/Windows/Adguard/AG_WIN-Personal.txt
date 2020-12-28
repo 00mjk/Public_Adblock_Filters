@@ -1,0 +1,29 @@
+! Title: Windows Files Types Firewall Personal Setting for Adguard
+! Licence: Unlicense (https://choosealicense.com/licenses/unlicense/)
+! Homepage: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Expires: 15 days
+! Version: 04.26.2020
+! Source: 
+! Issues: https://github.com/InnoScorpio/Public_Adblock_Filters
+! Description: Block dangerous Windows file extensions from most network protocols to increase security against potential exploits, download cradles, drive-by-download attacks, and malicious code. Intended for Adguard.
+! Use them at your own risk.
+! ============================================================================
+! Dangerous File Extensions for Microsoft Windows
+! Block downloads of .exe and .msi from insecure websites.
+http://*.exe^$empty
+http://*.msi^$empty
+! Other vulnerable or malicious extensions for Windows
+||*.bat^$empty
+||*.dll^$empty
+||*.hta^$empty
+||*.jar^$empty
+||*.msu^$empty
+||*.pif^$empty
+||*.ps1^$empty
+||*.ps2^$empty
+||*.reg^$empty
+||*.scr^$empty
+||*.sys^$empty
+||*.vbe^$empty
+||*.vbs^$empty
+||*.tmp^$empty
